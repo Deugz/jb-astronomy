@@ -1,0 +1,39 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Introduction
+    chapters:
+    - file: Intro/content
+  - caption: Teaching
+    chapters:
+    - file: Teaching_Main
+    - file: Bitesize/Bitesize_Main
+    - file: Bitesize/Astronomy/Astronomy_Main
+      sections:
+      - file: Bitesize/Astronomy/Astronomy_101/Astronomy_101
+      - file: Bitesize/Astronomy/The_solar_system/Solar_system
+      - file: Bitesize/Astronomy/ISM/ISM
+      - file: Bitesize/Astronomy/Astrochemistry/Astrochemistry
+      - file: Bitesize/Astronomy/Interstellar_dust_grains/Dust
+      - file: Bitesize/Astronomy/Star_formation/Star_formation
+      - file: Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top
+      - file: Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom
+      - file: Bitesize/Astronomy/JWST/JWST
+    - file: Bitesize/Physics/Physics_Main
+      sections:
+      - file: Bitesize/Physics/Water_physics/Water_physics
+      - file: Bitesize/Physics/Water_ice/Water_ice
+      - file: Bitesize/Physics/IR_Spectro/IR_Spectro
+      - file: Bitesize/Physics/Special_Relativity/Special_Relativity
+    - file: Practicle/Practicle_Main
+    - file: Practicle/WebDev/WebDev_Main
+      sections:
+      - file: Practicle/WebDev/Jupyter_Book/Jupyter_Book
+      - file: Practicle/WebDev/HTML_CSS/HTML_CSS
+    - file: Practicle/Python/Python_Main
+      sections:
+      - file: Practicle/Python/Step1
+      - file: Practicle/Python/Step2

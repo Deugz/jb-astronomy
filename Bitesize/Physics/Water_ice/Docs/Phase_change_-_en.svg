@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="493" height="524">
+	<style type="text/css">
+		text {
+			font-family: "DejaVu Sans", sans-serif;
+		}
+	</style>
+	
+	<defs>
+		<path id="arrow" d="
+			M0 -11
+			h8
+			l10 11
+			l-10 11
+			h-8
+			l10 -11
+			z"/>
+		<rect id="bubble" x="-61.5" y="-31.5" width="123" height="63" rx="7" stroke-width="2.3"/>
+	</defs>
+	
+	<path fill="none" stroke="#969696" stroke-width="12.5" d="
+		M88 196
+		V468
+		L348 332
+		L88 196
+		L348 58"/>
+	
+	<g font-size="16" text-anchor="middle">
+		<g transform="translate(88,332) rotate(-90)">
+			<text y="-14">Deposition</text>
+			<text y="26">Sublimation</text>
+			<use xlink:href="#arrow" x="-50" y="-20" transform="rotate(180, -50, -20)"/>
+			<use xlink:href="#arrow" x="50" y="20"/>
+		</g>
+		
+		<g transform="translate(218,400) rotate(-28)">
+			<text y="-14">Freezing</text>
+			<text y="26">Melting</text>
+			<use xlink:href="#arrow" x="-40" y="-20" transform="rotate(180, -40, -20)"/>
+			<use xlink:href="#arrow" x="40" y="20"/>
+		</g>
+		
+		<g transform="translate(218,264) rotate(28)">
+			<text y="-14">Vaporization</text>
+			<text y="26">Condensation</text>
+			<use xlink:href="#arrow" x="-60" y="-20" transform="rotate(180, -60, -20)"/>
+			<use xlink:href="#arrow" x="60" y="20"/>
+		</g>
+		
+		<g transform="translate(218,127) rotate(-28)">
+			<text y="-14">Recombination</text>
+			<text y="26">Ionization</text>
+			<use xlink:href="#arrow" x="-65" y="-20" transform="rotate(180, -65, -20)"/>
+			<use xlink:href="#arrow" x="45" y="20"/>
+		</g>
+	</g>
+	
+	<g font-size="24" text-anchor="middle">
+		<use xlink:href="#bubble" x="88" y="196" fill="#ffffb6" stroke="#e8ed4f"/>
+		<text x="88" y="204.5">Gas</text>
+		
+		<use xlink:href="#bubble" x="88" y="468" fill="#d8fed7" stroke="#56c25c"/>
+		<text x="88" y="476.5">Solid</text>
+		
+		<use xlink:href="#bubble" x="348" y="332" fill="#bbdcff" stroke="#89b2de"/>
+		<text x="348" y="340.5">Liquid</text>
+		
+		<use xlink:href="#bubble" x="348" y="58" fill="#ffdedd" stroke="#dd8383"/>
+		<text x="348" y="66.5">Plasma</text>
+	</g>
+	
+	<path d="
+		M 434 58
+		c -2.3,12.9 -4,30.2 -10.8,45 4.7,-0.6 6.8,-4.6 8.6,-8.5
+		l 0,372.2 4.4,0 0,-372.2
+		c 1.8,3.9 3.9,7.9 8.6,8.4 -6.8,-14.8 -8.5,-32.1 -10.8,-45 z"/>
+	
+	<text x="-377.5" y="463" transform="rotate(-90)" font-size="24px">Enthalpy of system</text>
+</svg>
