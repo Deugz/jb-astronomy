@@ -1,0 +1,8 @@
+Mercury 5.79e10
+Venus 1.08e11
+Earth 1.50e11
+Mars 2.28e11
+Jupiter 7.79e11
+Saturn 1.43e12
+Uranus 2.87e12
+Neptune 4.50e12

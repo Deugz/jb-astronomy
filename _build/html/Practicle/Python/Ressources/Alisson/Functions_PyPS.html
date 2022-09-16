@@ -1,0 +1,1034 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Python - Functions &#8212; Teaching</title>
+    
+  <link href="../../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb_Teaching");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Practicle/Python/Ressources/Alisson/Functions_PyPS.html" />
+    <link rel="shortcut icon" href="../../../../_static/logo2.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-YJLM4C4S2Q');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../_static/logo2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Teaching</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Intro/content.html">
+   Content
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Bitesize/Bitesize_Main.html">
+   <strong>
+    Bitesize
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_Main.html">
+   Astronomy
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">
+     Astronomy 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">
+     The Solar system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/ISM/ISM.html">
+     The Interstellar Medium
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">
+     Astrochemistry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">
+     Interstellar Dust
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Star_formation/Star_formation.html">
+     Lifecycle of Stars
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
+     Planet formation (bottom-up)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
+     Planet formation (top-bottom)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/JWST/JWST.html">
+     JWST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Physics/Physics_Main.html">
+   Physics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_physics/Water_physics.html">
+     The strange behaviour of water
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_ice/Water_ice.html">
+     Water ice
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">
+     Infrared Spectroscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">
+     Special Relativity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Practicle_Main.html">
+   <strong>
+    Practicle
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../WebDev/WebDev_Main.html">
+   Web Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/Jupyter_Book/Jupyter_Book.html">
+     Jupyter Book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/HTML_CSS/HTML_CSS.html">
+     HTML / CSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Python_Main.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step1.html">
+     Introduction to Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step2.html">
+     Plotting some data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/Practicle/Python/Ressources/Alisson/Functions_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Deugz/nb_Teaching"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Deugz/nb_Teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Ressources/Alisson/Functions_PyPS.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Deugz/nb_Teaching/edit/master/docs/Practicle/Python/Ressources/Alisson/Functions_PyPS.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Deugz/nb_Teaching/master?urlpath=tree/docs/Practicle/Python/Ressources/Alisson/Functions_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions-what-are-they">
+   1. Functions: what are they?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions-summary">
+     Functions - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-build-your-own-functions">
+   2. How to build your own functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-your-own-functions-summary">
+     Build your own functions - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modules-and-packages">
+   3. Modules and Packages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modules-and-packages-summary">
+     Modules and Packages - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises - Answers
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Getting Started with Python - Functions</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions-what-are-they">
+   1. Functions: what are they?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions-summary">
+     Functions - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-build-your-own-functions">
+   2. How to build your own functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-your-own-functions-summary">
+     Build your own functions - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modules-and-packages">
+   3. Modules and Packages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modules-and-packages-summary">
+     Modules and Packages - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises - Answers
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-functions">
+<h1>Getting Started with Python - Functions<a class="headerlink" href="#getting-started-with-python-functions" title="Permalink to this headline">¶</a></h1>
+<p>Version 0.1 Jul 2020</p>
+<p>This notebook introduces a key concept in programming which is functions. You will discover what functions are and how to use them in Python.</p>
+<p><a class="reference external" href="#Functions">1. Functions: what are they?</a></p>
+<p><a class="reference external" href="#Building">2. Building your own function</a></p>
+<p><a class="reference external" href="#Modules">3. Modules</a></p>
+<p><a class="reference external" href="#Exercise-Answers">Answers of the exercises</a></p>
+<p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">Functions_PyPS.ipnyb</span></code></p>
+<hr class="docutils" />
+<p><a id="Functions"></a></p>
+<div class="section" id="functions-what-are-they">
+<h2>1. Functions: what are they?<a class="headerlink" href="#functions-what-are-they" title="Permalink to this headline">¶</a></h2>
+<p>Programs often involve running the same sequence of instructions several (or many) times. Where there are situations like this, it is usually possible to group these instructions into a named block of code that can be deployed as and when needed. These blocks are called <strong>Functions</strong>. Some functions are supplied as part of Python or in a <em>library</em> that you can easily access. For library functions, the block of code that makes up the function is something you would not normally be able to see or edit.</p>
+<p>You have already used some functions, but here we will go into a bit more detail about what they are. So, you have already seen and used the functions <code class="docutils literal notranslate"><span class="pre">print()</span></code> and <code class="docutils literal notranslate"><span class="pre">type()</span></code>. All functions are used in a similar way: when a program uses a function, there will be some code of the form <code class="docutils literal notranslate"><span class="pre">name_of_function(input)</span></code>. This will <em>call</em> the function, which then returns something depending on the value of <code class="docutils literal notranslate"><span class="pre">input</span></code>.</p>
+<p>For instance, the function <code class="docutils literal notranslate"><span class="pre">type()</span></code> you saw that given a variable as input, the function returns its type.</p>
+<p>We won’t make an exhaustive list of all existing Python functions, rather, we will show a few examples that you might encounter that will help you understand how to use functions in general.</p>
+<p>Firstly, variable types can be changed using functions. This particularly useful for converting a number given in text (i.e. as string) into a number that can be used in calculation.</p>
+<p>The function <code class="docutils literal notranslate"><span class="pre">int()</span></code> converts its input into an integer. So, this function can be used to convert strings to integers as can be seen by running the following example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example showing how int() converts strings to integers</span>
+<span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;234&quot;</span>
+<span class="n">string_2</span> <span class="o">=</span> <span class="s2">&quot;790&quot;</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">string_1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">string_2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1024
+</pre></div>
+</div>
+</div>
+</div>
+<p>Another situation might be that we need to convert a float to an integer. Note that in such a conversion, any part after the decimal point is simply removed or <em>truncated</em> (note that <code class="docutils literal notranslate"><span class="pre">int()</span></code> does <strong>not</strong> round to the nearest integer) as shown by running the following example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example showing how int() converts a float to an integer</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># Find and print x/y - it will be a float</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Now use int() to convert x/y to integer and print this value</span>
+<span class="n">index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.6666666666666665
+2
+</pre></div>
+</div>
+</div>
+</div>
+<p>Similarly, the functions <code class="docutils literal notranslate"><span class="pre">float</span></code>, and <code class="docutils literal notranslate"><span class="pre">str</span></code> allow you to convert the input into either a float or a string as shown by running the following example. You may want to try removing the <code class="docutils literal notranslate"><span class="pre">float()</span></code> and <code class="docutils literal notranslate"><span class="pre">str()</span></code>
+functions (lines 4 and 14) to see what happens.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example showing use of float() and str()</span>
+
+<span class="c1"># Convert a number as a string to a float</span>
+<span class="n">mass_kg</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;4.5&quot;</span><span class="p">)</span>
+
+<span class="c1"># Carry out a calculation</span>
+<span class="n">mass_g</span> <span class="o">=</span> <span class="n">mass_kg</span> <span class="o">*</span> <span class="mf">1000.</span> 
+
+<span class="c1"># Define some output strings</span>
+<span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;Mass of body: &quot;</span>
+<span class="n">string_2</span> <span class="o">=</span> <span class="s2">&quot; g&quot;</span>
+
+<span class="c1"># Concatenate the strings, with the mass coverted to a string</span>
+<span class="n">string_3</span> <span class="o">=</span> <span class="n">string_1</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mass_g</span><span class="p">)</span> <span class="o">+</span> <span class="n">string_2</span>
+
+<span class="c1"># Print the output</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mass of body: 4500.0 g
+</pre></div>
+</div>
+</div>
+</div>
+<p>An important point to note is that many functions operate with input variables of different types. So in the example of <code class="docutils literal notranslate"><span class="pre">int()</span></code> above, we saw that the function works appropriately regardless of whether the input type is <code class="docutils literal notranslate"><span class="pre">str</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+<p>Moreover, the input to a function need not be a single simple variable and functions can be applied to more complex objects like lists. For instance, if you wish to find the number of elements in a list or sum them, you can use the function <code class="docutils literal notranslate"><span class="pre">len()</span></code> or <code class="docutils literal notranslate"><span class="pre">sum()</span></code> as you can see by running the following example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example showing use of list functions</span>
+<span class="c1"># Some data in a list</span>
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mf">4.78</span><span class="p">,</span> <span class="s2">&quot;item&quot;</span><span class="p">]</span>
+
+<span class="c1"># Find and print the length of the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The length of the first list is &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span>
+
+<span class="c1"># A second list where all elements are of the same type</span>
+<span class="n">second_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="c1"># Sum the elements in this list and print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of the elements of the second list is&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">second_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The length of the first list is  6
+The sum of the elements of the second list is 69
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can  see in this example that functions can sometimes take several variables as inputs and these are separated by commas. In the above example the function <code class="docutils literal notranslate"><span class="pre">print()</span></code> has two inputs (and can take more).</p>
+<p>Note also that functions can be combined as in the above example where <code class="docutils literal notranslate"><span class="pre">len()</span></code>  and <code class="docutils literal notranslate"><span class="pre">sum()</span></code> are called from within the input parameter list of <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+<p><a id="Exercise1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>The following code cell assigns a list of numbers. Write a program that returns a list containing the truncated integer values of the items in the first list.</p>
+<p>Hint: you will need to create an output list, and iterate on all the elements of the input list to take their integer values before appending them successively to the output list.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.1</span>
+<span class="n">list_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">23.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.234</span><span class="p">,</span> <span class="mf">0.92</span><span class="p">,</span> <span class="mf">10.29</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.0</span><span class="p">]</span>
+
+<span class="c1"># Type your code here </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.1">Exercise Answers</a></p>
+<p>One last useful function is <code class="docutils literal notranslate"><span class="pre">input()</span></code>. This allows you to ask the user of the program for value. Let us see how it works on the following example: try running the following cell, and when prompted for your year of birth, enter it in the box and press return.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ask the user to input their birth year</span>
+<span class="n">birth_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;In what year were you born? &quot;</span><span class="p">)</span> 
+
+<span class="c1"># Convert input to integer</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In 2015 your age was&quot;</span><span class="p">,</span> <span class="mi">2015</span> <span class="o">-</span> <span class="n">year</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="n">f613da6f976c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Ask the user to input their birth year</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">birth_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;In what year were you born? &quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Convert input to integer</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span>
+
+<span class="nn">~\Anaconda3\lib\site-packages\ipykernel\kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">    </span><span class="mi">855</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">856</span><span class="s2">         if not self._allow_stdin:</span>
+<span class="ne">--&gt; </span><span class="mi">857</span><span class="s2">             raise StdinNotImplementedError(</span>
+<span class="g g-Whitespace">    </span><span class="mi">858</span><span class="s2">                 &quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">859</span><span class="s2">             )</span>
+
+<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+</pre></div>
+</div>
+</div>
+</div>
+<p>This program asks for your birth year and answers with you your age as it was in the year 2015. The first instruction is the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function that prints the given string and takes an input from the user. This is input stored in the variable <code class="docutils literal notranslate"><span class="pre">birth_year</span></code>. This input is automatically input in text format i.e. as <code class="docutils literal notranslate"><span class="pre">str</span></code> type. Therefore, to be able to calculate your age in the given year, this text has to be converted into an integer with the <code class="docutils literal notranslate"><span class="pre">int()</span></code> function.</p>
+<p><a id="Exercise1.2"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.2</b> <br> 
+<p>The code cell below calculates the cumulative mass of input masses. Explain (using <code class="docutils literal notranslate"><span class="pre">#</span></code> comments) what each line of this this program does.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 1.2</span>
+<span class="n">totmass</span> <span class="o">=</span> <span class="mf">0.</span> 
+<span class="n">more_input</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">more_input</span><span class="p">):</span>
+    <span class="n">answer</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Mass of item in kg? (enter stop when finished) &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span><span class="p">:</span>
+        <span class="n">more_input</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="n">mass</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+        <span class="n">totmass</span> <span class="o">=</span> <span class="n">totmass</span> <span class="o">+</span> <span class="n">mass</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total mass:&quot;</span><span class="p">,</span> <span class="n">totmass</span><span class="p">,</span> <span class="s2">&quot;kilograms&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.2">Exercise Answers</a></p>
+<div class="section" id="functions-summary">
+<h3>Functions - summary<a class="headerlink" href="#functions-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you learned what functions are and how to use some pre-defined ones. You saw that the functions <code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">float()</span></code> and <code class="docutils literal notranslate"><span class="pre">str()</span></code> convert variable types and how the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function allows you to prompt the user to supply a value for a variable. You also learnt more about how to use the <code class="docutils literal notranslate"><span class="pre">print</span></code> function and that it can call several variables of different types that need to be comma-separated.</p>
+<hr class="docutils" />
+<p><a id="Building"></a></p>
+</div>
+</div>
+<div class="section" id="how-to-build-your-own-functions">
+<h2>2. How to build your own functions<a class="headerlink" href="#how-to-build-your-own-functions" title="Permalink to this headline">¶</a></h2>
+<p>Using existing functions from Python libraries is very powerful but sometimes you will want to create your own functions to carry out specific tasks.</p>
+<p>Let us see an example how this is done in Python by running the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## This program calculates the energy (in eV) of the state of a hydrogen atom with principal quantum number n</span>
+
+<span class="c1"># We define the function that calculates the energy of a state </span>
+<span class="c1"># of the hydrogen atom with principal quantum number n</span>
+<span class="k">def</span> <span class="nf">energy</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1"># Rydberg constant in eV</span>
+    <span class="n">ryd_constant</span><span class="o">=</span><span class="mf">13.6</span>
+    <span class="n">ener</span> <span class="o">=</span> <span class="o">-</span> <span class="n">ryd_constant</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ener</span>
+
+<span class="c1"># The main program starts here</span>
+<span class="c1"># ask user for principal quantum number n</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input the principal quantum number:&quot;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Energy of the hydrogen atom in this state:&quot;</span><span class="p">,</span> <span class="n">energy</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="s2">&quot;eV&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the program, a function named <code class="docutils literal notranslate"><span class="pre">energy()</span></code> is defined. The function block starts with the line <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">energy(n):</span></code> and ends with the <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">ener</span></code> statement. The function takes a single input variable <code class="docutils literal notranslate"><span class="pre">n</span></code> and returns the value of the energy contained in the variable <code class="docutils literal notranslate"><span class="pre">ener</span></code>. Similarly to the selection (if) and iteration statements (for or while), the indentation is important here. Note also that the line <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">ener</span></code> indicates the variable to be returned when the function is called.</p>
+<p>The main program starts at line 11 and prompts the user to input the principal quantum number <code class="docutils literal notranslate"><span class="pre">n</span></code>. Then, in line 13, when the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function calls <code class="docutils literal notranslate"><span class="pre">energy(n)</span></code>, the program jumps to the definition of the function and executes all the instructions contained within it (i.e. everything that is indented). When it reaches the <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">ener</span></code> statement, it jumps back to the line that called the function (i.e. the <code class="docutils literal notranslate"><span class="pre">print</span></code> function) and then continues executing the rest of the instructions in the program.</p>
+<p>Note also that the name of the variable within the user defined function does not have to be the same as the name of the variable outside the function. Here, a variable <code class="docutils literal notranslate"><span class="pre">n</span></code> and passed to the function. The function uses the same name for that variable (n). You could, if you wish, use a different variable name (say m) within the function. Try changing the program yourself to see this. This feature can be useful if you call the same function multiple times within the same program, but using a different variable each time.</p>
+<p>As you have already seen, unctions can also take more than one variable as input. Properly, these are called <em>arguments</em> and they are written to the right of the function (inside the brackets) separated by commas. Remember the colon at the end of the <code class="docutils literal notranslate"><span class="pre">def</span></code> line: the program won’t work if you forget it.</p>
+<p>One last thing to note in the program is that we defined the variable <code class="docutils literal notranslate"><span class="pre">ryd_constant</span></code> to contain the value of the Rydberg constant inside the function. This means that you can’t use this particular variable outside the function (we say it is a <em>local</em> variable). (You can test this by adding <code class="docutils literal notranslate"><span class="pre">print(ryd_constant)</span></code> so that you output the value of the Rydberg constant either outside or inside the function block. One of these will give you an error message.)</p>
+<p><a id="Exercise2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>Write a program that uses the function <code class="docutils literal notranslate"><span class="pre">energy()</span></code> defined above to calculate the energy difference between two states of the hydrogen atom. The program should ask the user to provide the principal quantum number of the states.</p>
+<p>Hint: The program needs to use the function <code class="docutils literal notranslate"><span class="pre">energy()</span></code> twice, using the principal quantum numbers provided by the user.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 2.1</span>
+<span class="c1"># We define the function that calculates the energy of a state </span>
+<span class="c1"># of the hydrogen atom with principal quantum number n</span>
+<span class="k">def</span> <span class="nf">energy</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1"># Rydberg constant in eV</span>
+    <span class="n">ryd_constant</span><span class="o">=</span><span class="mf">13.6</span>
+    <span class="n">ener</span> <span class="o">=</span> <span class="o">-</span> <span class="n">ryd_constant</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ener</span>
+
+<span class="c1"># The main program starts here</span>
+<span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.1">Exercise Answers</a></p>
+<div class="section" id="build-your-own-functions-summary">
+<h3>Build your own functions - summary<a class="headerlink" href="#build-your-own-functions-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you have seen how to define your own function, how to call it and how the function returns a certain value to the main program. You have also seen than variables that are only defined within functions are called <em>local</em> variables and that these are not accessible from the main program.</p>
+<hr class="docutils" />
+<p><a id="Modules"></a></p>
+</div>
+</div>
+<div class="section" id="modules-and-packages">
+<h2>3. Modules and Packages<a class="headerlink" href="#modules-and-packages" title="Permalink to this headline">¶</a></h2>
+<p>We saw earlier that it is possible to use a few pre-built functions to automatically perform some operations. Then we learned how to go about writing our own functions. But you don’t want to lose precious time reinventing the wheel if a function already exists. Fortunately in Python, many function libraries have been developed and are available to you! They are called <strong>Modules</strong> and <strong>Packages</strong>.</p>
+<p>As we’ve already mentioned, Python is an extremely popular programming language and there are huge numbers of people out there using it to do specialist things. Python is managed by the Python Software Foundation (<a class="reference external" href="https://www.python.org/psf/">https://www.python.org/psf/</a>) which guides its development.</p>
+<p>One example of a module is the <code class="docutils literal notranslate"><span class="pre">math</span></code> module. This is built into Python and contains useful mathematical functions such as <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> (square root). Packages are collections of related modules, and these are often produced and distributed as extensions to the Python language.</p>
+<p>There are lots of packages written either specifically for Physics, Astronomy and Data Science or more generally for science and technology (as well as Machine learning, A.I., natural language processing, web development, … and so on). Part of the skill of developing code in Python is being able to find and use modules that have been developed by others.</p>
+<p>As an example, we will focus in this section on the <code class="docutils literal notranslate"><span class="pre">math</span></code> module for you to see how it works, and how you use it.  Following the same sort of approach, you will then be able to use many other available modules.</p>
+<p>The first step is to load the module; this is done at the beginning of your program (or at least before you call any function from the module) by an instruction line of the form:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Running this instruction will import the <code class="docutils literal notranslate"><span class="pre">math</span></code> module and allows you to call any of the functions it contains.</p>
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">as</span></code> statement tells Python to replace <code class="docutils literal notranslate"><span class="pre">math</span></code> with <code class="docutils literal notranslate"><span class="pre">m</span></code>. To access e.g. the <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> function from <code class="docutils literal notranslate"><span class="pre">math</span></code> you would call it using <code class="docutils literal notranslate"><span class="pre">m.sqrt()</span></code>. While it isn’t necessary to shorten the name of the module (from <code class="docutils literal notranslate"><span class="pre">math</span></code> to <code class="docutils literal notranslate"><span class="pre">m</span></code>) it is such common practice that you need to be aware of it. If you don’t use the <code class="docutils literal notranslate"><span class="pre">as</span></code> statement, you would have to give the full name for the function, which in this case would be <code class="docutils literal notranslate"><span class="pre">math.sqrt()</span></code>.</p>
+<p>So, let’s try using it by running a simple example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_of_squares</span><span class="o">=</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">4.</span><span class="p">,</span><span class="mf">9.</span><span class="p">,</span><span class="mf">16.</span><span class="p">,</span><span class="mf">25.</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">list_of_squares</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sometimes, you don’t want to load the full module just for one function. It is possible to load only the required function from the module. This is done using an instruction of the form:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Running this will import only the function square root but not the other <code class="docutils literal notranslate"><span class="pre">math</span></code> functions. When loaded in this way, the function can be called without any prefix (i.e. without <code class="docutils literal notranslate"><span class="pre">math.</span></code>). For example, we can now call the <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> function by running:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">144.</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Many calculations in the physical sciences require functions from the <code class="docutils literal notranslate"><span class="pre">math</span></code> module. Some of the many functions available are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">factorial(x)</span></code>	The factorial of the number x.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exp(x)</span></code>	The exponential of the number x (i.e. e to the power x)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">log(x)</span></code>	The natural logarithm of the number x (i.e. the log to the base e of x)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">log10(x)</span></code>	The logarithm to the base 10 of the number x</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sin(x)</span></code>	The sine of the number x, where x is in radians</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cos(x)</span></code>	The cosine of the number x, where x is in radians</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tan(x)</span></code>	The tangent of the number x, where x is in radians</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">asin(x)</span></code>	The arcsine of the number x (i.e. the angle in radians whose sine is x)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">acos(x)</span></code>	The arccosine of the number x (i.e. the angle in radians whose cosine is x)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">atan(x)</span></code>	The arctangent of the number x (i.e. the angle in radians whose tangent is x)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">e</span></code>         The base of natural logarithms (i.e. the number 2.71828182846…)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pi</span></code>       	The ratio of the circumference of a circle to its diameter (i.e. the number 3.14159265359…)</p></li>
+</ul>
+<p>They are very numerous and it might be interesting to have a look at the module documentation online (<a class="reference external" href="https://docs.python.org/3/library/math.html">https://docs.python.org/3/library/math.html</a>). However, do note that much of the documentation about modules does contain a lot more information that what you need at the moment, but you can always refer back to it as you become more advanced in your programing skills.</p>
+<p>Let’s use all you have learned so far in a concluding activity:</p>
+<p><a id="Exercise3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+In the the expansion of $(1+x)^{n}$, the integer coefficient of $x^{n}$ is called the binomial coefficient. 
+<p>These coefficients are given by <span class="math notranslate nohighlight">\(\frac{n!}{k! (n-k)!}\)</span> for all integer values of <span class="math notranslate nohighlight">\(k\)</span> from 1 to <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Write a function that takes two integers <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> as input and returns <span class="math notranslate nohighlight">\(\frac{a!}{b! (a-b)!}\)</span>.</p>
+<p>Hence write a program that calculates the all the binomial coefficients for <span class="math notranslate nohighlight">\(n=10\)</span>.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.1">Exercise Answers</a></p>
+<div class="section" id="modules-and-packages-summary">
+<h3>Modules and Packages - summary<a class="headerlink" href="#modules-and-packages-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you have learnt how you can load packages of modules of pre-defined functions to be able to use them. You have played with some functions of the <code class="docutils literal notranslate"><span class="pre">math</span></code> module.</p>
+<hr class="docutils" />
+<p><a id="Exercise-Answers"></a></p>
+</div>
+</div>
+<div class="section" id="exercises-answers">
+<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">¶</a></h2>
+<p><a id="ExerciseAnswers1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>Have a look at the following example answer.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.1 (Answer)</span>
+<span class="n">list_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">23.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.234</span><span class="p">,</span> <span class="mf">0.92</span><span class="p">,</span> <span class="mf">10.29</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.0</span><span class="p">]</span>
+
+<span class="c1"># Type your code here </span>
+
+<span class="n">list_number_abs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">list_numbers</span><span class="p">:</span>
+    
+    <span class="n">list_number_abs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">list_number_abs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise1.1">Back to Exercise 1.1</a></p>
+<p><a id="ExerciseAnswers1.2"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.2</b> <br> 
+The working of the program is explained in comments on each line in the code cell below.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.2 (Answer)</span>
+<span class="n">totmass</span> <span class="o">=</span> <span class="mf">0.</span>          <span class="c1"># Initialise the total mass in kilograms</span>
+<span class="n">more_input</span> <span class="o">=</span> <span class="kc">True</span>    <span class="c1"># Define a Boolean variable to define whether more input should be requested. Initialise to True</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">more_input</span><span class="p">):</span>  <span class="c1"># Loop while we expect more input, otherwise jump to end of this loop</span>
+    <span class="n">answer</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Mass of item in kg? (enter stop when finished)&quot;</span><span class="p">)</span>   <span class="c1"># Ask user for an input mass or stop when finished </span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s1">&#39;stop&#39;</span><span class="p">:</span>    <span class="c1"># Test whether the user has entered the stop condition  </span>
+        <span class="n">more_input</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># If so, set the variable more_input to False</span>
+    <span class="k">else</span><span class="p">:</span>                   <span class="c1"># Otherwise we have another mass to add</span>
+        <span class="n">mass</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span><span class="c1"># Convert the input string to a float</span>
+        <span class="n">totmass</span> <span class="o">=</span> <span class="n">totmass</span> <span class="o">+</span> <span class="n">mass</span> <span class="c1"># Add this mass to the cumulative total </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total mass:&quot;</span><span class="p">,</span> <span class="n">totmass</span><span class="p">,</span> <span class="s2">&quot;kilograms&quot;</span><span class="p">)</span> <span class="c1"># After the while loop, print the current value of the cumulative mass.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise1.2">Back to Exercise 1.2</a></p>
+<p><a id="ExerciseAnswers2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>A working example is given below</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 2.1 (Answer)</span>
+<span class="c1"># We define the function that calculates the energy of a state </span>
+<span class="c1"># of the hydrogen atom with principal quantum number n</span>
+<span class="k">def</span> <span class="nf">energy</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1"># Rydberg constant in eV</span>
+    <span class="n">ryd_constant</span> <span class="o">=</span> <span class="mf">13.6</span>
+    <span class="n">ener</span> <span class="o">=</span> <span class="o">-</span> <span class="n">ryd_constant</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ener</span>
+
+<span class="c1"># The main program starts here</span>
+<span class="c1"># ask user for the first principal quantum number</span>
+<span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the first principal quantum number? &quot;</span><span class="p">))</span>
+<span class="c1"># ask user for the second principal quantum number</span>
+<span class="n">second_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the second principal quantum number? &quot;</span><span class="p">))</span>
+
+<span class="c1"># Calculate the energy difference by calling the function energy</span>
+
+<span class="n">energy_difference</span> <span class="o">=</span> <span class="p">(</span><span class="n">energy</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span> <span class="o">-</span> <span class="n">energy</span><span class="p">(</span><span class="n">second_number</span><span class="p">))</span>
+
+<span class="c1"># Print the energy difference</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Energy difference between the two states :&quot;</span><span class="p">,</span> <span class="n">energy_difference</span><span class="p">,</span> <span class="s2">&quot;eV&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise2.1">Back to Exercise 2.1</a></p>
+<p><a id="ExerciseAnswers3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+<p>A working example is given below</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First we will need to load the factorial function from the math module</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
+
+<span class="c1"># Then we define a function that calculates the binomial coefficients.</span>
+
+<span class="k">def</span> <span class="nf">binomial</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">binomial</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">factorial</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">binomial</span>
+
+<span class="c1"># we initialize at 10 the order and a running integer at 1</span>
+
+<span class="n">order</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">running_integer</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Then we loop on all the integers from 1 to order with a while loop</span>
+
+<span class="k">while</span> <span class="n">running_integer</span> <span class="o">&lt;</span> <span class="n">order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">binomial</span><span class="p">(</span><span class="n">order</span><span class="p">,</span> <span class="n">running_integer</span><span class="p">))</span>
+    <span class="n">running_integer</span> <span class="o">=</span> <span class="n">running_integer</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise3.1">Back to Exercise 3.1</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Practicle\Python\Ressources\Alisson"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Vincent Deguin<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

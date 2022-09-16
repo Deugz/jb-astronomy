@@ -1,10 +1,19 @@
 # Interstellar Dust
 
+***
+
 Carl Sagan: Are we all made of star dust ?
 
 Javascript flipping card
 
 (sondage ?)
+
+***
+
+```{figure} Docs/w_17.9.2019_Water in space origine.jpg
+:width: 700px
+Interstellar Dust Grain. [Source](https://www.csh.unibe.ch/services/infographics/index_eng.html)
+```
 
 ## Origin
 

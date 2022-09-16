@@ -2,11 +2,41 @@
 
 ## Introduction
 
-I build knowledge incrementaly, and I find usefull to have a place to take notes about what I learn, and implement ressources that discover along the way.
+:::::{margin} 
+::::{grid} 1
+:::{grid-item-card} 
+:img-bottom: Docs/JWST_cloud1.jpg
+:link: https://deugz.github.io/nb-master/_build/html/intro.html
+&#127968; **Master**
+:::
+::::
+:::::
+
+
+
+I build knowledge incrementaly, and I find usefull to have a place to take notes about what I learn, and implement ressources that I discover along the way.
 
 It is also a good method to implement seeds for future collaborations/contributions as your understanding increase and you push the boundaries.
 
 ### Collaboration
+
+:::::{margin} 
+::::{grid} 1
+:::{grid-item-card} 
+**Contributions**
+^^^
+Edition:
+- Vincent Deguin
+
+Content:
+- Vincent Deguin
+
+- Ross (?)
+- Giulia (?)
+
+:::
+::::
+:::::
 
 As members of academia, we have a lot to share with each others and with the world.
 
@@ -90,3 +120,16 @@ There is a few prerequisties to perform before to jump into those tutorial, go v
 
 :::
 ::::
+
+
+
+
+## Comments
+
+<script src="https://utteranc.es/client.js"
+        repo="Deugz/nb-teaching"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

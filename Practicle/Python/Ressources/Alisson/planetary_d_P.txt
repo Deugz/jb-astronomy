@@ -1,0 +1,8 @@
+Mercury	5.79e+10	7.59e+06
+Venus	1.08e+11	1.93e+07
+Earth	1.5e+11	3.17e+07
+Mars	2.28e+11	5.93e+07
+Jupiter	7.79e+11	3.75e+08
+Saturn	1.43e+12	9.32e+08
+Uranus	2.87e+12	2.65e+09
+Neptune	4.5e+12	5.2e+09

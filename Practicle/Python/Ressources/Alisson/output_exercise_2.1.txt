@@ -1,0 +1,5 @@
+Apples	5	5
+Pears	19	24
+Oranges	32	56
+Pineapples	2	58
+Blackberries	45	103

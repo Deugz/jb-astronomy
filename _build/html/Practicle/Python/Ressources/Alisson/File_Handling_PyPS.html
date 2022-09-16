@@ -1,0 +1,1102 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Python - File input and output &#8212; Teaching</title>
+    
+  <link href="../../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb_Teaching");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Practicle/Python/Ressources/Alisson/File_Handling_PyPS.html" />
+    <link rel="shortcut icon" href="../../../../_static/logo2.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-YJLM4C4S2Q');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../_static/logo2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Teaching</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Intro/content.html">
+   Content
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Bitesize/Bitesize_Main.html">
+   <strong>
+    Bitesize
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_Main.html">
+   Astronomy
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">
+     Astronomy 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">
+     The Solar system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/ISM/ISM.html">
+     The Interstellar Medium
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">
+     Astrochemistry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">
+     Interstellar Dust
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Star_formation/Star_formation.html">
+     Lifecycle of Stars
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
+     Planet formation (bottom-up)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
+     Planet formation (top-bottom)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/JWST/JWST.html">
+     JWST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Physics/Physics_Main.html">
+   Physics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_physics/Water_physics.html">
+     The strange behaviour of water
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_ice/Water_ice.html">
+     Water ice
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">
+     Infrared Spectroscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">
+     Special Relativity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Practicle_Main.html">
+   <strong>
+    Practicle
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../WebDev/WebDev_Main.html">
+   Web Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/Jupyter_Book/Jupyter_Book.html">
+     Jupyter Book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/HTML_CSS/HTML_CSS.html">
+     HTML / CSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Python_Main.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step1.html">
+     Introduction to Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step2.html">
+     Plotting some data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/Practicle/Python/Ressources/Alisson/File_Handling_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Deugz/nb_Teaching"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Deugz/nb_Teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Ressources/Alisson/File_Handling_PyPS.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Deugz/nb_Teaching/edit/master/docs/Practicle/Python/Ressources/Alisson/File_Handling_PyPS.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Deugz/nb_Teaching/master?urlpath=tree/docs/Practicle/Python/Ressources/Alisson/File_Handling_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-data-from-a-file">
+   1. Importing data from a file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-data-from-a-file-summary">
+     Importing data from a file - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-data-to-a-file">
+   2. Writing data to a file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-data-to-a-file-summary">
+     Writing data to a file - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-text">
+   3. Formatting text
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatting-text-summary">
+     Formatting text - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises - Answers
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Getting Started with Python - File input and output</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-data-from-a-file">
+   1. Importing data from a file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-data-from-a-file-summary">
+     Importing data from a file - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-data-to-a-file">
+   2. Writing data to a file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-data-to-a-file-summary">
+     Writing data to a file - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-text">
+   3. Formatting text
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatting-text-summary">
+     Formatting text - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises - Answers
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-file-input-and-output">
+<h1>Getting Started with Python - File input and output<a class="headerlink" href="#getting-started-with-python-file-input-and-output" title="Permalink to this headline">¶</a></h1>
+<p>Version 0.2 Aug 2020</p>
+<p>This notebook explains how you can import data from external files into a Python program or write data from a program to a file.</p>
+<p>For this part, you will need to download the files <code class="docutils literal notranslate"><span class="pre">file_1.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">file_2.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">file_3.txt</span></code> from the Resources section of the course. These files should be saved to the same folder as this notebook.</p>
+<p><a class="reference external" href="#Input">1. Importing data from a file</a></p>
+<p><a class="reference external" href="#Output">2. Writing data to a file</a></p>
+<p><a class="reference external" href="#Format">3. Formatting text</a></p>
+<p><a class="reference external" href="#Exercise-Answers">Answers to Exercises</a></p>
+<p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">File_Handling_PyPS.ipnyb</span></code></p>
+<hr class="docutils" />
+<p><a id="Input"></a></p>
+<div class="section" id="importing-data-from-a-file">
+<h2>1. Importing data from a file<a class="headerlink" href="#importing-data-from-a-file" title="Permalink to this headline">¶</a></h2>
+<p>We’ve already seen (in <code class="docutils literal notranslate"><span class="pre">Functions_PyPS.ipynb</span></code>) how we can get the user to input data from the keyboard. However, it is not very practical to do so when you want to input or output thousands of lines of data or long texts. To overcome this issue, Python provides a way to access the content of files.</p>
+<p>The first step is to use the <code class="docutils literal notranslate"><span class="pre">open()</span></code> function to tell Python the name of the file. This is done using a statement such as:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file_input</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_1.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">&quot;file_1.txt&quot;</span></code> is the file you want the program to to access. Note that the file needs to be in the same folder as your Jupyter Notebook.</p>
+<p>In addition, you need an instruction that describes how Python will be working with this file:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'r'</span></code> opens the file in reading mode. This reads data from an existing file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'w'</span></code> opens the file in writing mode. If the file already exists, then this mode overwrites the content of the existing file. If the file does not exist then it is created by the kernel.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'a'</span></code> opens the file in append mode. Writing in this mode will add what you write at the end of the file.</p></li>
+</ol>
+<p>Let’s trying opening and reading the input file <code class="docutils literal notranslate"><span class="pre">file_1.txt</span></code>, assuming it is located in the same folder as this notebook. Run the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file_input_1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_1.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="n">content</span> <span class="o">=</span> <span class="n">file_input_1</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+<span class="n">file_input_1</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Example of text file
+Good Morning !
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the above code cell, the file is opened under the name <code class="docutils literal notranslate"><span class="pre">file_input_1</span></code>. Then the file content is read using <code class="docutils literal notranslate"><span class="pre">read()</span></code> and stored as a string variable called <code class="docutils literal notranslate"><span class="pre">content</span></code>. The very last line of the program tidies things up by closing the file using <code class="docutils literal notranslate"><span class="pre">close()</span></code>.</p>
+<p>In fact, <code class="docutils literal notranslate"><span class="pre">file_input_1</span></code> is what is called a <em>file object</em>. This file object can be given any name providing it follows the usual rules for naming variables.</p>
+<p>Note especially the way in which <code class="docutils literal notranslate"><span class="pre">read()</span></code> is called here - it is connected with a <code class="docutils literal notranslate"><span class="pre">.</span></code> to the name of the file object.  You need to be aware that in handling files, we often use special functions that are called by connecting them to name of the file object in this way (you can see that <code class="docutils literal notranslate"><span class="pre">close()</span></code> also follows this pattern). We won’t say much more about this except to note that that <code class="docutils literal notranslate"><span class="pre">read()</span></code> and <code class="docutils literal notranslate"><span class="pre">close()</span></code> are more properly described as a <strong>methods</strong> rather than functions and we will use this terminology in what follows.</p>
+<p>Often we want to read files one line at a time and it is possible to do this with the <code class="docutils literal notranslate"><span class="pre">readline()</span></code> method. This instruction only reads one line at the time and repeating it will read the following line. Try running the following example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file_input_1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_1.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="n">first_line</span> <span class="o">=</span> <span class="n">file_input_1</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The first line is:&quot;</span><span class="p">,</span> <span class="n">first_line</span><span class="p">)</span>
+
+<span class="n">second_line</span> <span class="o">=</span> <span class="n">file_input_1</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The second line is:&quot;</span><span class="p">,</span> <span class="n">second_line</span><span class="p">)</span>
+
+<span class="n">file_input_1</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first line is: Example of text file
+
+The second line is: Good Morning !
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is also possible to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to iterate over the lines of a file using  <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">line</span> <span class="pre">in</span> <span class="pre">(file_object):</span></code></p>
+<p>For example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file_input_1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_1.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_input_1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    
+<span class="n">file_input_1</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Example of text file
+
+Good Morning !
+</pre></div>
+</div>
+</div>
+</div>
+<p>Lines that are extracted this way are a sequence of single strings. You will often find that you need to manipulate such strings to get at the data you want to work with, so let us show you some properties of strings and one useful method that works on <code class="docutils literal notranslate"><span class="pre">str</span></code> variables (i.e. a string method):</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">string</span></code> is a <code class="docutils literal notranslate"><span class="pre">str</span></code> type variable, then:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">string[k]</span></code> is the k-th element of <code class="docutils literal notranslate"><span class="pre">string</span></code>,  i.e. the character in the k-th position. Remember that in Python, counting starts at 0.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string[i:j]</span></code> is the part of the <code class="docutils literal notranslate"><span class="pre">string</span></code> from the i-th to the j-th characters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string.split('divider')</span></code>: this method allows you to divide <code class="docutils literal notranslate"><span class="pre">string</span></code> into multiple strings using the <code class="docutils literal notranslate"><span class="pre">divider</span></code> ; e.g. dividing a string using <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (which is the default value) would divide a phrase into words. This method returns a list of strings containing all the words in the phrase.</p></li>
+</ol>
+<p>Let us illustrate these by running a short example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;This is an example of a string.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The zero-th element of the string is:&quot;</span><span class="p">,</span> <span class="n">string_1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The 5-th element of the string is:&quot;</span><span class="p">,</span> <span class="n">string_1</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The 5-th to 15-th elements of the string are:&quot;</span><span class="p">,</span> <span class="n">string_1</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">15</span><span class="p">])</span>
+
+<span class="n">string_cut</span> <span class="o">=</span> <span class="n">string_1</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list of words in the string is:&quot;</span><span class="p">,</span> <span class="n">string_cut</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The 4-th word of the string is:&quot;</span><span class="p">,</span> <span class="n">string_cut</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The zero-th element of the string is: T
+The 5-th element of the string is: i
+The 5-th to 15-th elements of the string are: is an exam
+The list of words in the string is: [&#39;This&#39;, &#39;is&#39;, &#39;an&#39;, &#39;example&#39;, &#39;of&#39;, &#39;a&#39;, &#39;string.&#39;]
+The 4-th word of the string is: of
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s practice file input and string handling with an exercise:</p>
+<p><a id="Exercise1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>In the following code cell, write a program that will load the file <code class="docutils literal notranslate"><span class="pre">file_2.txt</span></code>. The content of this file is:</p>
+<hr class="docutils" />
+<p>Apples 5</p>
+<p>Pears 19</p>
+<p>Oranges 32</p>
+<p>Pineapples 2</p>
+<p>Blackberries 45</p>
+<hr class="docutils" />
+<p>The program should read the file and print the total number of items of fruit.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.1</span>
+<span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.1">Exercise Answers</a></p>
+<div class="section" id="importing-data-from-a-file-summary">
+<h3>Importing data from a file - summary<a class="headerlink" href="#importing-data-from-a-file-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you learned how to load a file in Python and you saw how to read it either in its entirety or line by line.
+You saw that methods are types of functions that apply to entities (such as file objects or strings). You also gained experience in working with strings and saw how to extract data from a string that you can work with in a program.</p>
+<hr class="docutils" />
+<p><a id="Output"></a></p>
+</div>
+</div>
+<div class="section" id="writing-data-to-a-file">
+<h2>2. Writing data to a file<a class="headerlink" href="#writing-data-to-a-file" title="Permalink to this headline">¶</a></h2>
+<p>Often, you will find it useful to store some data that your Python program has produced. Saving data in an external file allows it to be used at a later time. Python allows you to write to a text file in a way that is similar to the process of reading data.</p>
+<p>The first step is to open the file, but this time in a <em>write</em> mode:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file_output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This will create a file named <code class="docutils literal notranslate"><span class="pre">output.txt</span></code> in the folder you are working in (likely to be the folder where is located this Notebook). Of course, you can chose any valid name for the file; however, we strongly recommend avoiding the use of spaces or any other special characters except underscores (<code class="docutils literal notranslate"><span class="pre">_</span></code>), dashes (<code class="docutils literal notranslate"><span class="pre">-</span></code>), and full stops <code class="docutils literal notranslate"><span class="pre">.</span></code>. As for opening files for reading, note that within the program, a new file object (called <code class="docutils literal notranslate"><span class="pre">file_output</span></code> in this example) is created and this file object can have any name that meets the rules of naming variables in Python.</p>
+<p>The second step is to write to the file with a method called <code class="docutils literal notranslate"><span class="pre">write()</span></code>. Note that this method can only take an input that is a string.</p>
+<p>Let us try writing a few words in a new file by running the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open a new file in write mode</span>
+<span class="n">file_output_2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output_2.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c1"># A string to be written to file</span>
+<span class="n">text_1</span> <span class="o">=</span> <span class="s2">&quot;example text to write in the file&quot;</span>
+
+<span class="c1"># Write this to file</span>
+<span class="n">file_output_2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text_1</span><span class="p">)</span>
+
+<span class="c1"># Another string to be written to file</span>
+<span class="n">text_2</span> <span class="o">=</span> <span class="s2">&quot;other text to write&quot;</span>
+
+<span class="c1"># Write this to file</span>
+<span class="n">file_output_2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text_2</span><span class="p">)</span>
+
+<span class="c1"># Close the output file</span>
+<span class="n">file_output_2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Executing this cell has created a new file named <code class="docutils literal notranslate"><span class="pre">output_2.txt</span></code> in your folder.</p>
+<p>Look for this file now and inspect its contents (in Windows File Explorer, double clicking on this file should open it using the Notepad application). Is the content of the file exactly as you expect?</p>
+<p>You’ll see that the program has written the two strings, one immediately after the other, like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">example</span> <span class="pre">text</span> <span class="pre">to</span> <span class="pre">write</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">fileother</span> <span class="pre">text</span> <span class="pre">to</span> <span class="pre">write</span></code></p>
+<p>You might have been expecting there to be a separate line for each string, but this does not happen automatically - if you want a new line after a string is output, you have to explicity state this using using the special character <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> (note that although it looks like this the two characters <code class="docutils literal notranslate"><span class="pre">'\'</span></code> and <code class="docutils literal notranslate"><span class="pre">'n'</span></code>, it is interpreted by Python as a single special character called <em>newline</em>).</p>
+<p>Another special character is <code class="docutils literal notranslate"><span class="pre">\t</span></code> that is used to indicate a <code class="docutils literal notranslate"><span class="pre">Tab</span></code> separation. This can be useful in producing formatted output.</p>
+<p>For example, try running the following code cell:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A string to be written to file</span>
+<span class="n">text_1</span> <span class="o">=</span> <span class="s2">&quot;example text to write in the file&quot;</span>
+
+<span class="c1"># Another string to be written to file</span>
+<span class="n">text_2</span> <span class="o">=</span> <span class="s2">&quot;other text to write&quot;</span>
+
+<span class="c1"># A new string that combines these with an intervening tab </span>
+<span class="n">tab_separation</span> <span class="o">=</span> <span class="n">text_1</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">text_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">tab_separation</span><span class="p">)</span>
+
+<span class="c1"># A new string that combines these with an intervening newline</span>
+<span class="n">new_line</span> <span class="o">=</span> <span class="n">text_1</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">text_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">new_line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>example text to write in the file	other text to write
+example text to write in the file
+other text to write
+</pre></div>
+</div>
+</div>
+</div>
+<p>Usually, when writing to a file, you will want to write it line by line.  First put all the output information for each line in a string, then end it with a final <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> before writing it with the <code class="docutils literal notranslate"><span class="pre">write()</span></code> method.</p>
+<p><a id="Exercise2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>Copy and paste the code you wrote for Exercise 1.1 and modify it so that it creates a new file named <code class="docutils literal notranslate"><span class="pre">output_exercise_2.1.txt</span></code>. This output file should contain in each line the name of the fruit, the number of items of this fruit, and the cumulative sum at that point (i.e. the sum of the number of items of fruit from this and all previous lines). All these should be Tabulation or space separated.</p>
+<p>Your program should return a file like:</p>
+<hr class="docutils" />
+<p>Apples 5    5</p>
+<p>Pears 19    24</p>
+<p>Oranges 32    56</p>
+<p>Pineapples 2    58</p>
+<p>Blackberries 45    103</p>
+<hr class="docutils" />
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 2.1</span>
+<span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.1">Exercise Answers</a></p>
+<div class="section" id="writing-data-to-a-file-summary">
+<h3>Writing data to a file - summary<a class="headerlink" href="#writing-data-to-a-file-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you learned how a file can be created with Python and how you can write text to it.</p>
+<p>Now it is time to see how you can change how numbers and words are written so that you can modify the way they are printed.</p>
+<hr class="docutils" />
+<p><a id="Format"></a></p>
+</div>
+</div>
+<div class="section" id="formatting-text">
+<h2>3. Formatting text<a class="headerlink" href="#formatting-text" title="Permalink to this headline">¶</a></h2>
+<p>Computers can handle numerical calculations with ease, but making it readable to humans takes a little thought and care.</p>
+<p>Take this example – this program calculates the square root of 2.0 and prints it out. This example uses the <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> function, which is part of the <code class="docutils literal notranslate"><span class="pre">math</span></code> package. We must import the <code class="docutils literal notranslate"><span class="pre">math</span></code> package first, before we can use it.</p>
+<p>Run the following to see how the number is output:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Printing numerical values</span>
+<span class="kn">import</span> <span class="nn">math</span>     <span class="c1"># this is needed for the sqrt() function</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c1"># calculate the square root of 2.0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142135623730951
+</pre></div>
+</div>
+</div>
+</div>
+<p>You will find that the result is printed out with a long string of decimal places: 1.4142135623730951</p>
+<p>Fortunately, the print() function allows us to control the precision displayed. This is of course important when dealing with scientific data as we want to display the values to the correct number of significant figures.</p>
+<p>Try this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Formatting printout</span>
+<span class="kn">import</span> <span class="nn">math</span>     <span class="c1"># this is needed for the sqrt() function</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c1"># calculate the square root of 2.0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.41
+</pre></div>
+</div>
+</div>
+</div>
+<p>This time, the result is printed with just two decimal places: 1.41.</p>
+<p>In this example, the <code class="docutils literal notranslate"><span class="pre">%.2f</span></code> is a format specifier that says that we want to print a floating point value with two decimal places. The second % sign separates this format specifier from the variable whose value we want to print (i.e. <code class="docutils literal notranslate"><span class="pre">x</span></code>).</p>
+<p>To control the number of significant figures rather than decimal places, we use the format <code class="docutils literal notranslate"><span class="pre">%.2g</span></code>.</p>
+<p>This will print the result to two significant figures 1.4. (Try it.)</p>
+<p>Another way of controlling what is printed or written to a file is to create strings that are formatted in the way we want before they are output. To do this we use a string method called <code class="docutils literal notranslate"><span class="pre">format</span></code>.</p>
+<p>Let’s have a look at how this works. Run the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Julius&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">21</span>
+<span class="n">city</span> <span class="o">=</span> <span class="s2">&quot;Singapore&quot;</span>
+
+<span class="n">sentence_to_print</span> <span class="o">=</span> <span class="s2">&quot;My name is </span><span class="si">{0}</span><span class="s2">, I live in </span><span class="si">{1}</span><span class="s2"> and I am </span><span class="si">{2}</span><span class="s2"> years old.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sentence_to_print</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>My name is Julius, I live in Singapore and I am 21 years old.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here we have used the <code class="docutils literal notranslate"><span class="pre">format()</span></code> method to insert the content of three variables (<code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">city</span></code> and <code class="docutils literal notranslate"><span class="pre">age</span></code>)) into the string (<code class="docutils literal notranslate"><span class="pre">sentence_to_print</span></code>) that is printed by the kernel. Note how the position is denoted by curly braces (<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>), and that <code class="docutils literal notranslate"><span class="pre">{0}</span></code> is where the first variable (<code class="docutils literal notranslate"><span class="pre">name</span></code>) is inserted.</p>
+<p>You can specify how numbers are written by combining this with the formatting instruction you saw previously. For example if the variable at position <code class="docutils literal notranslate"><span class="pre">{2}</span></code> is to be written as a floating point number with one decimal place, we would replace <code class="docutils literal notranslate"><span class="pre">{2}</span></code> with <code class="docutils literal notranslate"><span class="pre">{2:.1f}</span></code>.</p>
+<p>Have a look at the example below where the same number is printed but with different formatting instructions. Note that the numbers is rounded appropriately (rather than being truncated).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mf">3.5902756829385638292384</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the number given to 5 decimal places : </span><span class="si">{0:.5f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the number to 7 significant figures : </span><span class="si">{0:.7g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Here is the number given to 5 decimal places : 3.59028
+Here is the number to 7 significant figures : 3.590276
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let us finish with a concluding exercise for you to practice this last point.</p>
+<p><a id="Exercise3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+<p>File <code class="docutils literal notranslate"><span class="pre">file_3.txt</span></code> lists the planets in the solar system and the semi-major axes of their orbits (in metres).</p>
+<p>Write a program that calculates the orbital period (in seconds) for each planet.</p>
+<p>To find the orbital period <span class="math notranslate nohighlight">\(P\)</span> you will need to use Kepler’s third law, which can be written as:</p>
+<p><span class="math notranslate nohighlight">\(P^2 = K d^3\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(P\)</span> is the period in seconds and <span class="math notranslate nohighlight">\(d\)</span> the semi-major axis of the planetary orbit in metres.</p>
+<p>The constant <span class="math notranslate nohighlight">\(K\)</span> has a value of <span class="math notranslate nohighlight">\(2.97 \times 10^{-19} \text{ s}^2 \text{ m}^{-3}\)</span></p>
+<p>The program should output a file which gives the name of each planet, its semi-major axis and the relevant orbital period (in seconds) to three significant figures.</p>
+<hr class="docutils" />
+<p>Note that the content of <code class="docutils literal notranslate"><span class="pre">file_3.txt</span></code>  is:</p>
+<hr class="docutils" />
+<p>Mercury   5.79e10</p>
+<p>Venus   1.08e11</p>
+<p>Earth   1.50e11</p>
+<p>Mars   2.28e11</p>
+<p>Jupiter   7.79e11</p>
+<p>Saturn   1.43e12</p>
+<p>Uranus   2.87e12</p>
+<p>Neptune   4.50e12</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 3.1</span>
+<span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.1">Exercise Answers</a></p>
+<div class="section" id="formatting-text-summary">
+<h3>Formatting text - summary<a class="headerlink" href="#formatting-text-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this section you have seen some of the ways that you can control the format of text that is written to a file. Specifically, you have seen how to control the format of how variables are written to a string. This string can then be output (printed or written to a file).</p>
+<p>There are many more aspects to formatting strings, but the examples you have seen here will allow you to have some control over how to store and display numerical data from your Python programs.</p>
+<hr class="docutils" />
+<p><a id="Exercise-Answers"></a></p>
+</div>
+</div>
+<div class="section" id="exercises-answers">
+<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">¶</a></h2>
+<p><a id="ExerciseAnswers1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>Have a look at the following example answer. You can check that your code is fine by calculating the sum of fruits yourself and compare to what the program gives.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.1</span>
+<span class="c1"># First we load the file, assuming it is located in the same folder as this notebook</span>
+<span class="n">file_2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_2.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c1"># Initialise the total number of fruits</span>
+<span class="n">number_of_fruits</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Then we loop on all the lines of the file</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_2</span><span class="p">:</span>
+    
+    <span class="c1"># Then we divide the line into words    </span>
+    <span class="n">line_split</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+    <span class="c1"># Take the second word and converting it into an integer</span>
+    <span class="n">number_in_line</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line_split</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    
+    <span class="c1"># Add this number to the total number of fruits</span>
+    <span class="n">number_of_fruits</span> <span class="o">=</span> <span class="n">number_of_fruits</span> <span class="o">+</span> <span class="n">number_in_line</span>
+    
+<span class="c1"># Now close the file</span>
+<span class="n">file_2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="c1"># Print the answer</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total number of items of fruit is:&quot;</span><span class="p">,</span> <span class="n">number_of_fruits</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The total number of items of fruit is: 103
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise1.1">Back to Exercise 1.1</a></p>
+<p><a id="ExerciseAnswers2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>Have a look at the following example answer.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 2.1</span>
+<span class="c1"># First we load the file, assuming it is located in the same folder as this notebook</span>
+<span class="n">file_2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_2.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c1"># Then we create the output file</span>
+<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output_exercise_2.1.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c1"># Initialise the total number of items of fruit</span>
+<span class="n">number_of_fruits</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Then we loop on all the lines of the file</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_2</span><span class="p">:</span>
+    
+    <span class="c1"># Then we divide the line into words </span>
+    <span class="n">line_split</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+    <span class="c1"># Take the second word and convert it into an integer</span>
+    <span class="n">number_in_line</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line_split</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    
+    <span class="c1"># Add this number to the total number of fruits</span>
+    <span class="n">number_of_fruits</span> <span class="o">=</span> <span class="n">number_of_fruits</span> <span class="o">+</span> <span class="n">number_in_line</span>
+    
+    <span class="c1"># Prepare the line we are going to write. First the name of the fruit, first element of line_split</span>
+    <span class="c1"># then the number_in_line converted in string, then the number_of_fruits converted in string</span>
+    <span class="c1"># then the newline statement &#39;\n&#39;</span>
+    
+    <span class="n">line_to_write</span> <span class="o">=</span> <span class="n">line_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number_in_line</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number_of_fruits</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+    
+    <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_to_write</span><span class="p">)</span>
+    
+<span class="c1"># Close the files</span>
+<span class="n">file_2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise2.1">Back to Exercise 2.1</a></p>
+<p><a id="ExerciseAnswers3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+<p>Have a look at the following example answer.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+
+<span class="c1"># First we load the file, assuming it is located in the same folder as this notebook</span>
+
+<span class="n">file_3</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_3.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c1"># Then we create the output file</span>
+
+<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;planetary_d_P.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="c1"># Then we loop on all the lines of the file</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_3</span><span class="p">:</span>
+    
+    <span class="c1"># Then we divide the line in words</span>
+    
+    <span class="n">line_split</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+    <span class="c1"># Then we take the second word and convert it into a float</span>
+    
+    <span class="n">semi_major_axis</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">line_split</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    
+    <span class="c1"># Then we calculate the orbital period using Kepler&#39;s third law</span>
+    
+    <span class="n">orbital_period</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">2.97e-19</span><span class="o">*</span><span class="p">(</span><span class="n">semi_major_axis</span><span class="o">**</span><span class="mi">3</span><span class="p">))</span>
+    
+    <span class="c1"># Then we prepare the line we are going to write ; name of the planet, semi-major axis and orbital period and end of line</span>
+    
+    <span class="n">line_to_write</span> <span class="o">=</span> <span class="n">line_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">{0:.3g}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">semi_major_axis</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">{0:.3g}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">orbital_period</span><span class="p">)</span><span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+    
+    <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line_to_write</span><span class="p">)</span>
+    
+<span class="n">file_3</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise3.1">Back to Exercise 3.1</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Practicle\Python\Ressources\Alisson"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Vincent Deguin<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

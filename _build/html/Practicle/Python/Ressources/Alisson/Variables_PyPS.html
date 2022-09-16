@@ -1,0 +1,980 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Python - Variables &#8212; Teaching</title>
+    
+  <link href="../../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <link rel="preload" as="script" href="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb_Teaching");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Practicle/Python/Ressources/Alisson/Variables_PyPS.html" />
+    <link rel="shortcut icon" href="../../../../_static/logo2.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-YJLM4C4S2Q');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../_static/logo2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Teaching</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Intro/content.html">
+   Content
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../Bitesize/Bitesize_Main.html">
+   <strong>
+    Bitesize
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_Main.html">
+   Astronomy
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">
+     Astronomy 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">
+     The Solar system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/ISM/ISM.html">
+     The Interstellar Medium
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">
+     Astrochemistry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">
+     Interstellar Dust
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Star_formation/Star_formation.html">
+     Lifecycle of Stars
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
+     Planet formation (bottom-up)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
+     Planet formation (top-bottom)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Astronomy/JWST/JWST.html">
+     JWST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Bitesize/Physics/Physics_Main.html">
+   Physics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_physics/Water_physics.html">
+     The strange behaviour of water
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Water_ice/Water_ice.html">
+     Water ice
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">
+     Infrared Spectroscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">
+     Special Relativity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Practicle_Main.html">
+   <strong>
+    Practicle
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../WebDev/WebDev_Main.html">
+   Web Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/Jupyter_Book/Jupyter_Book.html">
+     Jupyter Book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../WebDev/HTML_CSS/HTML_CSS.html">
+     HTML / CSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Python_Main.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step1.html">
+     Introduction to Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Step2.html">
+     Plotting some data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/Practicle/Python/Ressources/Alisson/Variables_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Deugz/nb_Teaching"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Deugz/nb_Teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Ressources/Alisson/Variables_PyPS.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Deugz/nb_Teaching/edit/master/docs/Practicle/Python/Ressources/Alisson/Variables_PyPS.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Deugz/nb_Teaching/master?urlpath=tree/docs/Practicle/Python/Ressources/Alisson/Variables_PyPS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables">
+   1. Variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variables-summary">
+     Variables - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#types">
+   2. Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-summary">
+     Types - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-about-lists">
+   3. More about Lists
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lists-summary">
+     Lists - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises Answers
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Getting Started with Python - Variables</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables">
+   1. Variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variables-summary">
+     Variables - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#types">
+   2. Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-summary">
+     Types - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-about-lists">
+   3. More about Lists
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lists-summary">
+     Lists - summary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-answers">
+   Exercises Answers
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-variables">
+<h1>Getting Started with Python - Variables<a class="headerlink" href="#getting-started-with-python-variables" title="Permalink to this headline">¶</a></h1>
+<p>Version 0.1 Jul 2020</p>
+<p>This notebook introduces the concept of variables in Python programming. You will discover what variables are, and see that every variable in Python has a type. You will also find out more about lists in Python.</p>
+<p><a class="reference external" href="#Variables">1. Variables</a></p>
+<p><a class="reference external" href="#Types">2. Types</a></p>
+<p><a class="reference external" href="#Lists">3. More about Lists</a></p>
+<p><a class="reference external" href="#Exercise-Answers">Answers to exercises</a></p>
+<p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">Variables_PyPS.ipnyb</span></code></p>
+<hr class="docutils" />
+<p><a id="Variables"></a></p>
+<div class="section" id="variables">
+<h2>1. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>variable</strong> is a named entity that stores some information within a computer program. Variables provide a way for programmers to store information so that they can retrieve and reuse this information as many times as they want, just by calling its name.</p>
+<p>Using variables in Python starts usually starts with an <em>assignment statement</em>, such as</p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_name</span> <span class="pre">=</span> <span class="pre">(value)</span></code></p>
+<p>In plain English, you could translate this statement as: save the given value in a variable called name <code class="docutils literal notranslate"><span class="pre">variable_name</span></code>. Consider a simple example (run the following code cell).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number_of_apples</span> <span class="o">=</span> <span class="mi">56</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This statement puts the number 56 into the variable called <code class="docutils literal notranslate"><span class="pre">number_of_apples</span></code>.</p>
+<p>On assignment, provided that the variable name has not been used before, Python will create a new variable with this name. However, if a variable with this name already exists, its value will be overwritten as you can see by running the following example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number_of_apples</span> <span class="o">=</span> <span class="mi">35</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value in number_of_apples is&quot;</span><span class="p">,</span> <span class="n">number_of_apples</span><span class="p">)</span>
+<span class="n">number_of_apples</span> <span class="o">=</span> <span class="mi">49</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value in number_of_apples is&quot;</span><span class="p">,</span> <span class="n">number_of_apples</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value in number_of_apples is 35
+The value in number_of_apples is 49
+</pre></div>
+</div>
+</div>
+</div>
+<p>In passing, note that if you want to find out the value of a variable, then instead of using the <code class="docutils literal notranslate"><span class="pre">print</span></code> function you can also run a code cell that only contains the variable name. This will return the current value of the variable. Try this now by running the code cell below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number_of_apples</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>49
+</pre></div>
+</div>
+</div>
+</div>
+<p>Variable names can be chosen at your convenience, but with a few important restictions:</p>
+<ol class="simple">
+<li><p>Variable names cannot start with a number: for instance <code class="docutils literal notranslate"><span class="pre">3things</span></code> is not valid. However, variables names may contain or end with a number: so <code class="docutils literal notranslate"><span class="pre">things3</span></code> is valid, as is <code class="docutils literal notranslate"><span class="pre">thi3ngs</span></code>.</p></li>
+<li><p>Variables names are <em>case sensitive</em> which means that <code class="docutils literal notranslate"><span class="pre">Thing</span></code>, <code class="docutils literal notranslate"><span class="pre">THING</span></code>, <code class="docutils literal notranslate"><span class="pre">thing</span></code> and <code class="docutils literal notranslate"><span class="pre">thinG</span></code> are four different names and would correspond to different variables.</p></li>
+<li><p>In variable names, you must not use spaces, or special characters such as <code class="docutils literal notranslate"><span class="pre">!</span></code>, <code class="docutils literal notranslate"><span class="pre">:</span></code> or <code class="docutils literal notranslate"><span class="pre">#</span></code>, although the underscore character (<code class="docutils literal notranslate"><span class="pre">_</span></code>) is allowed. It is usually preferable to stick to names that comprise only letters, numbers and the underscore (‘_’).</p></li>
+<li><p>Variable names cannot be the same as any of the keywords that have special meaning in Python. These are: <code class="docutils literal notranslate"><span class="pre">and,</span> <span class="pre">del,</span> <span class="pre">from,</span> <span class="pre">none,</span> <span class="pre">True,</span> <span class="pre">False,</span> <span class="pre">as,</span> <span class="pre">elif,</span> <span class="pre">global,</span> <span class="pre">nonlocal,</span> <span class="pre">try,</span> <span class="pre">assert,</span> <span class="pre">else,</span> <span class="pre">if,</span> <span class="pre">not,</span> <span class="pre">while,</span> <span class="pre">break,</span> <span class="pre">except,</span> <span class="pre">import,</span> <span class="pre">or,</span> <span class="pre">with,</span> <span class="pre">class,</span> <span class="pre">in,</span> <span class="pre">pass,</span> <span class="pre">yield,</span> <span class="pre">continue,</span> <span class="pre">finally,</span> <span class="pre">is,</span> <span class="pre">raise,</span> <span class="pre">def,</span> <span class="pre">for,</span> <span class="pre">lambda,</span> <span class="pre">return</span></code>.</p></li>
+</ol>
+<p>Given the freedom that you have in choosing variable names, it is good to remember that such names are also important for the readability of your code, and it is good practice to choose names that are meaningful and unambigious.</p>
+<p>During assignment, it is also possible to define variables with other variables and overwrite them with their previous self.</p>
+<p>Let’s see this with a small exercise.</p>
+<p><a id="Exercise1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>The following code defines the value of the variables <code class="docutils literal notranslate"><span class="pre">height</span></code> and <code class="docutils literal notranslate"><span class="pre">length</span></code>. What are their values at the end of the cell ?</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.1</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mi">35</span>
+<span class="n">length</span> <span class="o">=</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">10</span>
+<span class="n">height</span> <span class="o">=</span> <span class="n">height</span> <span class="o">+</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.1">Exercise Answers</a></p>
+<p>You can see that in this exercise, the original value of <code class="docutils literal notranslate"><span class="pre">height</span></code> has been lost. You should be careful not to overwrite information that you cannot retrieve!</p>
+<p>Let’s see how to hold onto important values in the following exercise.</p>
+<p><a id="Exercise1.2"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.2</b> <br> 
+<p>In the following code cell two variables are defined:</p>
+<p><code class="docutils literal notranslate"><span class="pre">red_lights</span></code> is assigned the value <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">blue_lights</span></code> is assigned the value <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p>How can you switch them so that the value of <code class="docutils literal notranslate"><span class="pre">red_lights</span></code> is in <code class="docutils literal notranslate"><span class="pre">blue_lights</span></code> and vice-versa ? If you suceed, the cell should return <code class="docutils literal notranslate"><span class="pre">18</span> <span class="pre">5</span></code>.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.2</span>
+<span class="n">red_lights</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">blue_lights</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="c1"># Type your code here</span>
+
+<span class="c1"># Do not modify after this line</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">red_lights</span><span class="p">,</span> <span class="n">blue_lights</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 18
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.2">Exercise Answers</a></p>
+<div class="section" id="variables-summary">
+<h3>Variables - summary<a class="headerlink" href="#variables-summary" title="Permalink to this headline">¶</a></h3>
+<p>To recap then:</p>
+<ul class="simple">
+<li><p>Variables are places where you can store information in the computer under a given name. You can then retrieve and use this information just by calling its name.</p></li>
+<li><p>Variables are created by an <em>assignment statement</em>. If the variable name has not previously been used, Python will create it. If it has already been used, the old value will be overwritten with the new value.</p></li>
+<li><p>Variable names may be chosen relatively freely as long as they adhere to the restrictions mentioned above.</p></li>
+<li><p>Variable names should be chosen so as to help the readability of your code.</p></li>
+</ul>
+<hr class="docutils" />
+<p><a id="Types"></a></p>
+</div>
+</div>
+<div class="section" id="types">
+<h2>2. Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h2>
+<p>As you can imagine, variables can be used in many more applications than just moving integers from one box to another (as you saw in Exercise 1.2). In fact, numbers are only one flavour of data that you might be handling with Python.</p>
+<p>When any new variable is defined using an assignment in Python, the kernel automatically attributes a <em>type</em> to it. You have come across several types of data already in this course, but we haven’t yet discussed them explicitly. So, let’s briefly introduce the most common variable types in Python.</p>
+<ol class="simple">
+<li><p>Integers (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – these are whole numbers, either positive or negative (1, 2, −3456, …)</p></li>
+<li><p>Floating point numbers (<code class="docutils literal notranslate"><span class="pre">float</span></code>) – these are numbers with decimal places (1.0, 3.142, −0.000361, …). As on a calculator, you can also use scientific notation for floating point numbers (e.g. 1.23e2 to represent <span class="math notranslate nohighlight">\(1.23 \times 10^{2}\)</span>)</p></li>
+<li><p>Strings (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – are a sequence of characters, such as might be used for words or sentences. These are indicated by either single or double quotes (‘fred’, “1”, ‘World’, ‘3.142’). It is important to note that strings containing only digits (e.g. ‘1’ and “3.142”) are treated as text and cannot be manipulated as if they were numbers.</p></li>
+<li><p>Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) - these are variables that can only take the values <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+</ol>
+<p>In case of doubt, you can use the Python function <code class="docutils literal notranslate"><span class="pre">type()</span></code> to find the type of a variable. This is done using <code class="docutils literal notranslate"><span class="pre">type(variable_name)</span></code>.</p>
+<p><a id="Exercise2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>In the following window, six variables have been defined. Can you work out what their types are? Check your answers by using the <code class="docutils literal notranslate"><span class="pre">type</span></code> function.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Execise 2.1</span>
+<span class="n">variable_one</span> <span class="o">=</span> <span class="s2">&quot;five&quot;</span>
+<span class="n">variable_two</span> <span class="o">=</span> <span class="mf">3.49</span>
+<span class="n">variable_three</span> <span class="o">=</span> <span class="s2">&quot;4&quot;</span>
+<span class="n">variable_four</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">variable_five</span> <span class="o">=</span> <span class="s2">&quot;five - 3&quot;</span>
+<span class="n">variable_six</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Type your code here to try the type function; example type(variable_one)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.1">Exercise Answers</a></p>
+<p>These different types of variable are different in nature and therefore may behave differently when combined with operations. For instance, the use of addition (<code class="docutils literal notranslate"><span class="pre">+</span></code>) with two floats or two strings as shown below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">float_1</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="n">float_2</span> <span class="o">=</span> <span class="mf">6.85</span>
+
+<span class="n">sum_of_floats</span> <span class="o">=</span> <span class="n">float_1</span> <span class="o">+</span> <span class="n">float_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of the two floats is&quot;</span><span class="p">,</span> <span class="n">sum_of_floats</span><span class="p">)</span>
+
+<span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="n">string_2</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
+
+<span class="n">sum_of_strings</span> <span class="o">=</span> <span class="n">string_1</span> <span class="o">+</span> <span class="n">string_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of the two string is&quot;</span><span class="p">,</span> <span class="n">sum_of_strings</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of the two floats is 10.85
+The sum of the two string is HelloWorld
+</pre></div>
+</div>
+</div>
+</div>
+<p>When you run this example, you’ll see that the addition of two floats performs arithmetic summation as expected, whereas addition of two strings gives the string made by joining together (or <em>concatenating</em>) the two input strings. You should also note that the variable created by the addition of two floats is also a float, and similarly with string.</p>
+<p>In general, different variable types cannot be mixed. Let us see what happens if you try to sum a float with a string:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">float_1</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+
+<span class="n">sum_mixed</span> <span class="o">=</span> <span class="n">float_1</span> <span class="o">+</span> <span class="n">string_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of a float and a string is&quot;</span><span class="p">,</span> <span class="n">sum_mixed</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="n">b100efed3d48</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">sum_mixed</span> <span class="o">=</span> <span class="n">float_1</span> <span class="o">+</span> <span class="n">string_2</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of a float and a string is&quot;</span><span class="p">,</span> <span class="n">sum_mixed</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: unsupported operand type(s) for +: &#39;float&#39; and &#39;str&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Running this code will give an error message, because it is not permissable to add a string to a float. This example shows you that you should keep track of the types of your variables so you don’t mix them together in a forbidden way.</p>
+<p>The exception to the general prohibition on mixing data types occurs with floats and integers. It is acceptable to carry arithmetic operations that mix floats and integers, but note that the results will usually be converted to floats. This isn’t usually problematic for calculations, but it can be a problem if you then use that result to do something in Python that requires an integer input.</p>
+<div class="section" id="types-summary">
+<h3>Types - summary<a class="headerlink" href="#types-summary" title="Permalink to this headline">¶</a></h3>
+<p>To recap this section:</p>
+<ul class="simple">
+<li><p>Every variable in Python has a specific type.</p></li>
+<li><p>Four of the main variable types are: <em>integers</em> (<code class="docutils literal notranslate"><span class="pre">int</span></code>), <em>floats</em> (<code class="docutils literal notranslate"><span class="pre">float</span></code>), <em>strings</em> (<code class="docutils literal notranslate"><span class="pre">str</span></code>)  and <em>Booleans</em> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>).</p></li>
+<li><p>The type of a variable can be found using the function <code class="docutils literal notranslate"><span class="pre">type()</span></code>.</p></li>
+<li><p>Variables can usually only be combined together if they are of the same type. An exception is the arithmetic combination of <code class="docutils literal notranslate"><span class="pre">int</span></code> and <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p></li>
+</ul>
+<hr class="docutils" />
+<p><a id="Lists"></a></p>
+</div>
+</div>
+<div class="section" id="more-about-lists">
+<h2>3. More about Lists<a class="headerlink" href="#more-about-lists" title="Permalink to this headline">¶</a></h2>
+<p>We quickly introduced lists when we talked about iteration. Let us be a bit more thorough in describing what Python means by a list. Recalling the definition we used before, lists are sequences of elements that can be anything from numbers to words. They are represented by the form:</p>
+<p>[element 1, element 2, element 3, …. element n]</p>
+<p>where elements are separated by commas within square brackets.</p>
+<p>It is natural to imagine lists of similar elements like integers for instance, but lists in Python can be composed of elements with mixed data types as you can see by running the following:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">example_of_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.56</span><span class="p">,</span> <span class="s2">&quot;Good Morning&quot;</span><span class="p">,</span> <span class="mi">78</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>As you see in this example, lists are defined in the same way as variables, i.e. by using an assignment statement. Here, the list has four elements.</p>
+<p>If you want to refer to a specific element of a list, this is done using <code class="docutils literal notranslate"><span class="pre">name_of_list[index_of_element]</span></code>, where <code class="docutils literal notranslate"><span class="pre">index_of_element</span></code> represents the position of the element in the list. Note that in Python, list indicies start at 0; for example, the first element of the previous list is <code class="docutils literal notranslate"><span class="pre">example_of_list[0]</span></code> and the third is <code class="docutils literal notranslate"><span class="pre">example_of_list[2]</span></code>.</p>
+<p>Let us make sure of this by running:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">example_of_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Also note that the index should be an <code class="docutils literal notranslate"><span class="pre">int</span></code>. In the code cell above, try replacing the <code class="docutils literal notranslate"><span class="pre">2</span></code> with <code class="docutils literal notranslate"><span class="pre">2.0</span></code>.</p>
+<p>You’ll see that this gives a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> telling you that the index should be an <code class="docutils literal notranslate"><span class="pre">int</span></code> (or a <code class="docutils literal notranslate"><span class="pre">slice</span></code> - you will learn about slices when you have more experience in coding in Python). Thinking back to the previous section on variable types, here then is an example of a situation where it does matter whether a number is stored as an <code class="docutils literal notranslate"><span class="pre">int</span></code> or a <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+<p>There are several functions that are useful for handling lists:</p>
+<ol class="simple">
+<li><p>Empty lists can be created just by declaring a list to <code class="docutils literal notranslate"><span class="pre">[]</span></code>, (e.g. <code class="docutils literal notranslate"><span class="pre">name_of_list=[]</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name_of_list.append(element)</span></code> - this instruction will add the item <code class="docutils literal notranslate"><span class="pre">element</span></code> at the last position of the list named <code class="docutils literal notranslate"><span class="pre">name_of_list</span></code></p></li>
+<li><p>Lists can be concatenated by adding (<code class="docutils literal notranslate"><span class="pre">+</span></code>) them.</p></li>
+</ol>
+<p>Run the following example to see how these features are used:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an empty list</span>
+<span class="n">list_1</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># Append three entries to this list</span>
+<span class="n">list_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">list_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">56</span><span class="p">)</span>
+<span class="n">list_1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">93</span><span class="p">)</span>
+
+<span class="c1"># Assign values to another list</span>
+<span class="n">list_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">926</span><span class="p">,</span> <span class="mi">59</span><span class="p">]</span>
+
+<span class="c1"># Add these two lists together</span>
+<span class="n">list_3</span> <span class="o">=</span> <span class="n">list_1</span> <span class="o">+</span> <span class="n">list_2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">list_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Empty lists may seem like a strange idea, but they are very useful when you need to assign values to a list when you don’t know at the start of a program how many elements you might need to store. By creating an empty list and appending to it as needed, you can create a list that is defined by the operation of the program.</p>
+<p>Let us conclude this notebook with a concluding exercice where you will use what you learned during the Jupyter Notebooks <em>Program Control</em> and <em>Variables</em>.</p>
+<p><a id="Exercise3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+<p>A student has recieved marks from several tests in different courses and would like to know the global average mark. The marks are given in a separate list for each of three courses. Can you build a small program that will calculate and return the average mark?</p>
+<p>Hint: you might want to concatenate the three lists and then iterate on each on the marks to sum them and calculate the total average.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 3.1</span>
+<span class="c1"># List of marks for maths</span>
+<span class="n">marks_math</span> <span class="o">=</span> <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="c1"># List of marks for English</span>
+<span class="n">marks_english</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+<span class="c1"># List of marks for p.e.</span>
+<span class="n">marks_pe</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+
+<span class="c1"># Type your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.1">Exercise Answers</a></p>
+<div class="section" id="lists-summary">
+<h3>Lists - summary<a class="headerlink" href="#lists-summary" title="Permalink to this headline">¶</a></h3>
+<p>In this part, you learned what lists are and how to use them to store a set of information. You also saw how to retrieve the different elements of the list or append elements to it.</p>
+<hr class="docutils" />
+<p><a id="Exercise-Answers"></a></p>
+</div>
+</div>
+<div class="section" id="exercises-answers">
+<h2>Exercises Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">¶</a></h2>
+<p><a id="ExerciseAnswers1.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.1</b> <br> 
+<p>The final value of <code class="docutils literal notranslate"><span class="pre">length</span></code> is 35 - 10 so <code class="docutils literal notranslate"><span class="pre">25</span></code>.
+The final value of <code class="docutils literal notranslate"><span class="pre">height</span></code> is 35 +  4 so <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+</div>
+<p><a class="reference external" href="#Exercise1.1">Back to Exercise 1.1</a></p>
+<p><a id="ExerciseAnswers1.2"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 1.2</b> <br> 
+<p>The key idea is to create a third variable to store the information that we don’t want to lose. Here we call this variable <code class="docutils literal notranslate"><span class="pre">auxiliary</span></code>. First we transfer the content of <code class="docutils literal notranslate"><span class="pre">red_lights</span></code> into it so that it is saved. Then we transfer the content of <code class="docutils literal notranslate"><span class="pre">blue_lights</span></code> into <code class="docutils literal notranslate"><span class="pre">red_lights</span></code> and transfer the content of <code class="docutils literal notranslate"><span class="pre">auxiliary</span></code> (which has the initial <code class="docutils literal notranslate"><span class="pre">red_lights</span></code> content) into <code class="docutils literal notranslate"><span class="pre">blue_lights</span></code>.</p>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 1.2 (Answer)</span>
+<span class="n">red_lights</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">blue_lights</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="c1"># Type your code here</span>
+<span class="n">auxiliary</span> <span class="o">=</span> <span class="n">red_lights</span>
+<span class="n">red_lights</span> <span class="o">=</span> <span class="n">blue_lights</span>
+<span class="n">blue_lights</span> <span class="o">=</span> <span class="n">auxiliary</span>
+<span class="c1"># Do not modify after this line</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">red_lights</span><span class="p">,</span> <span class="n">blue_lights</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise1.2">Back to Exercise 1.2</a></p>
+<p><a id="ExerciseAnswers2.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 2.1</b> <br> 
+<p>By using the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function for each variable in turn in the code cell below, you should find that:</p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_one</span></code> is a <code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_two</span></code> is a <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_three</span></code> is a <code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_four</span></code> is an <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_five</span></code> is a <code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">variable_six</span></code> is a <code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Execise 2.1 (Answer)</span>
+<span class="n">variable_one</span> <span class="o">=</span> <span class="s2">&quot;five&quot;</span>
+<span class="n">variable_two</span> <span class="o">=</span> <span class="mf">3.49</span>
+<span class="n">variable_three</span> <span class="o">=</span> <span class="s2">&quot;4&quot;</span>
+<span class="n">variable_four</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">variable_five</span> <span class="o">=</span> <span class="s2">&quot;five - 3&quot;</span>
+<span class="n">variable_six</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Type your code here to try the type function; example type(variable_one)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">variable_one</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise2.1">Back to Exercise 2.1</a></p>
+<p><a id="ExerciseAnswers3.1"></a></p>
+<div class="alert alert-block alert-info">
+<b>Exercise 3.1</b> <br> 
+<p>The following code is a working example of a solution.
+To test if your program is working, you can manually calculate the mark average and compare it to what your program yields.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 3.1 (Answer)</span>
+<span class="n">marks_math</span> <span class="o">=</span> <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">marks_english</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+<span class="n">marks_pe</span> <span class="o">=</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+
+<span class="c1"># First, let us create a list with all the marks in it</span>
+
+<span class="n">list_marks</span> <span class="o">=</span> <span class="n">marks_math</span> <span class="o">+</span> <span class="n">marks_english</span> <span class="o">+</span> <span class="n">marks_pe</span>
+
+<span class="c1"># Then we need to initialise two things ; the sum of the marks and the total numer of marks.</span>
+
+<span class="n">sum_of_marks</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">number_of_marks</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Now we want to iterate with a for loop on the elements on the list to count them and sum them</span>
+
+<span class="k">for</span> <span class="n">mark</span> <span class="ow">in</span> <span class="n">list_marks</span><span class="p">:</span>
+    
+    <span class="n">number_of_marks</span> <span class="o">=</span> <span class="n">number_of_marks</span> <span class="o">+</span> <span class="mi">1</span> 
+    <span class="n">sum_of_marks</span> <span class="o">=</span> <span class="n">sum_of_marks</span> <span class="o">+</span> <span class="n">mark</span>
+
+<span class="c1"># Then, let us create and calculate the average</span>
+
+<span class="n">average_of_marks</span> <span class="o">=</span> <span class="n">sum_of_marks</span><span class="o">/</span><span class="n">number_of_marks</span>
+
+<span class="c1"># Now we can print the answer</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The average of all marks is&#39;</span><span class="p">,</span> <span class="n">average_of_marks</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="#Exercise3.1">Back to Exercise 3.1</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Practicle\Python\Ressources\Alisson"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Vincent Deguin<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

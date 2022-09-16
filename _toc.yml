@@ -21,6 +21,7 @@ parts:
       - file: Bitesize/Astronomy/Star_formation/Star_formation
       - file: Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top
       - file: Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom
+      - file: Bitesize/Astronomy/Exoplanets/Exoplanets
       - file: Bitesize/Astronomy/JWST/JWST
     - file: Bitesize/Physics/Physics_Main
       sections:
