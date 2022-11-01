@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Going up in scale &#8212; Teaching</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb_Teaching");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Bitesize/Physics/Water_physics/Water.html" />
+    <link rel="shortcut icon" href="../../../_static/logo2.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-YJLM4C4S2Q');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/logo2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Teaching</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Intro/content.html">
+   Content
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Bitesize_Main.html">
+   <strong>
+    Bitesize
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Astronomy/Astronomy_Main.html">
+   Astronomy
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Astronomy_101/Astronomy_101.html">
+     Astronomy 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/The_solar_system/Solar_system.html">
+     The Solar system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/ISM/ISM.html">
+     The Interstellar Medium
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Astrochemistry/Astrochemistry.html">
+     Astrochemistry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Interstellar_dust_grains/Dust.html">
+     Interstellar Dust
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Star_formation/Star_formation.html">
+     Lifecycle of Stars
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
+     Planet formation (bottom-up)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
+     Planet formation (top-bottom)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/Exoplanets/Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Astronomy/JWST/JWST.html">
+     JWST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Physics_Main.html">
+   Physics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Water_ice/Water_ice.html">
+     Water ice
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IR_Spectro/IR_Spectro.html">
+     Infrared Spectroscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Special_Relativity/Special_Relativity.html">
+     Special Relativity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Practicle/Practicle_Main.html">
+   <strong>
+    Practicle
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../Practicle/WebDev/WebDev_Main.html">
+   Web Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/WebDev/Jupyter_Book/Jupyter_Book.html">
+     Jupyter Book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/WebDev/HTML_CSS/HTML_CSS.html">
+     HTML / CSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../Practicle/Python/Python_Main.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/Python/Step1.html">
+     Introduction to Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/Python/Step2.html">
+     Plotting some data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/External/Basketball_DQ.html">
+     Basketball
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/Bitesize/Physics/Water_physics/Water.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Deugz/nb_Teaching"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Deugz/nb_Teaching/issues/new?title=Issue%20on%20page%20%2FBitesize/Physics/Water_physics/Water.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Deugz/nb_Teaching/edit/master/docs/Bitesize/Physics/Water_physics/Water.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Going up in scale
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-water-structure-mc-png">
+   ```{figure} Docs/Water_structure_MC.PNG
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-water-orbitals-mc-png">
+   ```{figure} Docs/Water_Orbitals_MC.PNG
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-energie-diagram-mc-png">
+   ```{figure} Docs/Energie_diagram_MC.PNG
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Going up in scale</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Going up in scale
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-water-structure-mc-png">
+   ```{figure} Docs/Water_structure_MC.PNG
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-water-orbitals-mc-png">
+   ```{figure} Docs/Water_Orbitals_MC.PNG
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figure-docs-energie-diagram-mc-png">
+   ```{figure} Docs/Energie_diagram_MC.PNG
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="highlight-{.cell notranslate"><div class="highlight"><pre><span></span># Water Ice
+
+Even though water is a relatively simple molecule, the third most abundant molecule in the Universe (after H2 and CO), and the most abundant molecule on Earth
+
+------------------------------------------------------------------------
+
+:::::{div} full-width
+::::{grid} 4
+:::{grid-item}
+**Plan**
+</pre></div>
+</div>
+<div class="section" id="going-up-in-scale">
+<h1>Going up in scale<a class="headerlink" href="#going-up-in-scale" title="Permalink to this headline">¶</a></h1>
+<p>Water is a tri atomique molecule made of 1 Oxygen et 2 Hydrogens.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<p><strong>Hydrogen</strong>
+^^^
+<code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">Docs/H.png</span> <span class="pre">:alt:</span> <span class="pre">Water_moleucule</span> <span class="pre">:width:</span> <span class="pre">70px</span> <span class="pre">:align:</span> <span class="pre">left</span></code>
+Hydrogen is the must abundant atoms in the Universe (by far). 1 proton, 1 electron, couldn’t be more simple</p>
+<ul class="simple">
+<li><p>Isotopes:</p>
+<ul>
+<li><p>Deuterium (D)</p></li>
+<li><p>Tritium (T)</p></li>
+</ul>
+</li>
+<li><p>ISM abundances</p></li>
+</ul>
+<p><strong>Oxygen</strong>
+^^^</p>
+<p><code class="docutils literal notranslate"><span class="pre">{image}</span> <span class="pre">Docs/O.png</span> <span class="pre">:alt:</span> <span class="pre">Water_moleucule</span> <span class="pre">:width:</span> <span class="pre">70px</span> <span class="pre">:align:</span> <span class="pre">left</span></code>
+Oxygen however is a bit more heavy and it’s isotopes are keys to unveil history of the Solar System <span id="id1">[]</span></p>
+<ul class="simple">
+<li><p>Isotopes</p>
+<ul>
+<li><p>O<code class="docutils literal notranslate"><span class="pre">&lt;sup&gt;</span></code>{=html}16<code class="docutils literal notranslate"><span class="pre">&lt;/sup&gt;</span></code>{=html}</p></li>
+<li><p>O<code class="docutils literal notranslate"><span class="pre">&lt;sup&gt;</span></code>{=html}17<code class="docutils literal notranslate"><span class="pre">&lt;/sup&gt;</span></code>{=html}</p></li>
+<li><p>O<code class="docutils literal notranslate"><span class="pre">&lt;sup&gt;</span></code>{=html}18<code class="docutils literal notranslate"><span class="pre">&lt;/sup&gt;</span></code>{=html}</p></li>
+</ul>
+</li>
+<li><p>ISM abundances</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Key Litterature</strong>:</p>
+<ul>
+<li><p>1</p></li>
+<li><p>2</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="p">:::{</span><span class="n">grid</span><span class="o">-</span><span class="n">item</span><span class="p">}</span>
+<span class="o">**</span><span class="n">Links</span><span class="o">**</span>
+</pre></div>
+</div>
+</li>
+<li><p><a class="reference external" href="https://water.lsbu.ac.uk/water/water_structure_science.html">lsbcu</a> <em>Martin Chaplin</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+:::{grid-item}
+`{image} Docs/animated_water.gif :alt: Water_moleucule :width: 100px :align: center`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+</ul>
+<hr class="docutils" />
+</div>
+<div class="section" id="figure-docs-water-structure-mc-png">
+<h1>```{figure} Docs/Water_structure_MC.PNG<a class="headerlink" href="#figure-docs-water-structure-mc-png" title="Permalink to this headline">¶</a></h1>
+<p>name: MC_1
+width: 400px</p>
+<p>Explain: source Wikimedia</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:::
+
+:::{grid-item}
+:columns: 8
+
+**Geometry**: HOH angle = 104.48 deg (Hoy 1979) - different than in tetrahedral configuration (109.47). Each molecule is electrically neutral but also &lt;span class=&quot;hovertext&quot; data-hover=&quot;define&quot;&gt;polar&lt;/span&gt; due to the Oxygen atom having a higher &lt;span class=&quot;hovertext&quot; data-hover=&quot;define&quot;&gt;electronegativity&lt;/span&gt; than the two Hydrogens. Length
+
+
+**Electron density**: The Oxygen has 2 lone pair of electrons.
+
+
+**Strength**
+
+:::
+::::
+
+
+&lt;h5&gt;&lt;strong&gt;&lt;u&gt;Oxygen lone electron pairs&lt;/u&gt;&lt;/strong&gt;&lt;/h5&gt; 
+
+::::{grid} 2
+:::{grid-item}
+:columns: 4
+
+```{figure} Docs/Water_HB_MC.PNG
+---
+name: MC_3
+width: 400px
+---
+Explain: source Wikimedia
+</pre></div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+</div>
+<p>:columns: 8</p>
+<p><strong>tetraedral</strong></p>
+</div>
+</div>
+<div class="section" id="figure-docs-water-orbitals-mc-png">
+<h1>```{figure} Docs/Water_Orbitals_MC.PNG<a class="headerlink" href="#figure-docs-water-orbitals-mc-png" title="Permalink to this headline">¶</a></h1>
+<p>name: MC_5
+width: 400px</p>
+<p>Explain: <a class="reference external" href="https://water.lsbu.ac.uk/water/h2o_orbitals.html">source</a></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;h4&gt;&lt;strong&gt;Properties&lt;/strong&gt;&lt;/h4&gt;
+
+Water is known for it&#39;s &lt;strong&gt;anomalous properties&lt;/strong&gt; including a 
+So let&#39;s have a look to it&#39;s molecular properties to see how they arise
+
+&lt;h5&gt;&lt;strong&gt;&lt;u&gt;Molecular vibration&lt;/u&gt;&lt;/strong&gt;&lt;/h5&gt; 
+
+:::::{div} full-width
+
+
+
+::::{grid} 2
+:::{grid-item}
+:columns: 4
+
+&lt;span class=&quot;hovertext&quot; data-hover=&quot;Definition&quot;&gt;Polarizability&lt;/span&gt; leads to an induced **Dipole moment** that makes the water molecule IR active.
+
+3 fundamental **atomic vibration modes**:
+- (v1) Symmetric Stretching 
+- (v3) Assymetric Stretching 
+- (v2) Bending 
+
+
+:::
+
+:::{grid-item}
+:columns: 8
+
+```{figure} Docs/Water-vibrations.gif
+---
+name: MC_4
+width: 400px
+---
+Explain: source Wikimedia
+</pre></div>
+</div>
+</div>
+<div class="section" id="figure-docs-energie-diagram-mc-png">
+<h1>```{figure} Docs/Energie_diagram_MC.PNG<a class="headerlink" href="#figure-docs-energie-diagram-mc-png" title="Permalink to this headline">¶</a></h1>
+<p>name: MC_2
+width: 600px</p>
+<p>Explain: source Wikimedia</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>:::
+::::
+:::::
+
+&lt;h5&gt;&lt;strong&gt;&lt;u&gt;Hydrogen bonding&lt;/u&gt;&lt;/strong&gt;&lt;/h5&gt; 
+
+::::{margin}
+```{image} Docs/HB-pic.png
+:alt: Water_moleucule
+:width: 160px
+:align: center
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+One of the most crucial propertie of water is it&#39;s ability to form Hydrogen bonds (with itself or other molecules/atoms)
+
+``` {.{note}}
+- How is Hydrogen Bonding affecting the molecular vibration shown above is one of the key research questions we are trying to adress 
+```
+
+```{=html}
+&lt;h5&gt;
+&lt;strong&gt;&lt;u&gt; Solvatation &lt;/u&gt;&lt;/strong&gt;
+&lt;/h5&gt;
+```
+```{=html}
+&lt;h5&gt;
+&lt;strong&gt;&lt;u&gt;More ? &lt;/u&gt;&lt;/strong&gt;
+&lt;/h5&gt;
+```
+```{=html}
+&lt;h4&gt;
+&lt;strong&gt;Phase Diagram&lt;/strong&gt;
+&lt;/h4&gt;
+```
+:::::{div} full-width
+
+::::{grid} 2
+
+Water can exist in all three 3 physical states under Earth conditions. We are quite familiar with liquid water, however I would like to point your attention on the solid phase of water, ice. Many `&lt;span class=&quot;hovertext&quot; data-hover=&quot;Definition&quot;&gt;`{=html}polymorphs`&lt;/span&gt;`{=html}, the one you know being Hexagonal ice (Ih).
+
+Phase lines on this phase diagram represents a `&lt;strong&gt;`{=html}phase boundary`&lt;/strong&gt;`{=html} and gives the conditions when two phases may stably coexist in any relative proportions (having the same Gibbs free energy and identical chemical potential)
+
+:::{grid-item}
+`{figure} Docs/Phase_diagram_of_water.svg --- name: PT Diagram width: 800px --- Explain: source Wikimedia`
+:::
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+```{=html}
+&lt;h4&gt;
+&lt;strong&gt;Water models&lt;/strong&gt;
+&lt;/h4&gt;
+```
+Now we have seen some of water properties let&#39; have a look at how scientists model the water molecule to push further their investigations. A key point is that:
+
+-   There is **no universal water model** that can explain all the water properties
+
+{cite:p}`Ouyang2015` reviewed the different models created over time (up to 2015) and classified them in 4 groups:
+
+-   1
+-   2
+-   3
+-   4
+
+  \`\`\`{figure} Docs/Water_model_O.PNG
+  ---------------------------------------
+  name: Water Model timeline
+  width: 1000px
+
+Explain: source {cite:p}`Ouyang2015`
+
+    The &lt;strong&gt;Lennard-Jones&lt;/strong&gt; relationship
+
+
+
+
+
+    - Models for individual molecules to perform &lt;span class=&quot;hovertext&quot; data-hover=&quot;MD: Definition&quot;&gt;Molecular Dynamics&lt;/span&gt; simulations.
+
+
+
+    &lt;h3&gt;&lt;strong&gt;&amp;#187;  &lt;u&gt;Gas &lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+    Gas: weakly interacting molecules 
+
+    &lt;h4&gt;&lt;strong&gt;Thermodynamic properties&lt;/strong&gt;&lt;/h4&gt;
+
+
+    &lt;h3&gt;&lt;strong&gt;&amp;#187;  &lt;u&gt;Cluster &lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+    &lt;h4&gt;&lt;strong&gt; Hydrogen Bonding &lt;/strong&gt;&lt;/h4&gt;
+
+    With two other water molecules
+
+    - DDAA
+    - ...
+
+    &lt;h5&gt; &lt;strong&gt;&lt;u&gt;Small clusters &lt;/u&gt;&lt;/strong&gt; &lt;/h5&gt;
+
+    &lt;h5&gt; &lt;strong&gt;&lt;u&gt;Large clusters &lt;/u&gt;&lt;/strong&gt; &lt;/h5&gt;
+
+
+    &lt;h4&gt;&lt;strong&gt; Network Description &lt;/strong&gt;&lt;/h4&gt;
+
+    How do we describe an assembly of water molecules
+
+    - Protonated Water Cluster (PW)
+
+    &lt;h5&gt;Modeling Clusters&lt;/h5&gt;
+
+    **Thole-type model**
+
+    - [1999](https://sci-hub.ru/10.1063/1.478797)
+
+    - [2002](https://sci-hub.ru/10.1063/1.1423942)
+
+    - [Hydrogen-bond pattern to characterize water network](https://www.degruyter.com/document/doi/10.1515/pac-2018-0721/html)
+    - The dipole moment of a constituent molecule in a water cluster is enhanced depending on the local HB network around the water molecule
+
+    &lt;h3&gt;&lt;strong&gt;&amp;#187;  &lt;u&gt;Liquid &lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+
+    ```{note}
+
+    - description of the science in liquid water ...
+
+    - Low T vs High T liquid - subject of polemic 
+
+Constant breaking and reorganisation of individual hydrogen bonds on a `&lt;strong&gt;`{=html}picosecond`&lt;/strong&gt;`{=html} timescale. However
+
+## Ice
+
+```{=html}
+&lt;h3&gt;
+&lt;strong&gt;» &lt;u&gt; Overview &lt;/u&gt;&lt;/strong&gt;
+&lt;/h3&gt;
+```
+Ice rules (or Bernal--Fowler rules): basic principles that govern arrangement of atoms in water ice
+
+-   Each oxygen is covalently bonded to two hydrogen atoms
+-   The oxygen atom in each water molecule forms two hydrogen bonds with other water molecules
+
+```{=html}
+&lt;h4&gt;
+&lt;strong&gt;Hexagonal Ice &lt;/strong&gt;
+&lt;/h4&gt;
+```
+Ih
+
+```{=html}
+&lt;h3&gt;
+&lt;strong&gt;» &lt;u&gt;Water ice polymorphism &lt;/u&gt;&lt;/strong&gt;
+&lt;/h3&gt;
+```
+```{=html}
+&lt;h3&gt;
+&lt;strong&gt;» &lt;u&gt; Amorphous vs Crystaline Ice &lt;/u&gt;&lt;/strong&gt;
+&lt;/h3&gt;
+```
+```{=html}
+&lt;h4&gt;
+&lt;strong&gt; Comparison &lt;/strong&gt;
+&lt;/h4&gt;
+```
+```{=html}
+&lt;article id=&quot;P1&quot;&gt;
+
+&lt;h4&gt;
+Crystaline
+&lt;/h4&gt;
+
+-   Polymorph: 18 ?  
+-   Ice rules
+
+&lt;h4&gt;
+Amorphous
+&lt;/h4&gt;
+
+-   Polymorph: 5
+
+&lt;/article&gt;
+```
+Amorphous Solid Water
+
+```{=html}
+&lt;h3&gt;
+&lt;strong&gt;» &lt;u&gt;Crystalisation&lt;/u&gt;&lt;/strong&gt;
+&lt;/h3&gt;
+```
+At molecular scales (few molecules up to 100 ?) - Matrix isolation techniques
+
+`{image} Docs/crystal-min-size.png :alt: Water_moleucule :width: 600px :align: center`
+:::
+</pre></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Bitesize\Physics\Water_physics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Vincent Deguin<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -29,6 +29,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/style_book_shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/style_book_shell-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
@@ -244,13 +247,13 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../Physics/Water_physics/Water_physics.html">
-     The strange behaviour of water
+    <a class="reference internal" href="../../Physics/Physics_101/Physics_101.html">
+     Physics 101
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../Physics/Water_ice/Water_ice.html">
-     Water ice
+    <a class="reference internal" href="../../Physics/Water/Water.html">
+     Water
     </a>
    </li>
    <li class="toctree-l2">
@@ -312,6 +315,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../../../Practicle/Python/Step2.html">
      Plotting some data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../Practicle/External/Basketball_DQ.html">
+     Basketball
     </a>
    </li>
   </ul>
@@ -405,16 +413,47 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#introduction">
    Introduction
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collaboration">
+     Collaboration
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#who">
+       Who ?
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collaboration">
-   Collaboration
+  <a class="reference internal nav-link" href="#reading-the-isotopic-code">
+   Reading the Isotopic Code
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#who">
-     Who ?
+    <a class="reference internal nav-link" href="#ressources">
+     Ressources
     </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definitions">
+     Definitions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-go">
+     Let’s go
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-causes-isotopic-variation">
+       What causes isotopic variation
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -442,16 +481,47 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#introduction">
    Introduction
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collaboration">
+     Collaboration
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#who">
+       Who ?
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#collaboration">
-   Collaboration
+  <a class="reference internal nav-link" href="#reading-the-isotopic-code">
+   Reading the Isotopic Code
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#who">
-     Who ?
+    <a class="reference internal nav-link" href="#ressources">
+     Ressources
     </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definitions">
+     Definitions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-go">
+     Let’s go
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-causes-isotopic-variation">
+       What causes isotopic variation
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -490,13 +560,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Everything we use that has not been grown either contains or relies on materials that have been sourced by a geologist. In this free course you will be introduced to some key geological processes that impact everyday life, as you discover the link between volcanoes and your mobile phone, and find out why tiny marine wildlife is at the core of the plastics industry. You will learn about the various types of rock, and explore how, where and why different rocks and natural resources form across the Earth. You will also look at some of the environmental and sustainability considerations that geologists need to take into account when extracting and processing these resources.</p>
 </div>
 </article>
-</div>
 <hr class="docutils" />
 <div class="section" id="collaboration">
-<h2>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this headline">¶</a></h2>
+<h3>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this headline">¶</a></h3>
 <p>This field is not mine and hence I am looking for collaborators to help me.</p>
 <div class="section" id="who">
-<h3>Who ?<a class="headerlink" href="#who" title="Permalink to this headline">¶</a></h3>
+<h4>Who ?<a class="headerlink" href="#who" title="Permalink to this headline">¶</a></h4>
 <p>Contributions are welcome from:</p>
 <ul class="simple">
 <li><p>Geologist</p></li>
@@ -504,6 +573,46 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>[…]</p></li>
 </ul>
 <p>Ross !!</p>
+</div>
+</div>
+</div>
+<div class="section" id="reading-the-isotopic-code">
+<h2>Reading the Isotopic Code<a class="headerlink" href="#reading-the-isotopic-code" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p><strong>Key concepts</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=QVXlPDrl-Yk&amp;list=PLpH1IDQEoE8Sb17yE8pGIIZmWQ0__AAzw&amp;index=2">Isotope fractionation - (Youtube tuto)</a></p></li>
+</ul>
+<hr class="docutils" />
+<p>Based on Element (December 2021 - Volum 17 - number 6)</p>
+<div class="section" id="ressources">
+<h3>Ressources<a class="headerlink" href="#ressources" title="Permalink to this headline">¶</a></h3>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><a class="reference external" href="https://heavystableisotopes.org/">Heavy Stable Isotope Periodic table</a> (Interactive)</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="definitions">
+<h3>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="let-s-go">
+<h3>Let’s go<a class="headerlink" href="#let-s-go" title="Permalink to this headline">¶</a></h3>
+<p>History of our Solar System is recorded in the <strong>isotopic variability</strong> of the chemical elements. In 1903, <em>Rutherford and Soddy</em> unveil radioactive transformations (commonly use nowaday for age dating) but it is 10 years later in 1913 that Soddy introduce the term <span class="hovertext" data-hover="Definition">isotope</span>, experimentaly confirmed the same year by J.J Thompson.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Theory of what is an isotope</p></li>
+</ul>
+</div>
+<p>First quantitative framework for describing the thermodynamics of isotopic exchange reactions rest on two key papers:</p>
+<ul class="simple">
+<li><p>Urey 1947 <a class="reference external" href="https://sci-hub.ru/10.1039/JR9470000562">link</a></p></li>
+<li><p>Bigeleison and Mayer 1947</p></li>
+</ul>
+<div class="section" id="what-causes-isotopic-variation">
+<h4>What causes isotopic variation<a class="headerlink" href="#what-causes-isotopic-variation" title="Permalink to this headline">¶</a></h4>
+</div>
 </div>
 </div>
 </div>

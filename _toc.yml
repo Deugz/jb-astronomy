@@ -25,8 +25,8 @@ parts:
       - file: Bitesize/Astronomy/JWST/JWST
     - file: Bitesize/Physics/Physics_Main
       sections:
-      - file: Bitesize/Physics/Water_physics/Water_physics
-      - file: Bitesize/Physics/Water_ice/Water_ice
+      - file: Bitesize/Physics/Physics_101/Physics_101
+      - file: Bitesize/Physics/Water/Water
       - file: Bitesize/Physics/IR_Spectro/IR_Spectro
       - file: Bitesize/Physics/Special_Relativity/Special_Relativity
     - file: Practicle/Practicle_Main
@@ -38,3 +38,5 @@ parts:
       sections:
       - file: Practicle/Python/Step1
       - file: Practicle/Python/Step2
+      - file: Practicle/External/Basketball_DQ
+      
