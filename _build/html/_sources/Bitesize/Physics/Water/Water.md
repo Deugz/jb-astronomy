@@ -15,6 +15,9 @@ Even though water is a relatively simple molecule, the third most abundant molec
 
 ***
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_2x8wntd1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player>
+
 ## Going up in scale
 
 ``````{margin} 

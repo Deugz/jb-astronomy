@@ -2,7 +2,44 @@
 
 HTML CSS Jupyter-Book ...
 
-Front end / Back end.
+## The landscape of web-developpers
+
+### Front end vs Back end
+
+- [Youtube](https://www.youtube.com/watch?v=oJYFRZ4cj2Q) - Inside the Mind of a Pro Front-end Dev - *4 min*
+
+::::{grid} 2
+::: {grid-item-card}
+:class-header: bg-light
+**Front**
+^^^
+
+The front end dev can build **static web-site**
+
+He uses tools like:
+- HTML
+- CSS
+- Javascript
+
+:::
+
+::: {grid-item-card}
+:class-header: bg-light
+**Back**
+^^^
+
+The back end dev however is responsible for ... ?
+
+He uses tools like:
+- PHP
+- SQL
+
+:::
+
+
+::::
+
+
 
 ## The different tools
 

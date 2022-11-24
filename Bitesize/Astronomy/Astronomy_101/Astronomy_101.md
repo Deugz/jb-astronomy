@@ -11,22 +11,29 @@
 <a class="dif" href="More/Page3.html">Matter</a>
 </div> 
 
+<div class="wrapper">
+<button class="button"><span> <a href="https://deugz.github.io/nb-teaching/_build/html/"  title= "" target="blank"> Jupyter Book </a></span></button> 
+</div>
+
 ***
 
 ## Observing the Universe
 
 There is different "method" to observe the universe:
 
+:::::{div} full-width
 ::::{grid} 3
-:::{grid-item-card}  
-With your own eyes
+:::{grid-item-card}
+:class-header: bg-light
+<span style="float: right"> &#128064;</span>  With your own eyes
 ^^^
 
 [Interactive sky chart](https://skyandtelescope.org/interactive-sky-chart/)
 
 :::
-:::{grid-item-card} 
-Optical telescopes
+:::{grid-item-card}
+:class-header: bg-light
+<span style="float: right">![flag alt >](../../../Docs/Svg_icons/Telescopes/telescope-svgrepo-com.svg)</span> Optical telescopes
 ^^^
 
 [Stars 3D Map](https://charliehoey.com/threejs-demos/gaia_dr1.html)
@@ -37,15 +44,16 @@ GAIA mission
 
 :::
 
-:::{grid-item-card} 
-Multi-wavelength observations
+:::{grid-item-card}
+:class-header: bg-light
+<span style="float: right">![flag alt >](../../../Docs/Svg_icons/Telescopes/radar-observatory-svgrepo-com.svg)</span> Multi-wavelength observations
 ^^^
 
 [Chromoscope.net](https://chromoscope.net/)
 
 :::
 ::::
-
+:::::
 
 ### Feel like practising ?
 
@@ -86,6 +94,7 @@ This free course shows you how to navigate the night sky, and introduces the wid
 
     
 </article>
+
 ***
 
 
@@ -129,6 +138,7 @@ Scale – *dealing with the miniscule to the massive, over milliseconds to mille
 
     
 </article>
+
 ***
 
 
