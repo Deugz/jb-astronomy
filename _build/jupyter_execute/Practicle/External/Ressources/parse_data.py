@@ -21,7 +21,7 @@ box_scores = os.listdir(SCORE_DIR)
 box_scores = [os.path.join(SCORE_DIR, f) for f in box_scores if f.endswith(".html")]
 
 
-# In[3]:
+# In[ ]:
 
 
 from bs4 import BeautifulSoup
@@ -36,7 +36,7 @@ def parse_html(box_score):
     return soup
 
 
-# In[4]:
+# In[ ]:
 
 
 def read_season_info(soup):
@@ -46,7 +46,7 @@ def read_season_info(soup):
     return season
 
 
-# In[5]:
+# In[ ]:
 
 
 def read_line_score(soup):
@@ -61,7 +61,7 @@ def read_line_score(soup):
     return line_score
 
 
-# In[6]:
+# In[ ]:
 
 
 
@@ -72,7 +72,7 @@ def read_stats(soup, team, stat):
     return df
 
 
-# In[7]:
+# In[ ]:
 
 
 games = []
@@ -125,7 +125,7 @@ for box_score in box_scores:
         print(f"{len(games)} / {len(box_scores)}")
 
 
-# In[8]:
+# In[ ]:
 
 
 

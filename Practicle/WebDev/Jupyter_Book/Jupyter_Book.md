@@ -10,6 +10,38 @@
 
 ***
 
+
+
+[Complete tuto](https://datascientistforai.github.io/DataScienceStudy/customize/toc.html)
+
+## Getting Started
+
+### Prerequisties
+
+- Anaconda 
+
+```{note}
+
+Insert link toward Anaconda tutorial
+
+```
+
+### Installation
+
+using the command line copy and paste the following command
+
+```bash
+pip install -U jupyter-book
+```
+
+### Build your first book
+
+Before you build your first book, make you are located in the folder within which you want your book to be placed using the command `cd`
+
+```bash
+jb create mybookname/
+```
+
 ## Description
 
 The perfect tool to *Build beautiful, publication-quality books and documents from computational content*

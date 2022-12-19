@@ -55,6 +55,11 @@ The possibility of water on Mars has captured human imagination for over a centu
 ***
 
 
+### Jupyter
+
+- [Youtube](https://www.youtube.com/watch?v=OABw1WXLGi4) - What Is Concealed under Ice on Jupiter's Satellites?
+
+
 
 ## Moon and Moons
 
@@ -100,3 +105,9 @@ There are lots of moons in our Solar System. The Earth is the only planet with j
 
 
 ***
+
+## Alpha centauri solar system
+
+Closest to our own
+
+- [Youtube](https://www.youtube.com/watch?v=XKbQuNF0zPo&t=627s) - Alpha Centauri. What Does the Closest Stellar System Conceal?

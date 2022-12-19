@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright, TimeoutError as PlaywrightTim
 import time
 
 
-# In[2]:
+# In[ ]:
 
 
 SEASONS = list(range(2016,2023))
@@ -20,13 +20,13 @@ STANDINGS_DIR = os.path.join(DATA_DIR, "standings")
 SCORES_DIR = os.path.join(DATA_DIR, "scores")
 
 
-# In[3]:
+# In[28]:
 
 
 SEASONS
 
 
-# In[4]:
+# In[39]:
 
 
 async def get_html(url, selector, sleep=5, retries=3):
@@ -48,7 +48,7 @@ async def get_html(url, selector, sleep=5, retries=3):
     return html
 
 
-# In[5]:
+# In[40]:
 
 
 async def scrape_season(season):
@@ -69,7 +69,7 @@ async def scrape_season(season):
             f.write(html)
 
 
-# In[6]:
+# In[41]:
 
 
 for season in SEASONS:
