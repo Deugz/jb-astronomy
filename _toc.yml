@@ -39,4 +39,12 @@ parts:
       - file: Practicle/Python/Step1
       - file: Practicle/Python/Step2
       - file: Practicle/External/Basketball_DQ
-      
+  - caption: Cours particuliers
+    chapters:
+    - file: Cours/Cours_particuliers      
+    - file: Cours/Anglais/Anglais
+    - file: Cours/Physique/Physique
+      sections:
+      - file: Cours/Physique/Seconde/Physique2
+      - file: Cours/Physique/Premiere/Physique1
+      - file: Cours/Physique/Terminale/PhysiqueT

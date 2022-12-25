@@ -126,3 +126,11 @@ JWST capabilities gives us new capabilities to answer those questions
 ##### Grain growth influencing Band shape
 
 - Find Dartois/Noble article
+
+##  MINDS
+
+MIRI mid-INfrared Disk Survey GTO program
+
+- Principal Investigator:
+
+**Article**: [link](https://arxiv.org/abs/2212.08047)

@@ -60,6 +60,13 @@ As members of academia, we have a lot to share with each others and with the wor
 
 ## How it works ?
 
+````{margin} 
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ncpnijkz.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
+
+````
+
 Divided into the main scientific disciplines
 
 traffic light system

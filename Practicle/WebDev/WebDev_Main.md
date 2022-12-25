@@ -2,6 +2,15 @@
 
 HTML CSS Jupyter-Book ...
 
+***
+
+**Interesting tutorials elsewhere**:
+
+- [coding a snowflake tutorial](https://cloudfour.com/thinks/coding-a-snowflake-generator/) - HTML/CSS/JS
+
+
+***
+
 ## The landscape of web-developpers
 
 ### Front end vs Back end
