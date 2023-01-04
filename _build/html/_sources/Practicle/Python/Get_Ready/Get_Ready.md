@@ -1,4 +1,4 @@
-# Introduction to Python
+# Get ready
 
 ## The Basics
 

@@ -17,6 +17,8 @@
 
 - [iaaa](https://iaaa.org/)
 
+- [SAO/Cosmos](https://astronomy.swin.edu.au/cosmos/)
+
 ## Introduction
 
 - insert puzzle pieces (cf svg in docs)

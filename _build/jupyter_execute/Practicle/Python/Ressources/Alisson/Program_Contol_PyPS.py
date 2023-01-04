@@ -27,7 +27,7 @@
 # 
 # Our first program only has two lines of instructions in the code cell below. For this notebook, it helps to display the line numbers (these are displayed on the left hand side of a cell) - do this by selecting the `Toggle line numbers` option from the `View` menu (you can switch off line numbers by repeating this operation). Then **run** the cell. 
 
-# In[1]:
+# In[ ]:
 
 
 result = 3 + 7
@@ -52,7 +52,7 @@ print("The sum of 3 and 7 is", result)
 # 
 # You will get an error message saying there is a TypeError. This means the code is mixing data of different types – mixing apples and oranges if you like. In this case, you are trying to add a number (3) to a string ("7"), which of course doesn’t make sense.
 
-# In[2]:
+# In[ ]:
 
 
 result = 3 + 7
@@ -67,7 +67,7 @@ print("The sum of 3 and 7 is", result)
 #     
 # Now place double quotes around the the word `result` within the print statement on the second line and then run the cell. Try to explain the outcome before reading further.
 
-# In[3]:
+# In[ ]:
 
 
 result = 3 + 7
@@ -84,7 +84,7 @@ print("The sum of 3 and 7 is", result)
 # 
 # For example, the following simple program uses Pythagoras' theorem to calculate the length of the hypotenuse in a 3-4-5 triangle.  To do this, it works out the sum of 3 squared and 4 squared, then takes the square root (i.e. take the number to the power of one half).
 
-# In[4]:
+# In[ ]:
 
 
 output = ( (3**2) + (4**2) )**0.5
@@ -115,7 +115,7 @@ print(output)
 # You should attempt this exercise *before* looking at the [Exercise Answers](#ExerciseAnswers1.3)
 # 
 
-# In[5]:
+# In[ ]:
 
 
 # Exercise 1.3
@@ -139,7 +139,7 @@ print("The sum of 3 and 7 is", result)
 # 
 # Here is a short program to do this – it’s a simple sequence of assignments and an output. (Use `View` | `Toggle Line Numbers` to see the line numbers if they are not already displayed.)
 
-# In[6]:
+# In[ ]:
 
 
 totmass = 10.0   # total mass in kilograms
@@ -164,7 +164,7 @@ print("Total weight:", weight, "Newtons")
 # In the following program, the steps that will be followed by the kernel depend on the value of this variable (here called `latitude`).
 # 
 
-# In[7]:
+# In[ ]:
 
 
 totmass = 10.0        # total mass in kilograms
@@ -207,7 +207,7 @@ print("Total weight:", weight, "Newtons")
 # 
 # Finally, returning to the physical problem, we can be even more precise about the way the acceleration due to gravity changes with latitude, and consider three ranges of latitude instead of two. In Python, several conditions can be chained as in the following example:
 
-# In[8]:
+# In[ ]:
 
 
 totmass = 10.0  # total mass in kilograms 
@@ -253,7 +253,7 @@ print("Total weight:", weight, "Newtons")
 # 
 # You should attempt this exercise *before* looking at the [Exercise answers](#ExerciseAnswers2.3)
 
-# In[9]:
+# In[ ]:
 
 
 # Exercise 2.3
@@ -278,7 +278,7 @@ print("Total weight:", weight, "Newtons")
 # 
 # Inspect the following program and make sure you understand it. 
 
-# In[10]:
+# In[ ]:
 
 
 totmass = 10.0      # total mass in kilograms 
@@ -329,7 +329,7 @@ print("Total weight:", weight, "Newtons")
 # 
 # You should attempt this exercise *before* looking at the [Exercise Answers](#ExerciseAnswers2.4)
 
-# In[11]:
+# In[ ]:
 
 
 # Code for Exercise 2.4
@@ -382,7 +382,7 @@ print("Total weight:", weight, "Newtons")
 # 
 # This algorithm can be translated to Python as follows.
 
-# In[12]:
+# In[ ]:
 
 
 list_of_items = [1.45, 2, 0.25, 4.4, 1.9]  # masses in kg 
@@ -425,7 +425,7 @@ print("Total mass:", totmass, "kilograms")
 # Hint: you need to count the items in the list; their masses are irrelevant.
 # </div>
 
-# In[13]:
+# In[ ]:
 
 
 # Code for Exercise 3.1
@@ -453,7 +453,7 @@ print("Total mass:", totmass, "kilograms")
 # 
 # Let us show you a first simple example that provides the multiplication table of a given number:
 
-# In[14]:
+# In[ ]:
 
 
 number = 7          # Number we want the table of
@@ -492,7 +492,7 @@ while counter < 10: # As long as i is less than 10.
 # Below is a Python program which carries out Euclid's algorithm.
 # </div>
 
-# In[15]:
+# In[ ]:
 
 
 # Code for Exercise 3.2
@@ -540,7 +540,7 @@ print("The greatest common divisor of the integers provided is", n)
 
 # 1. The difference between two numbers
 
-# In[16]:
+# In[ ]:
 
 
 result = 3 - 7
@@ -549,7 +549,7 @@ print("The difference between 3 and 7 is", result)
 
 # 2. The product of two numbers
 
-# In[17]:
+# In[ ]:
 
 
 result = 3 * 7
@@ -558,7 +558,7 @@ print("The product of 3 and 7 is", result)
 
 # 3. The ratio of two numbers
 
-# In[18]:
+# In[ ]:
 
 
 result = 3 / 7
@@ -567,7 +567,7 @@ print("The ratio of 3 divided by 7 is", result)
 
 # 4. One number to the power of another
 
-# In[19]:
+# In[ ]:
 
 
 result = 3 ** 7
@@ -636,7 +636,7 @@ print("3 to the power 7 is", result)
 # 
 # The following code is an example of a working solution. It is likely that you will have something similar that reports that there are 5 items in the list.
 
-# In[20]:
+# In[ ]:
 
 
 # Code for Exercise 3.1 (Answer)
@@ -670,7 +670,7 @@ print("Total number of items:", nr_objects)
 # 
 # The following cell provides an example solution.
 
-# In[21]:
+# In[ ]:
 
 
 # Code for Exercise 3.2 (Answer)

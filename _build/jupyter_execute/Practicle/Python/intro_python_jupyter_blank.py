@@ -127,7 +127,7 @@
 # 
 # **EXERCISE:** In the space below, enter your name between the quotation marks and then run the code cell.
 
-# In[1]:
+# In[ ]:
 
 
 # inline comments in Python start with "#"
@@ -175,14 +175,14 @@ print(f'Hello, {name}!')   # this is a formatted string literal, or f-string, an
 # Just because a code cell runs or a Markdown cell renders does _not_ mean that your work is saved. 
 # Jupyter notebook kernels are known to crash pretty randomly, so save your work by clicking the symbol in the menu bar or using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Command</kbd>+<kbd>S</kbd> on Macs).
 
-# In[2]:
+# In[ ]:
 
 
 # Tip #1: iterative refinement
 names = ['alexa', 'eddie', 'enze', 'kevin', 'luis', 'mack', 'mark', 'megan']
 
 
-# In[3]:
+# In[ ]:
 
 
 # Tip #2: decomposition 🍁
@@ -192,7 +192,7 @@ print( (sum([p ** 2 for p in pos])) ** 0.5 )
 
 # Tip #3: `print()` is your friend. [Stack Overflow](https://stackoverflow.com/) is an even better friend.
 
-# In[4]:
+# In[ ]:
 
 
 # Tip #4: block comments (in addition to regular comments!)
@@ -210,7 +210,7 @@ i = 'later'
 
 # Tip #5: Reset and run all (Jupyter only). ⏩
 
-# In[5]:
+# In[ ]:
 
 
 # Tip #6: How to get help from Jupyter with Shift+Tab and ?

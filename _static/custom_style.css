@@ -295,4 +295,47 @@ transition: opacity 1s linear;
 opacity: 1;
 }
 
+
+#transition-img {
+  width: 500px;
+  height: 600px;
+  max-width: 100%;
+  margin: 50px auto;
+  box-shadow: 1px 5px 20px 0px #ddd;
+  overflow: hidden;
+}
+
+#transition-img .images-JWST {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding: Opx !important;
+}
+
+#transition-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  transition: 0.5s 0.1s ease-out;
+  padding: Opx !important;
+}
+
+#transition-img .one {
+  left: -100%;
+}
+
+#transition-img figcaption {
+  line-height: 1.6;
+  padding: 10px;
+}
+
+#transition-img:hover .one,
+#transition-img:hover .two {
+  transform: translateX(100%);
+}
+
+
  

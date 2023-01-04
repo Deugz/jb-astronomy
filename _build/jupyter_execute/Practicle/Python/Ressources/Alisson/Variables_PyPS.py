@@ -29,7 +29,7 @@
 
 # In plain English, you could translate this statement as: save the given value in a variable called name `variable_name`. Consider a simple example (run the following code cell).
 
-# In[1]:
+# In[ ]:
 
 
 number_of_apples = 56
@@ -39,7 +39,7 @@ number_of_apples = 56
 
 # On assignment, provided that the variable name has not been used before, Python will create a new variable with this name. However, if a variable with this name already exists, its value will be overwritten as you can see by running the following example.
 
-# In[2]:
+# In[ ]:
 
 
 number_of_apples = 35
@@ -50,7 +50,7 @@ print("The value in number_of_apples is", number_of_apples)
 
 # In passing, note that if you want to find out the value of a variable, then instead of using the `print` function you can also run a code cell that only contains the variable name. This will return the current value of the variable. Try this now by running the code cell below. 
 
-# In[3]:
+# In[ ]:
 
 
 number_of_apples 
@@ -75,7 +75,7 @@ number_of_apples
 # The following code defines the value of the variables `height` and `length`. What are their values at the end of the cell ?
 # </div>
 
-# In[4]:
+# In[ ]:
 
 
 # Code for Exercise 1.1
@@ -105,7 +105,7 @@ height = height + 4
 # 
 # </div>
 
-# In[5]:
+# In[ ]:
 
 
 # Code for Exercise 1.2
@@ -150,7 +150,7 @@ print(red_lights, blue_lights)
 # In the following window, six variables have been defined. Can you work out what their types are? Check your answers by using the `type` function.
 # </div>
 
-# In[6]:
+# In[ ]:
 
 
 # Code for Execise 2.1
@@ -167,7 +167,7 @@ variable_six = False
 
 # These different types of variable are different in nature and therefore may behave differently when combined with operations. For instance, the use of addition (`+`) with two floats or two strings as shown below:
 
-# In[7]:
+# In[ ]:
 
 
 float_1 = 4.0
@@ -189,7 +189,7 @@ print("The sum of the two string is", sum_of_strings)
 # 
 # In general, different variable types cannot be mixed. Let us see what happens if you try to sum a float with a string:
 
-# In[8]:
+# In[ ]:
 
 
 float_1 = 4.0

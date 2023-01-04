@@ -154,20 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../../intro.html">
-                    Welcome
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../../Intro/content.html">
    Content
@@ -320,6 +307,21 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Get_Ready/Get_Ready.html">
+     Get ready
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Matplotlib/Matplotlib.html">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Pandas/Pandas.html">
+     Pandas
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../../External/Basketball_DQ.html">
      Basketball
@@ -745,11 +747,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of 3 and 7 is 10
-</pre></div>
-</div>
-</div>
 </div>
 <p>The first instruction (line 1) is an <code class="docutils literal notranslate"><span class="pre">assignment</span></code>: the computer evaluates the expression to the right of the assignment (=) and stores the result in the variable (<code class="docutils literal notranslate"><span class="pre">result</span></code>) on the left of the assignment. Each piece of data that is needed by a program must be stored in a variable. Translating Python to English, the assignment states ‘let result be the sum of 3 and 7’. We could call the variable anything we want, such as <code class="docutils literal notranslate"><span class="pre">R</span></code> or <code class="docutils literal notranslate"><span class="pre">sum_of_two_numbers</span></code>, but the first of these is rather too short to be meaningful, and the second is rather long to type in. So a compromise for the variable name that’s not too long, not too short, and which means something to anyone reading the program is usually the best option.</p>
 <p>The second instruction, <code class="docutils literal notranslate"><span class="pre">print()</span></code> (in line 2), prints some text on the screen (in the left-hand pane), followed by the computed result. Note the following:</p>
@@ -771,11 +768,6 @@ In the following code cell, insert double quotes around the 7 on the first line 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of 3 and 7 is 10
-</pre></div>
-</div>
-</div>
 </div>
 <p>Sometimes, more subtle errors can lead to unexpected results. This is akin to miscommunication, when other people understand something different from what you intended to say. The next exercise gives an example of such an error.</p>
 <p><a id="Exercise1.2"></a></p>
@@ -789,11 +781,6 @@ In the following code cell, insert double quotes around the 7 on the first line 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of 3 and 7 is 10
-</pre></div>
-</div>
-</div>
 </div>
 <p>When putting double quotes around the variable name, it becomes a string. Hence, the computer will print the name literally, instead of printing the value stored in the variable.</p>
 <p>To sum up, <code class="docutils literal notranslate"><span class="pre">&quot;result&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;7&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">result</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> are different things. The first two are strings (literal text), the third is a variable name, and the last is a number. In Python, there are different <em>types</em> of variables, used to represent different sorts of data (such as strings or numbers).  You will learn more about variables and types in a subsequent notebook.</p>
@@ -804,11 +791,6 @@ In the following code cell, insert double quotes around the 7 on the first line 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.0
 </pre></div>
 </div>
 </div>
@@ -838,11 +820,6 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of 3 and 7 is 10
-</pre></div>
-</div>
-</div>
 </div>
 <section id="sequence-summary">
 <h3>Sequence - summary<a class="headerlink" href="#sequence-summary" title="Permalink to this headline">#</a></h3>
@@ -865,11 +842,6 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 98.10000000000001 Newtons
-</pre></div>
-</div>
-</div>
 </div>
 <p>So in this case, the expression on line 3 calculates the total mass multiplied by the acceleration due to gravity and assigns the value to the variable <code class="docutils literal notranslate"><span class="pre">weight</span></code>. Notice that you do not need to use complete words for variable names, but it’s best to use a name that at least reminds you of what the variable represents. Note also that Python cares about capitalisation in variable names, so <code class="docutils literal notranslate"><span class="pre">weight</span></code>, <code class="docutils literal notranslate"><span class="pre">Weight</span></code> and <code class="docutils literal notranslate"><span class="pre">WEIGHT</span></code> would be three different variables.</p>
 <p>More generally, you should always choose the names of any variables carefully. Ideally, variable names should be self-explanatory and unambiguous.</p>
@@ -889,11 +861,6 @@ In the following program, the steps that will be followed by the kernel depend o
   <span class="n">acc</span> <span class="o">=</span> <span class="mf">9.82</span>          <span class="c1"># acceleration in metres/(sec squared)</span>
 <span class="n">weight</span> <span class="o">=</span> <span class="n">totmass</span> <span class="o">*</span> <span class="n">acc</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total weight:&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="s2">&quot;Newtons&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 98.2 Newtons
 </pre></div>
 </div>
 </div>
@@ -927,11 +894,6 @@ Change the latitude to $44^\text{o}$ and then $45^\text{o}$ and confirm that the
 <span class="n">weight</span> <span class="o">=</span> <span class="n">totmass</span> <span class="o">*</span> <span class="n">acc</span> 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total weight:&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="s2">&quot;Newtons&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 97.8 Newtons
 </pre></div>
 </div>
 </div>
@@ -976,11 +938,6 @@ Does the code provide correct results? Is there anything that needs changing?
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 98.10000000000001 Newtons
-</pre></div>
-</div>
-</div>
 </div>
 <p>The conditions that you have seen so far only use one criterion. What if you need to make a selection based on multiple criteria? As you might have guessed, Python allows you to do this.</p>
 <p>We noted above that conditional expressions are <em>Boolean</em> - they have values that are only either true or false, and it is useful here to note that Python calls these values <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> (note the capitalisation). We can combine two or more Boolean expressions using so-called logical operators: <code class="docutils literal notranslate"><span class="pre">and</span></code> and <code class="docutils literal notranslate"><span class="pre">or</span></code>. In fact, you can use the <code class="docutils literal notranslate"><span class="pre">and</span></code> operator to fix the version of the code that you considered at the end of the previous section.</p>
@@ -1000,11 +957,6 @@ Does the code provide correct results? Is there anything that needs changing?
 <span class="n">weight</span> <span class="o">=</span> <span class="n">totmass</span> <span class="o">*</span> <span class="n">acc</span> 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total weight:&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="s2">&quot;Newtons&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 97.8 Newtons
 </pre></div>
 </div>
 </div>
@@ -1052,11 +1004,6 @@ Does the code provide correct results? Is there anything that needs changing?
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total weight: 97.8 Newtons
-</pre></div>
-</div>
-</div>
 </div>
 <section id="selection-summary">
 <h3>Selection - summary<a class="headerlink" href="#selection-summary" title="Permalink to this headline">#</a></h3>
@@ -1100,16 +1047,6 @@ Does the code provide correct results? Is there anything that needs changing?
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.45
-2
-0.25
-4.4
-1.9
-Total mass: 10.000000000000002 kilograms
-</pre></div>
-</div>
-</div>
 </div>
 <p>To explain what this Python code is doing, another type of object needs to be introduced: lists. A list a sequence of elements that can be numbers, strings or any other data type. They have the form:</p>
 <p><code class="docutils literal notranslate"><span class="pre">[element</span> <span class="pre">1,</span> <span class="pre">element</span> <span class="pre">2,</span> <span class="pre">element</span> <span class="pre">3,</span> <span class="pre">....</span> <span class="pre">element</span> <span class="pre">n]</span></code></p>
@@ -1140,16 +1077,6 @@ The program in the following window is copied from the previous program. Adapt i
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.45
-2
-0.25
-4.4
-1.9
-Total mass: 10.000000000000002 kilograms
-</pre></div>
-</div>
-</div>
 </div>
 <p>You should attempt this activity <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.1">Exercise Answers</a></p>
 </section>
@@ -1168,19 +1095,6 @@ Total mass: 10.000000000000002 kilograms
 <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span> <span class="c1"># As long as i is less than 10.</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">counter</span><span class="p">)</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
     <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>    <span class="c1"># Increment the Counter</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 x 7 = 7
-2 x 7 = 14
-3 x 7 = 21
-4 x 7 = 28
-5 x 7 = 35
-6 x 7 = 42
-7 x 7 = 49
-8 x 7 = 56
-9 x 7 = 63
 </pre></div>
 </div>
 </div>
@@ -1223,11 +1137,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The greatest common divisor of the integers provided is 153
-</pre></div>
-</div>
-</div>
 </div>
 <div class="alert alert-block alert-info">
 <p>Based on what you have learned in this notebook, attempt the following:</p>
@@ -1264,11 +1173,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The difference between 3 and 7 is -4
-</pre></div>
-</div>
-</div>
 </div>
 <ol class="simple">
 <li><p>The product of two numbers</p></li>
@@ -1277,11 +1181,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">7</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The product of 3 and 7 is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The product of 3 and 7 is 21
 </pre></div>
 </div>
 </div>
@@ -1296,14 +1195,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The ratio of 3 divided by 7 is
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 0.42857142857142855
-</pre></div>
-</div>
-</div>
 </div>
 <ol class="simple">
 <li><p>One number to the power of another</p></li>
@@ -1312,11 +1203,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">**</span> <span class="mi">7</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3 to the power 7 is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3 to the power 7 is 2187
 </pre></div>
 </div>
 </div>
@@ -1386,11 +1272,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total number of items: 5
-</pre></div>
-</div>
-</div>
 </div>
 <p><a class="reference external" href="#Exercise3.1">Back to Exercise 3.1</a></p>
 <p><a id="ExerciseAnswers3.2"></a></p>
@@ -1433,11 +1314,6 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
     
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR: The number entered is negative.&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The greatest common divisor of the integers provided is 153
 </pre></div>
 </div>
 </div>

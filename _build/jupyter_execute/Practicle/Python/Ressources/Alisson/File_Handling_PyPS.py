@@ -27,7 +27,7 @@
 # 
 # The first step is to use the `open()` function to tell Python the name of the file. This is done using a statement such as:
 
-# In[1]:
+# In[ ]:
 
 
 file_input = open("file_1.txt", 'r')
@@ -43,7 +43,7 @@ file_input = open("file_1.txt", 'r')
 # 
 # Let's trying opening and reading the input file `file_1.txt`, assuming it is located in the same folder as this notebook. Run the following:
 
-# In[2]:
+# In[ ]:
 
 
 file_input_1 = open("file_1.txt", 'r')
@@ -62,7 +62,7 @@ file_input_1.close()
 # 
 # Often we want to read files one line at a time and it is possible to do this with the `readline()` method. This instruction only reads one line at the time and repeating it will read the following line. Try running the following example:
 
-# In[3]:
+# In[ ]:
 
 
 file_input_1 = open("file_1.txt", 'r')
@@ -80,7 +80,7 @@ file_input_1.close()
 # 
 # For example:
 
-# In[4]:
+# In[ ]:
 
 
 file_input_1 = open("file_1.txt", 'r')
@@ -101,7 +101,7 @@ file_input_1.close()
 # 
 # Let us illustrate these by running a short example:
 
-# In[5]:
+# In[ ]:
 
 
 string_1 = "This is an example of a string."
@@ -142,7 +142,7 @@ print("The 4-th word of the string is:", string_cut[4])
 # 
 # </div>
 
-# In[6]:
+# In[ ]:
 
 
 # Code for Exercise 1.1
@@ -164,7 +164,7 @@ print("The 4-th word of the string is:", string_cut[4])
 # 
 # The first step is to open the file, but this time in a *write* mode:
 
-# In[7]:
+# In[ ]:
 
 
 file_output = open("output.txt", 'w')
@@ -176,7 +176,7 @@ file_output = open("output.txt", 'w')
 # 
 # Let us try writing a few words in a new file by running the following:
 
-# In[8]:
+# In[ ]:
 
 
 # Open a new file in write mode
@@ -212,7 +212,7 @@ file_output_2.close()
 # 
 # For example, try running the following code cell:
 
-# In[9]:
+# In[ ]:
 
 
 # A string to be written to file
@@ -256,7 +256,7 @@ print(new_line)
 # 
 # </div>
 
-# In[10]:
+# In[ ]:
 
 
 # Code for Exercise 2.1
@@ -281,7 +281,7 @@ print(new_line)
 # 
 # Run the following to see how the number is output:
 
-# In[11]:
+# In[ ]:
 
 
 # Printing numerical values
@@ -298,7 +298,7 @@ print(x)
 # 
 # Try this:
 
-# In[12]:
+# In[ ]:
 
 
 # Formatting printout
@@ -321,7 +321,7 @@ print("%.2f" % x)
 # 
 # Let's have a look at how this works. Run the following:
 
-# In[13]:
+# In[ ]:
 
 
 name = "Julius"
@@ -339,7 +339,7 @@ print(sentence_to_print)
 #  
 # Have a look at the example below where the same number is printed but with different formatting instructions. Note that the numbers is rounded appropriately (rather than being truncated).
 
-# In[14]:
+# In[ ]:
 
 
 number = 3.5902756829385638292384
@@ -389,7 +389,7 @@ print("Here is the number to 7 significant figures : {0:.7g}".format(number))
 # ***
 # 
 
-# In[15]:
+# In[6]:
 
 
 # Code for Exercise 3.1
@@ -415,7 +415,7 @@ print("Here is the number to 7 significant figures : {0:.7g}".format(number))
 # Have a look at the following example answer. You can check that your code is fine by calculating the sum of fruits yourself and compare to what the program gives.
 # </div>
 
-# In[16]:
+# In[ ]:
 
 
 # Code for Exercise 1.1
@@ -453,7 +453,7 @@ print("The total number of items of fruit is:", number_of_fruits)
 # Have a look at the following example answer. 
 # </div>
 
-# In[17]:
+# In[ ]:
 
 
 # Code for Exercise 2.1
@@ -500,7 +500,7 @@ output_file.close()
 # Have a look at the following example answer. 
 # </div>
 
-# In[18]:
+# In[ ]:
 
 
 from math import sqrt

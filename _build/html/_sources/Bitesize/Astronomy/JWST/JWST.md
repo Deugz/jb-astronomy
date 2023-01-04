@@ -16,13 +16,77 @@ Image ref?
 James Web Space Telescope
 
 
-## Different instruments
+## Scientific instruments
 
 Infrared telescope
+
+### Lists
 
 - NIRI
 - NIRCAM
 - ...
+
+```{note}
+
+Sciences questions relevant to the different instruments
+
+
+```
+
+
+### Comparison
+
+Let's see how different instruments give different results by comparing two of them targeted at the same region.
+
+
+:::::{div} full-width
+::::{grid} 2
+:::{grid-item}
+:columns: 5
+
+We will observe the *Pillars of creations*, one of the most famous astronomoical images. 
+
+Located in the eagle nebula, they are an active region of star formation.
+
+:::
+
+:::{grid-item}
+:columns: 7
+
+
+<iframe width="649" height="360" src="https://www.youtube.com/embed/XX8iCGZ66iQ?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+:::
+::::
+:::::
+
+
+***
+
+
+````{margin}
+```{note}
+
+Inserer comparaison mid-near IR like in the following article
+- [BBC](https://www.bbc.com/news/science-environment-64051171)
+
+Using the following Codepen example
+
+- https://codepen.io/Zaher-aa/pen/QWvNgBp
+
+```
+````
+
+
+
+<figure id="transition-img">
+<div class="images-JWST">
+<img src="../../../_static/Images/Webb_Pillars_of_Creation1.jpg" alt="" class="one">
+<img src="../../../_static/Images/Webb_Pillars_of_Creation2.jpg" alt="" class="two">
+</div>
+<figcaption>[Source 1](https://www.esa.int/ESA_Multimedia/Images/2022/10/Webb_s_instruments_showcase_the_Pillars_of_Creation_slider), MIRI image (mid infrared) - [Source 2](https://www.esa.int/ESA_Multimedia/Images/2022/10/Webb_s_portrait_of_the_Pillars_of_Creation_NIRCam), NIRCam image (near infrared)</figcaption>
+</figure>
+
 
 
 ## Science Programs

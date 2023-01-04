@@ -34,7 +34,7 @@
 # 
 # The function `int()` converts its input into an integer. So, this function can be used to convert strings to integers as can be seen by running the following example. 
 
-# In[1]:
+# In[ ]:
 
 
 # Example showing how int() converts strings to integers
@@ -48,7 +48,7 @@ print(total)
 
 # Another situation might be that we need to convert a float to an integer. Note that in such a conversion, any part after the decimal point is simply removed or *truncated* (note that `int()` does **not** round to the nearest integer) as shown by running the following example. 
 
-# In[2]:
+# In[ ]:
 
 
 # Example showing how int() converts a float to an integer
@@ -66,7 +66,7 @@ print(index)
 # Similarly, the functions `float`, and `str` allow you to convert the input into either a float or a string as shown by running the following example. You may want to try removing the `float()` and `str()`
 # functions (lines 4 and 14) to see what happens.
 
-# In[3]:
+# In[ ]:
 
 
 # Example showing use of float() and str()
@@ -93,7 +93,7 @@ print(string_3)
 # 
 # Moreover, the input to a function need not be a single simple variable and functions can be applied to more complex objects like lists. For instance, if you wish to find the number of elements in a list or sum them, you can use the function `len()` or `sum()` as you can see by running the following example.
 
-# In[4]:
+# In[ ]:
 
 
 # Example showing use of list functions
@@ -123,7 +123,7 @@ print("The sum of the elements of the second list is", sum(second_list))
 # Hint: you will need to create an output list, and iterate on all the elements of the input list to take their integer values before appending them successively to the output list.
 # </div>
 
-# In[5]:
+# In[ ]:
 
 
 # Code for Exercise 1.1
@@ -136,7 +136,7 @@ list_numbers = [23.5, -10.3, -0.234, 0.92, 10.29, -3.0]
 
 # One last useful function is `input()`. This allows you to ask the user of the program for value. Let us see how it works on the following example: try running the following cell, and when prompted for your year of birth, enter it in the box and press return. 
 
-# In[6]:
+# In[ ]:
 
 
 # Ask the user to input their birth year

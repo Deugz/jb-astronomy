@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Problem Set 5 &#8212; Teaching</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/style_book_shell.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../../_static/jquery.js"></script>
+    <script src="../../../../../../_static/underscore.js"></script>
+    <script src="../../../../../../_static/doctools.js"></script>
+    <script src="../../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/nb_Teaching");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../../../../../_static/assets/Picture_display.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Practicle/Python/Astronomy/Ressources/spf-main/sp5/disk_SED_ellen.html" />
+    <link rel="shortcut icon" href="../../../../../../_static/logo2.png"/>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-YJLM4C4S2Q');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">Current Version: 27/06/2022</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../../_static/logo2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Teaching</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../Intro/content.html">
+   Content
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../Bitesize/Bitesize_Main.html">
+   <strong>
+    Bitesize
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Astronomy_Main.html">
+   Astronomy
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">
+     Astronomy 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">
+     The Solar system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/ISM/ISM.html">
+     The Interstellar Medium
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">
+     Astrochemistry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">
+     Interstellar Dust
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Star_formation/Star_formation.html">
+     Lifecycle of Stars
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
+     Planet formation (bottom-up)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
+     Planet formation (top-bottom)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Astronomy/JWST/JWST.html">
+     JWST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../../Bitesize/Physics/Physics_Main.html">
+   Physics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Physics/Physics_101/Physics_101.html">
+     Physics 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Physics/Water/Water.html">
+     Water
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">
+     Infrared Spectroscopy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">
+     Special Relativity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../Practicle_Main.html">
+   <strong>
+    Practicle
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../WebDev/WebDev_Main.html">
+   Web Development
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../WebDev/Jupyter_Book/Jupyter_Book.html">
+     Jupyter Book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../WebDev/HTML_CSS/HTML_CSS.html">
+     HTML / CSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../Python_Main.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Get_Ready/Get_Ready.html">
+     Get ready
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Matplotlib/Matplotlib.html">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../Pandas/Pandas.html">
+     Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../External/Basketball_DQ.html">
+     Basketball
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Cours particuliers
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../Cours/Cours_particuliers.html">
+   <strong>
+    Introduction
+   </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../Cours/Anglais/Anglais.html">
+   Anglais
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../../Cours/Physique/Physique.html">
+   Physique Chimie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Cours/Physique/Seconde/Physique2.html">
+     Seconde
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Cours/Physique/Premiere/Physique1.html">
+     Première
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../Cours/Physique/Terminale/PhysiqueT.html">
+     Terminale
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Deugz/nb_Teaching/master?urlpath=tree/docs/Practicle/Python/Astronomy/Ressources/spf-main/sp5/disk_SED_ellen.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../../../../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Deugz/nb_Teaching"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb_Teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Astronomy/Ressources/spf-main/sp5/disk_SED_ellen.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Deugz/nb_Teaching/edit/master/docs/Practicle/Python/Astronomy/Ressources/spf-main/sp5/disk_SED_ellen.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../../_sources/Practicle/Python/Astronomy/Ressources/spf-main/sp5/disk_SED_ellen.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Problem Set 5
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1">
+     Part 1
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2">
+   Part 2
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-3">
+     Part 3
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-4">
+     Part 4
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Problem Set 5</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Problem Set 5
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1">
+     Part 1
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2">
+   Part 2
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-3">
+     Part 3
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-4">
+     Part 4
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="problem-set-5">
+<h1>Problem Set 5<a class="headerlink" href="#problem-set-5" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad_vec</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The integrated flux density is given by</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \underbrace{\big[ 1-e^{-\kappa_{\nu}\Sigma/\cos i} \big]}_{\text{(b)}} \underbrace{\frac{2\pi r dr \cos i}{d^2}}_{\text{(c)}}
+\]</div>
+<p>where:</p>
+<p>(a) Blackbody emission from the dust at some temperature <span class="math notranslate nohighlight">\(T\)</span>, which will be dependent on the radius in the disk</p>
+<p>(b) Frequency dependence from the optical depth, i.e., <span class="math notranslate nohighlight">\(1 - e^{-\tau_\nu}\)</span>, since it will emit more when <span class="math notranslate nohighlight">\(\tau_\nu\)</span> is larger</p>
+<p>(c) Integrating rings out from the center to cover the area of the disk, then scale down for the distance to the object <span class="math notranslate nohighlight">\(d\)</span> (and viewing angle)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aa_tau</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;aa_tau.txt&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">aa_tau</span> <span class="o">=</span> <span class="n">aa_tau</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">T_EFF</span> <span class="o">=</span> <span class="mi">4060</span> <span class="c1"># effective temperature in K</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mf">0.87</span> <span class="c1"># luminosity in L_sun</span>
+<span class="n">A_V</span> <span class="o">=</span> <span class="mf">1.3</span> <span class="c1"># visual extinction</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mi">59</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span> <span class="c1"># inclination in radians</span>
+<span class="n">PARALLAX</span> <span class="o">=</span> <span class="mf">7.43e-3</span> <span class="c1"># in arcseconds</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">3.086e16</span><span class="o">/</span><span class="n">PARALLAX</span> <span class="c1"># distance to AA Tau in m</span>
+
+<span class="n">H</span> <span class="o">=</span> <span class="mf">6.626e-34</span> <span class="c1"># Planck&#39;s constant in m^2 kg/s</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mf">3e8</span> <span class="c1"># speed of light in m/s</span>
+<span class="n">K_B</span> <span class="o">=</span> <span class="mf">1.38e-23</span> <span class="c1"># Boltzmann&#39;s constant in m^2 kg/s^2/K</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="part-1">
+<h2>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">#</a></h2>
+<p>The contribution from the star is predictable. For the disk, we obtain <span class="math notranslate nohighlight">\(T_1=100 \text{ K}\)</span> and <span class="math notranslate nohighlight">\(\Sigma_1 = 20 \text{ g/cm}^2\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">planck</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">Teff</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the value of Planck&#39;s function.</span>
+<span class="sd">    </span>
+<span class="sd">    PARAMETERS</span>
+<span class="sd">    nu: (float) the frequency in Hz</span>
+<span class="sd">    Teff: (float) the temperature in K</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">H</span><span class="o">*</span><span class="n">nu</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="n">C</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">H</span><span class="o">*</span><span class="n">nu</span><span class="o">/</span><span class="p">(</span><span class="n">K_B</span><span class="o">*</span><span class="n">Teff</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">extinction</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns A_lambda/A_V for the given wavelength, according to eqs. (9) and (10) of</span>
+<span class="sd">    Wang &amp; Chen 2019.</span>
+<span class="sd">    </span>
+<span class="sd">    PARAMETERS</span>
+<span class="sd">    l: (float) the wavelength in microns</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">l</span> <span class="o">-</span> <span class="mf">1.82</span>
+    <span class="c1"># optical 0.3 &lt; l &lt; 1</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="o">+</span> <span class="mf">0.7499</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.1086</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">0.08909</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mf">0.02905</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> \
+                    <span class="o">+</span> <span class="mf">0.01069</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">+</span> <span class="mf">0.001707</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">6</span> <span class="o">-</span> <span class="mf">0.001002</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">7</span>
+    <span class="c1"># NIR 1 &lt;= l &lt; 3.33</span>
+    <span class="n">f2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mf">0.3722</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">2.070</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">,</span> <span class="n">f1</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">f2</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">sed_star</span><span class="p">(</span><span class="n">nu</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the SED of the star with extinction.</span>
+<span class="sd">    </span>
+<span class="sd">    PARAMETERS:</span>
+<span class="sd">    nu: (float) the frequency in Hz</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">A_star</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mf">7e8</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5778</span><span class="o">/</span><span class="n">T_EFF</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span> <span class="o">*</span> <span class="n">L</span> <span class="c1"># surface area in m^2</span>
+    <span class="n">F_nu_emit_star</span> <span class="o">=</span> <span class="n">planck</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">T_EFF</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">A_star</span><span class="o">/</span><span class="mi">2</span> <span class="c1"># emitted flux density W/Hz</span>
+    <span class="n">F_nu_obs_star</span> <span class="o">=</span> <span class="n">F_nu_emit_star</span> <span class="o">/</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># recieved flux density W/m^2/Hz</span>
+    <span class="n">ext_corr</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">0.4</span><span class="o">*</span><span class="n">extinction</span><span class="p">(</span><span class="mf">1e6</span><span class="o">*</span><span class="n">C</span><span class="o">/</span><span class="n">nu</span><span class="p">)</span><span class="o">*</span><span class="n">A_V</span><span class="p">)</span> <span class="c1"># obtain scale factor for reddening</span>
+    <span class="k">return</span> <span class="n">nu</span><span class="o">*</span><span class="n">F_nu_obs_star</span><span class="o">*</span><span class="n">ext_corr</span>
+
+<span class="k">def</span> <span class="nf">sed_disk</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the SED of the disk with extinction.</span>
+<span class="sd">    </span>
+<span class="sd">    PARAMETERS</span>
+<span class="sd">    nu: (float) the frequency in Hz</span>
+<span class="sd">    rmin: (float) the minimum radius in the disk in AU</span>
+<span class="sd">    rmax: (float) the maximum radius in the disk in AU</span>
+<span class="sd">    s1: (float) the surface density of the disk at 1 AU in g/cm^2</span>
+<span class="sd">    t1: (float) the temperature of the disk at 1 AU in K</span>
+<span class="sd">    q: (float) the temperature scaling index</span>
+<span class="sd">    beta: (float) the dust opacity index</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">kappa0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># in m^2/kg</span>
+    <span class="n">nu0</span> <span class="o">=</span> <span class="mf">1e12</span> <span class="c1"># in Hz</span>
+    
+    <span class="n">kappa</span> <span class="o">=</span> <span class="n">kappa0</span><span class="o">*</span><span class="p">(</span><span class="n">nu</span><span class="o">/</span><span class="n">nu0</span><span class="p">)</span><span class="o">**</span><span class="n">beta</span>
+    <span class="n">Sigma_r</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="mi">10</span><span class="o">*</span><span class="n">s1</span><span class="o">*</span><span class="n">r</span><span class="o">**-</span><span class="mi">1</span> <span class="c1"># convert to kg/m^2</span>
+    <span class="n">T_r</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">t1</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">q</span><span class="p">)</span>
+    <span class="n">integrand</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">planck</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">T_r</span><span class="p">(</span><span class="n">r</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">kappa</span><span class="o">*</span><span class="n">Sigma_r</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">I</span><span class="p">)))</span> \
+                            <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">I</span><span class="p">)</span><span class="o">/</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="mf">1.5e11</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># convert AU to m</span>
+    
+    <span class="n">F_nu_obs_disk</span> <span class="o">=</span> <span class="n">quad_vec</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">ext_corr</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">0.4</span><span class="o">*</span><span class="n">extinction</span><span class="p">(</span><span class="mf">1e6</span><span class="o">*</span><span class="n">C</span><span class="o">/</span><span class="n">nu</span><span class="p">)</span><span class="o">*</span><span class="n">A_V</span><span class="p">)</span> <span class="c1"># obtain scale factor for reddening</span>
+    <span class="k">return</span> <span class="n">nu</span><span class="o">*</span><span class="n">F_nu_obs_disk</span><span class="o">*</span><span class="n">ext_corr</span>
+
+<span class="n">A_l</span> <span class="o">=</span> <span class="n">A_V</span><span class="o">*</span><span class="n">extinction</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">F_nu_obs_data</span> <span class="o">=</span> <span class="n">aa_tau</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mf">1e-26</span><span class="o">*</span><span class="n">C</span><span class="o">/</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mf">1e-6</span><span class="p">)</span>
+<span class="n">waves</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mf">3e3</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># in microns</span>
+<span class="n">nus</span> <span class="o">=</span> <span class="n">C</span><span class="o">/</span><span class="p">(</span><span class="n">waves</span><span class="o">*</span><span class="mf">1e-6</span><span class="p">)</span> <span class="c1"># in Hz</span>
+
+<span class="n">T0</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">S0</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">star_model</span> <span class="o">=</span> <span class="n">sed_star</span><span class="p">(</span><span class="n">nus</span><span class="p">)</span>
+<span class="n">disk_model</span> <span class="o">=</span> <span class="n">sed_disk</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">S0</span><span class="p">,</span> <span class="n">T0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F_nu_obs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observations&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_model</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Flat disk&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="o">+</span><span class="n">disk_model</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star+disk&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;lightseagreen&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda (\mu m)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\nu F_{\nu} (W/m^2)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mi">4000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">5e-18</span><span class="p">,</span> <span class="mf">2e-12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\vdegu\AppData\Local\Temp\ipykernel_32848\3893962190.py:9: RuntimeWarning: overflow encountered in exp
+  return 2*H*nu**3/C**2/(np.exp(H*nu/(K_B*Teff))-1)
+</pre></div>
+</div>
+<img alt="../../../../../../_images/disk_SED_ellen_5_1.png" src="../../../../../../_images/disk_SED_ellen_5_1.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-2">
+<h1>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">#</a></h1>
+<p>The ratios are:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\frac{T_{interior}}{T_{surface}} &amp; = 0.24 \\
+\frac{\Sigma_{interior}}{\Sigma_{surface}} &amp; = 16 .
+\end{align}
+\end{split}\]</div>
+<p>As expected, the interior of the disk is significantly cooler than the surface because it’s shielded from the star’s radiation. There is also a higher mass density because the heavier particles settle.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T1</span> <span class="o">=</span> <span class="mi">35</span> <span class="c1"># disk interior temperature in K</span>
+<span class="n">S1</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">145</span> <span class="c1"># disk surface temperature in K</span>
+<span class="n">S2</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">disk_int_model</span> <span class="o">=</span> <span class="n">sed_disk</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">T1</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">disk_surf_model</span> <span class="o">=</span> <span class="n">sed_disk</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">S2</span><span class="p">,</span> <span class="n">T2</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tint/Text = &#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T1</span><span class="o">/</span><span class="n">T2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sint/Sext = &#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S1</span><span class="o">/</span><span class="n">S2</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F_nu_obs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observations&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_surf_model</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Surface&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_int_model</span><span class="p">,</span> <span class="s1">&#39;-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Interior&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="o">+</span><span class="n">disk_surf_model</span><span class="o">+</span><span class="n">disk_int_model</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star+disk&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;lightseagreen&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda (\mu m)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\nu F_{\nu} (W/m^2)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mi">4000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">5e-18</span><span class="p">,</span> <span class="mf">2e-12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\vdegu\AppData\Local\Temp\ipykernel_32848\3893962190.py:9: RuntimeWarning: overflow encountered in exp
+  return 2*H*nu**3/C**2/(np.exp(H*nu/(K_B*Teff))-1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tint/Text = 0.24
+Sint/Sext = 16.00
+</pre></div>
+</div>
+<img alt="../../../../../../_images/disk_SED_ellen_7_2.png" src="../../../../../../_images/disk_SED_ellen_7_2.png" />
+</div>
+</div>
+<section id="part-3">
+<h2>Part 3<a class="headerlink" href="#part-3" title="Permalink to this headline">#</a></h2>
+<p>Playing with the parameters of <span class="math notranslate nohighlight">\(F_{\nu, disk}\)</span>, we find that:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> changes the slope of the right edge</p></li>
+<li><p><span class="math notranslate nohighlight">\(R_{min}\)</span> changes the size of the middle left dip</p></li>
+<li><p><span class="math notranslate nohighlight">\(R_{max}\)</span> changes the location of the right edge.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># playing with these parameters for this part of the question...</span>
+<span class="n">Rmin</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">Rmax</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">disk_int_model</span> <span class="o">=</span> <span class="n">sed_disk</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="n">Rmin</span><span class="p">,</span> <span class="n">Rmax</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">T1</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+<span class="n">disk_surf_model</span> <span class="o">=</span> <span class="n">sed_disk</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="n">Rmin</span><span class="p">,</span> <span class="n">Rmax</span><span class="p">,</span> <span class="n">S2</span><span class="p">,</span> <span class="n">T2</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F_nu_obs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observations&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_surf_model</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Surface&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_int_model</span><span class="p">,</span> <span class="s1">&#39;-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Interior&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="o">+</span><span class="n">disk_surf_model</span><span class="o">+</span><span class="n">disk_int_model</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star+disk&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;lightseagreen&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda (\mu m)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\nu F_{\nu} (W/m^2)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mi">4000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">5e-18</span><span class="p">,</span> <span class="mf">2e-12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\vdegu\AppData\Local\Temp\ipykernel_32848\3893962190.py:9: RuntimeWarning: overflow encountered in exp
+  return 2*H*nu**3/C**2/(np.exp(H*nu/(K_B*Teff))-1)
+</pre></div>
+</div>
+<img alt="../../../../../../_images/disk_SED_ellen_9_1.png" src="../../../../../../_images/disk_SED_ellen_9_1.png" />
+</div>
+</div>
+</section>
+<section id="part-4">
+<h2>Part 4<a class="headerlink" href="#part-4" title="Permalink to this headline">#</a></h2>
+<p>We can split the integral for <span class="math notranslate nohighlight">\(F_{\nu, disk}\)</span> so that we don’t integrate over the radii where the gap is located.</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\nu,disk} = \int_{R_{disk,min}}^{R_{gap,min}} B_{\nu}(T) \big[ 1-e^{-\kappa_{\nu}\Sigma/\cos i} \big] \frac{2\pi r dr \cos i}{d^2} + \int_{R_{gap,max}}^{R_{disk,max}} B_{\nu}(T) \big[ 1-e^{-\kappa_{\nu}\Sigma/\cos i} \big] \frac{2\pi r dr \cos i}{d^2}
+\]</div>
+<p>For illustrative purposes, I’ve chosen <span class="math notranslate nohighlight">\(R_{gap,min}=5 \text{ AU}\)</span> and <span class="math notranslate nohighlight">\(R_{gap,max}=15 \text{ AU}\)</span>. There’s now a decreasing bump in the part of the SED that comes from the disk. Roughly speaking, each radius in the disk contributes flux at a certain temperature, which then corresponds to a specific wavelength from Wien’s law. By removing some radii from the disk, we’re losing flux from their corresponding wavelengths.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sed_disk_gap</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">,</span> <span class="n">gapmin</span><span class="p">,</span> <span class="n">gapmax</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">T1</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the SED using the flat disk model with extinction.</span>
+<span class="sd">    </span>
+<span class="sd">    PARAMETERS</span>
+<span class="sd">    nu: (float) the frequency in Hz</span>
+<span class="sd">    rmin: (float) the minimum radius in the disk in AU</span>
+<span class="sd">    rmin: (float) the maximum radius in the disk in AU</span>
+<span class="sd">    gapmin: (float) the minimum radius of the gap in AU</span>
+<span class="sd">    gapmax: (float) the maximum radius of the gap in AU</span>
+<span class="sd">    S1: (float) the surface density of the disk at 1 AU in g/cm^2</span>
+<span class="sd">    T1: (float) the temperature of the disk at 1 AU in K</span>
+<span class="sd">    q: (float) the temperature scaling index</span>
+<span class="sd">    beta: (float) the dust opacity index</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">kappa0</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># in m^2/kg</span>
+    <span class="n">nu0</span> <span class="o">=</span> <span class="mf">1e12</span> <span class="c1"># in Hz</span>
+    
+    <span class="n">kappa</span> <span class="o">=</span> <span class="n">kappa0</span><span class="o">*</span><span class="p">(</span><span class="n">nu</span><span class="o">/</span><span class="n">nu0</span><span class="p">)</span><span class="o">**</span><span class="n">beta</span>
+    <span class="n">Sigma_r</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="mi">10</span><span class="o">*</span><span class="n">S1</span><span class="o">*</span><span class="n">r</span><span class="o">**-</span><span class="mi">1</span> <span class="c1"># convert to kg/m^2</span>
+    <span class="n">T_r</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">T1</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">q</span><span class="p">)</span>
+    <span class="n">integrand</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">planck</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">T_r</span><span class="p">(</span><span class="n">r</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">kappa</span><span class="o">*</span><span class="n">Sigma_r</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">I</span><span class="p">)))</span> \
+                            <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">I</span><span class="p">)</span><span class="o">/</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="mf">1.5e11</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># convert AU to m</span>
+    
+    <span class="n">F_nu_obs_disk</span> <span class="o">=</span> <span class="n">quad_vec</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">gapmin</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">quad_vec</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="n">gapmax</span><span class="p">,</span> <span class="n">rmax</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">ext_corr</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">0.4</span><span class="o">*</span><span class="n">extinction</span><span class="p">(</span><span class="mf">1e6</span><span class="o">*</span><span class="n">C</span><span class="o">/</span><span class="n">nu</span><span class="p">)</span><span class="o">*</span><span class="n">A_V</span><span class="p">)</span> <span class="c1"># obtain scale factor for reddening</span>
+    <span class="k">return</span> <span class="n">nu</span><span class="o">*</span><span class="n">F_nu_obs_disk</span><span class="o">*</span><span class="n">ext_corr</span>
+
+<span class="n">beta</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Rmin</span> <span class="o">=</span> <span class="mf">0.03</span>
+<span class="n">Rmax</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">gapmin</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">gapmax</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">disk_int_model</span> <span class="o">=</span> <span class="n">sed_disk_gap</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="n">Rmin</span><span class="p">,</span> <span class="n">Rmax</span><span class="p">,</span> <span class="n">gapmin</span><span class="p">,</span> <span class="n">gapmax</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">T1</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">7</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+<span class="n">disk_surf_model</span> <span class="o">=</span> <span class="n">sed_disk_gap</span><span class="p">(</span><span class="n">nus</span><span class="p">,</span> <span class="n">Rmin</span><span class="p">,</span> <span class="n">Rmax</span><span class="p">,</span> <span class="n">gapmin</span><span class="p">,</span> <span class="n">gapmax</span><span class="p">,</span> <span class="n">S2</span><span class="p">,</span> <span class="n">T2</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">aa_tau</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">F_nu_obs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observations&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_surf_model</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Surface&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">disk_int_model</span><span class="p">,</span> <span class="s1">&#39;-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Interior&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">waves</span><span class="p">,</span> <span class="n">star_model</span><span class="o">+</span><span class="n">disk_surf_model</span><span class="o">+</span><span class="n">disk_int_model</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Star+disk&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;lightseagreen&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda (\mu m)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\nu F_{\nu} (W/m^2)$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mi">4000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">5e-18</span><span class="p">,</span> <span class="mf">2e-12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\vdegu\AppData\Local\Temp\ipykernel_32848\3893962190.py:9: RuntimeWarning: overflow encountered in exp
+  return 2*H*nu**3/C**2/(np.exp(H*nu/(K_B*Teff))-1)
+</pre></div>
+</div>
+<img alt="../../../../../../_images/disk_SED_ellen_11_1.png" src="../../../../../../_images/disk_SED_ellen_11_1.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Practicle\Python\Astronomy\Ressources\spf-main\sp5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Vincent Deguin<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

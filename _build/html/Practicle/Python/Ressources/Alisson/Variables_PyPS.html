@@ -154,20 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../../intro.html">
-                    Welcome
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../../Intro/content.html">
    Content
@@ -320,6 +307,21 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Get_Ready/Get_Ready.html">
+     Get ready
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Matplotlib/Matplotlib.html">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Pandas/Pandas.html">
+     Pandas
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../../External/Basketball_DQ.html">
      Basketball
@@ -738,22 +740,11 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value in number_of_apples is 35
-The value in number_of_apples is 49
-</pre></div>
-</div>
-</div>
 </div>
 <p>In passing, note that if you want to find out the value of a variable, then instead of using the <code class="docutils literal notranslate"><span class="pre">print</span></code> function you can also run a code cell that only contains the variable name. This will return the current value of the variable. Try this now by running the code cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number_of_apples</span> 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>49
 </pre></div>
 </div>
 </div>
@@ -801,11 +792,6 @@ The value in number_of_apples is 49
 
 <span class="c1"># Do not modify after this line</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">red_lights</span><span class="p">,</span> <span class="n">blue_lights</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 18
 </pre></div>
 </div>
 </div>
@@ -873,12 +859,6 @@ The value in number_of_apples is 49
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The sum of the two floats is 10.85
-The sum of the two string is HelloWorld
-</pre></div>
-</div>
-</div>
 </div>
 <p>When you run this example, you’ll see that the addition of two floats performs arithmetic summation as expected, whereas addition of two strings gives the string made by joining together (or <em>concatenating</em>) the two input strings. You should also note that the variable created by the addition of two floats is also a float, and similarly with string.</p>
 <p>In general, different variable types cannot be mixed. Let us see what happens if you try to sum a float with a string:</p>
@@ -890,20 +870,6 @@ The sum of the two string is HelloWorld
 <span class="n">sum_mixed</span> <span class="o">=</span> <span class="n">float_1</span> <span class="o">+</span> <span class="n">string_2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of a float and a string is&quot;</span><span class="p">,</span> <span class="n">sum_mixed</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_3268</span>\<span class="mf">1760963395.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">string_1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">sum_mixed</span> <span class="o">=</span> <span class="n">float_1</span> <span class="o">+</span> <span class="n">string_2</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of a float and a string is&quot;</span><span class="p">,</span> <span class="n">sum_mixed</span><span class="p">)</span>
-
-<span class="ne">TypeError</span>: unsupported operand type(s) for +: &#39;float&#39; and &#39;str&#39;
 </pre></div>
 </div>
 </div>

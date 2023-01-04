@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 
@@ -12,7 +12,7 @@ import pandas as pd
 SCORE_DIR = "data/scores"
 
 
-# In[2]:
+# In[ ]:
 
 
 

@@ -154,20 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../../intro.html">
-                    Welcome
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../../Intro/content.html">
    Content
@@ -320,6 +307,21 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Get_Ready/Get_Ready.html">
+     Get ready
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Matplotlib/Matplotlib.html">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Pandas/Pandas.html">
+     Pandas
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../../External/Basketball_DQ.html">
      Basketball
@@ -734,11 +736,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1024
-</pre></div>
-</div>
-</div>
 </div>
 <p>Another situation might be that we need to convert a float to an integer. Note that in such a conversion, any part after the decimal point is simply removed or <em>truncated</em> (note that <code class="docutils literal notranslate"><span class="pre">int()</span></code> does <strong>not</strong> round to the nearest integer) as shown by running the following example.</p>
 <div class="cell docutils container">
@@ -753,12 +750,6 @@ title="Print to PDF"
 <span class="c1"># Now use int() to convert x/y to integer and print this value</span>
 <span class="n">index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.6666666666666665
-2
 </pre></div>
 </div>
 </div>
@@ -787,11 +778,6 @@ functions (lines 4 and 14) to see what happens.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mass of body: 4500.0 g
-</pre></div>
-</div>
-</div>
 </div>
 <p>An important point to note is that many functions operate with input variables of different types. So in the example of <code class="docutils literal notranslate"><span class="pre">int()</span></code> above, we saw that the function works appropriately regardless of whether the input type is <code class="docutils literal notranslate"><span class="pre">str</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
 <p>Moreover, the input to a function need not be a single simple variable and functions can be applied to more complex objects like lists. For instance, if you wish to find the number of elements in a list or sum them, you can use the function <code class="docutils literal notranslate"><span class="pre">len()</span></code> or <code class="docutils literal notranslate"><span class="pre">sum()</span></code> as you can see by running the following example.</p>
@@ -809,12 +795,6 @@ functions (lines 4 and 14) to see what happens.</p>
 
 <span class="c1"># Sum the elements in this list and print the result</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum of the elements of the second list is&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">second_list</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The length of the first list is  6
-The sum of the elements of the second list is 69
 </pre></div>
 </div>
 </div>
@@ -847,27 +827,6 @@ The sum of the elements of the second list is 69
 <span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In 2015 your age was&quot;</span><span class="p">,</span> <span class="mi">2015</span> <span class="o">-</span> <span class="n">year</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_20424</span>\<span class="mf">1851064285.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Ask the user to input their birth year</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">birth_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;In what year were you born? &quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Convert input to integer</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span>
-
-<span class="nn">~\anaconda3\lib\site-packages\ipykernel\kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1172</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1173</span><span class="s2">         if not self._allow_stdin:</span>
-<span class="ne">-&gt; </span><span class="mi">1174</span><span class="s2">             raise StdinNotImplementedError(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1175</span><span class="s2">                 &quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1176</span><span class="s2">             )</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
 </pre></div>
 </div>
 </div>

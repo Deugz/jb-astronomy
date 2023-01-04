@@ -154,20 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../../intro.html">
-                    Welcome
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../../Intro/content.html">
    Content
@@ -320,6 +307,21 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Get_Ready/Get_Ready.html">
+     Get ready
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Matplotlib/Matplotlib.html">
+     Matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Pandas/Pandas.html">
+     Pandas
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../../External/Basketball_DQ.html">
      Basketball
@@ -745,12 +747,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Example of text file
-Good Morning !
-</pre></div>
-</div>
-</div>
 </div>
 <p>In the above code cell, the file is opened under the name <code class="docutils literal notranslate"><span class="pre">file_input_1</span></code>. Then the file content is read using <code class="docutils literal notranslate"><span class="pre">read()</span></code> and stored as a string variable called <code class="docutils literal notranslate"><span class="pre">content</span></code>. The very last line of the program tidies things up by closing the file using <code class="docutils literal notranslate"><span class="pre">close()</span></code>.</p>
 <p>In fact, <code class="docutils literal notranslate"><span class="pre">file_input_1</span></code> is what is called a <em>file object</em>. This file object can be given any name providing it follows the usual rules for naming variables.</p>
@@ -770,13 +766,6 @@ Good Morning !
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first line is: Example of text file
-
-The second line is: Good Morning !
-</pre></div>
-</div>
-</div>
 </div>
 <p>It is also possible to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to iterate over the lines of a file using  <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">line</span> <span class="pre">in</span> <span class="pre">(file_object):</span></code></p>
 <p>For example:</p>
@@ -788,13 +777,6 @@ The second line is: Good Morning !
     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
     
 <span class="n">file_input_1</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Example of text file
-
-Good Morning !
 </pre></div>
 </div>
 </div>
@@ -822,15 +804,6 @@ Good Morning !
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list of words in the string is:&quot;</span><span class="p">,</span> <span class="n">string_cut</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The 4-th word of the string is:&quot;</span><span class="p">,</span> <span class="n">string_cut</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The zero-th element of the string is: T
-The 5-th element of the string is: i
-The 5-th to 15-th elements of the string are: is an exam
-The list of words in the string is: [&#39;This&#39;, &#39;is&#39;, &#39;an&#39;, &#39;example&#39;, &#39;of&#39;, &#39;a&#39;, &#39;string.&#39;]
-The 4-th word of the string is: of
 </pre></div>
 </div>
 </div>
@@ -929,13 +902,6 @@ You saw that methods are types of functions that apply to entities (such as file
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>example text to write in the file	other text to write
-example text to write in the file
-other text to write
-</pre></div>
-</div>
-</div>
 </div>
 <p>Usually, when writing to a file, you will want to write it line by line.  First put all the output information for each line in a string, then end it with a final <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> before writing it with the <code class="docutils literal notranslate"><span class="pre">write()</span></code> method.</p>
 <p><a id="Exercise2.1"></a></p>
@@ -983,11 +949,6 @@ other text to write
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4142135623730951
-</pre></div>
-</div>
-</div>
 </div>
 <p>You will find that the result is printed out with a long string of decimal places: 1.4142135623730951</p>
 <p>Fortunately, the print() function allows us to control the precision displayed. This is of course important when dealing with scientific data as we want to display the values to the correct number of significant figures.</p>
@@ -1000,11 +961,6 @@ other text to write
 <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c1"># calculate the square root of 2.0</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.41
 </pre></div>
 </div>
 </div>
@@ -1027,11 +983,6 @@ other text to write
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>My name is Julius, I live in Singapore and I am 21 years old.
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here we have used the <code class="docutils literal notranslate"><span class="pre">format()</span></code> method to insert the content of three variables (<code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">city</span></code> and <code class="docutils literal notranslate"><span class="pre">age</span></code>)) into the string (<code class="docutils literal notranslate"><span class="pre">sentence_to_print</span></code>) that is printed by the kernel. Note how the position is denoted by curly braces (<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>), and that <code class="docutils literal notranslate"><span class="pre">{0}</span></code> is where the first variable (<code class="docutils literal notranslate"><span class="pre">name</span></code>) is inserted.</p>
 <p>You can specify how numbers are written by combining this with the formatting instruction you saw previously. For example if the variable at position <code class="docutils literal notranslate"><span class="pre">{2}</span></code> is to be written as a floating point number with one decimal place, we would replace <code class="docutils literal notranslate"><span class="pre">{2}</span></code> with <code class="docutils literal notranslate"><span class="pre">{2:.1f}</span></code>.</p>
@@ -1043,12 +994,6 @@ other text to write
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the number given to 5 decimal places : </span><span class="si">{0:.5f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the number to 7 significant figures : </span><span class="si">{0:.7g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Here is the number given to 5 decimal places : 3.59028
-Here is the number to 7 significant figures : 3.590276
 </pre></div>
 </div>
 </div>
@@ -1125,11 +1070,6 @@ Here is the number to 7 significant figures : 3.590276
     
 <span class="c1"># Print the answer</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total number of items of fruit is:&quot;</span><span class="p">,</span> <span class="n">number_of_fruits</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The total number of items of fruit is: 103
 </pre></div>
 </div>
 </div>

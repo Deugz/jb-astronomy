@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Introduction
+  - caption:
     chapters:
     - file: Intro/content
   - caption: Teaching
@@ -36,6 +36,9 @@ parts:
       - file: Practicle/WebDev/HTML_CSS/HTML_CSS
     - file: Practicle/Python/Python_Main
       sections:
+      - file: Practicle/Python/Get_Ready/Get_Ready
+      - file: Practicle/Python/Matplotlib/Matplotlib  
+      - file: Practicle/Python/Pandas/Pandas          
       - file: Practicle/Python/Step1
       - file: Practicle/Python/Step2
       - file: Practicle/External/Basketball_DQ
