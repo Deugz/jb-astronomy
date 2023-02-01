@@ -11,9 +11,7 @@
 <a class="dif" href="More/Page3.html">Matter</a>
 </div> 
 
-<div class="wrapper">
-<button class="button"><span> <a href="https://deugz.github.io/nb-teaching/_build/html/"  title= "" target="blank"> Jupyter Book </a></span></button> 
-</div>
+
 
 ***
 
@@ -54,6 +52,23 @@ GAIA mission
 :::
 ::::
 :::::
+
+
+::::{div} full-width
+:::{dropdown} Telescopes
+
+```{figure} Docs/Telescopes_EM.jpg
+---
+name: Telescopes_EM
+width: 1200px
+---
+[source](https://hubblesite.org/contents/media/images/01FEBQTM8Y4FESTQ4N2AFQDBXH?itemsPerPage=100)
+```
+
+<p class="emphase">Explanation</p>
+
+:::
+::::
 
 ### Feel like practising ?
 

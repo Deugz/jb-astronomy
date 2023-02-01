@@ -79,3 +79,13 @@ Why this one choosen
 - [NIRCam](https://arxiv.org/ftp/arxiv/papers/2211/2211.10489.pdf)
 - [NIRSpec](https://arxiv.org/ftp/arxiv/papers/2211/2211.10488.pdf)
 - [NIRSpec PRISM](https://arxiv.org/ftp/arxiv/papers/2211/2211.10487.pdf)
+
+## Habitable zone
+
+```{figure} Docs/Hab_zone_1.png
+---
+name: Hab_zone
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2020/06/4618-Image?itemsPerPage=100&page=3&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```

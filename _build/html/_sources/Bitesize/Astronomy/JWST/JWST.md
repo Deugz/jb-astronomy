@@ -4,6 +4,8 @@ James Webb Space Telescope.
 
 Who is James Webb
 
+
+
 ```{image} Docs/Webb_2_0.png
 :alt: JWST
 :width: 650px
@@ -91,7 +93,25 @@ Using the following Codepen example
 
 ## Science Programs
 
-### Ice age
+### Early Release Science Program
+
+- [Web-site](https://www.stsci.edu/jwst/science-execution/approved-ers-programs)
+
+ERS is made of 13 projects covering six science categories:
+
+- Galaxies and Intergalactic Medium
+
+- Massive Black Holes and Their Host Galaxies
+
+- Planets and Planet Formation
+
+- Solar System
+
+- Stellar Physics
+
+- Stellar Populations
+
+#### Ice age
 
 ::::{grid} 2
 
@@ -122,6 +142,18 @@ Using the following Codepen example
 
 ::::
 
+
+##### Litterature Review
+
+- {cite:p}`McClure2023`
+
+**Links**
+
+- [ESA Video](https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_unveils_dark_side_of_pre-stellar_ice_chemistry)
+
+Prior to JWST, chemical assays of cloud ice have been limited to regions with visual extinctions below A<sub>V</sub> ≈ 50 mag. Here ice observatoin at mag 60 is achieved within the chameleon MC
+
+- **Observed region**:  dense lines of sight just outside the infalling envelope of a class 0 protostar, *Cha MMS1* in the low-mass star-forming region Chameleon I 
 
 #### ERS Talk Helen 
 
@@ -198,3 +230,7 @@ MIRI mid-INfrared Disk Survey GTO program
 - Principal Investigator:
 
 **Article**: [link](https://arxiv.org/abs/2212.08047)
+
+## PHANGS
+
+had to do with PAH

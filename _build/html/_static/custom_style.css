@@ -53,6 +53,12 @@ img[alt$=">"] {
   margin: 5px !important;
 }
 
+img[alt$=">>"] {
+  width: 60px !important;
+  margin-left:5px !important;
+  margin-top:0px !important;
+}
+
 .small {
   width: 20px !important;
   margin: 5px !important;
@@ -63,6 +69,13 @@ img[alt$=">"] {
     font-size:1.4em;
     padding:20px;
     text-align:center;
+}
+
+.emphase2 {
+    font-size:2.6em;
+    padding:20px;
+    text-align:center;
+    color: #412582  !important;
 }
 
 .picto {

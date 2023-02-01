@@ -42,7 +42,7 @@ html:
     hypothesis              : true
     utterances              : 
       repo: "https://github.com/Deugz/nb_Teaching"
-  announcement              : "Current Version: 27/06/2022"
+  announcement              : "Current Version: Jan 2023 "
 
 
 sphinx:
