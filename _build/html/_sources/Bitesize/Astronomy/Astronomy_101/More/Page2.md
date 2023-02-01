@@ -47,3 +47,9 @@ width: 1200px
 ```
 
 :::
+
+```{note}
+
+- crop the title and keep only the white part
+
+```
