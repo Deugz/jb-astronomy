@@ -97,61 +97,70 @@ Everything I study during my scientific journey (I am an astrophysics researcher
 :::
 ::::
 
-***
 
+## Introduction
 
+<h3><strong>&#187;  <u> Why ? </u></strong></h3>
 
-<h3><strong>&#187;  <u>Introduction </u></strong></h3>
+:::{div} full-width
 
-The natural world is of a phenomenal beauty. How can creature as complex as Human-being came to be ?    
-
-## Why ?
 
 <p class="emphase2">Reconciliate Art with Science</p>
 
-<p class="emphase">The expression or application of human creative skill and imagination, typically in a visual form, producing works to be appreciated primarily for their beauty or emotional power</p>
 
+<p class="emphase"> <strong>Art</strong> is the expression or application of human creative skill and imagination, typically in a visual form, producing works to be appreciated primarily for their beauty or emotional power. The natural world is of a <strong>phenomenal beauty</strong> and sciences goal is to describe this world so why not use artistic tools to teach ?</p>
 
-Using artistic routine to touch the emotions and unleash curiosity.
+:::
+
+***
+
+:::::{div} full-width
+
+<h4> <strong>Compiling knowledge </strong></h4>
 
 ::::{grid} 2
 
 :::{grid-item}
-:columns: 4
+:columns: 10
 
+Like a DJ would do to build his set. A DJ set is a collection of individual tracks assembled in a coherent way to create a specific *vibe*. I found that I build knowledge incrementaly, and it is usefull for me to have a place to take notes about what I learn, and implement the ressources I discover along the way. Similarily to a DJ, that improves his setes with all the gems he found during his journey, this website is a place where I intend to implement all the <strong>teaching ressources</strong> I found and develop during my carreer as a researcher (those are my tracks). 
+
+
+:::
+
+:::{grid-item}
+:columns: 2
 
 ```{image} Docs/SVG_files/turntable-svgrepo-com.svg
 ```
-
-:::
-
-:::{grid-item}
-:columns: 8
-
-Same as a DJ improving his stes with all the gems he found during his journey, this website is a place where I intend to implement all the <strong>teaching ressources</strong> I found and develop during my carreer as a researcher.
-
 :::
 ::::
+:::::
 
+***
+
+:::::{div} full-width
+
+<h4><strong> Exhibit Science </strong> </h4>
 
 ::::{grid} 2
 
 :::{grid-item}
-:columns: 4
+:columns: 10
 
+Gallery, like in museum, organised by topics and as far as it can be from a curriculum type of segregation
+
+:::
+
+:::{grid-item}
+:columns: 2
 
 ```{image} Docs/SVG_files/abstract-painting-ic-national-culture-paris-svgrepo-com.svg
 ```
 
 :::
-
-:::{grid-item}
-:columns: 8
-
-Gallery, like in museum, organised by topics and as far as it can be from a curriculum type of segregation
-
-:::
 ::::
+:::::
 
 ::::{div} full-width
 :::{dropdown} **Examples** of some great scientific images
@@ -169,28 +178,38 @@ width: 1200px
 :::
 ::::
 
+***
+
+:::::{div} full-width
+
+<h4><strong> Sharing stories </strong> </h4>
+
+
 ::::{grid} 2
 
 :::{grid-item}
-:columns: 4
+:columns: 10
 
-
-```{image} Docs/SVG_files/books-svgrepo-com.svg
-```
-
-:::
-
-:::{grid-item}
-:columns: 8
-
-Different than scientific or teaching material writing styles.
+Not facts! Different than scientific or teaching material writing styles.
 
 Mix between magazine, book ...
 
 Free, Open and interactive
 
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+
+```{image} Docs/SVG_icons/poetry-symbol-of-a-feather-in-ink-container-svgrepo-com.svg
+```
+
+
 :::
 ::::
+:::::
 
 <p class="emphase">If you feel like it, go check the content page to start your journey by clicking the button below</p>
 
@@ -199,13 +218,99 @@ Free, Open and interactive
 </div>
 
 
-
-I build knowledge incrementaly, and I find usefull to have a place to take notes about what I learn, and implement ressources that I discover along the way.
-
-It is also a good method to implement seeds for future collaborations/contributions as your understanding increase and you push the boundaries.
-
+<br>
+<br>
 
 As members of academia, we have a lot to share with each others and with the world.
+
+
+***
+
+:::::{div} full-width
+
+
+<p class="emphase2">Promotting Collaborations</p>
+
+<p class="emphase"> Blabla</p>
+
+:::::
+
+:::::{div} full-width
+
+<h4><strong> Playground </strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+A single playground for us all
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/basketball-court-playground-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
+
+
+
+:::::{div} full-width
+
+<h4><strong> Puzzle </strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+A single place where every researchers can bring his own piece to resolve the "Big Picture" puzzle
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/puzzle-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
+:::::{div} full-width
+
+<h4><strong> Kindness </strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+- Participativ
+- No competition
+
+Pleasure is key
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/loving-charity-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
+
 
 ## How it works ?
 
@@ -223,6 +328,72 @@ I cannot stress how important <strong>collaboration</strong> is for science.
 Insert fish diagrams
 
 
+## Contribute
+
+### Financially
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 4
+
+<div class="coffee">
+<div class="coffee_container">
+	<div class="saucer"></div>
+	<div class="cup">
+		<div class="rim">
+			<div class="steam">
+				<span style="--i: 1"></span>
+				<span style="--i: 3"></span>
+				<span style="--i: 16"></span>
+				<span style="--i: 5"></span>
+				<span style="--i: 13"></span>
+				<span style="--i: 6"></span>
+				<span style="--i: 7"></span>
+				<span style="--i: 10"></span>
+				<span style="--i: 8"></span>
+				<span style="--i: 7"></span>
+				<span style="--i: 10"></span>
+				<span style="--i: 8"></span>
+				<span style="--i: 17"></span>
+				<span style="--i: 11"></span>
+				<span style="--i: 12"></span>
+				<span style="--i: 14"></span>
+				<span style="--i: 2"></span>
+				<span style="-i: 9"></span>
+				<span style="--i: 15"></span>
+				<span style="--i: 4"></span>
+			</div>
+			<div class="inside">
+				<div class="tea"></div>
+			</div>
+		</div>
+		<div class="handle"></div>
+	</div>
+</div>
+</div>
+
+
+:::
+
+:::{grid-item}
+:columns: 8
+
+<p class="emphase">No coffee, no Science ... That's rule n°1!</p>
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#317315', 'O4O6EZO78');kofiwidget2.draw();</script>
+
+:::
+::::
+:::::
+
+
+<br>
+<br>
+<br>
+<br>
+
 
 ## Comments
 
@@ -233,3 +404,48 @@ Insert fish diagrams
         crossorigin="anonymous"
         async>
 </script>
+
+
+::::{grid} 2
+
+:::{grid-item-card}
+:class-header: bg-light
+:columns: 5
+
+**Page status**
+^^^
+
+- Completed: ![flag alt >](Docs/Svg_icons/Under_construction.svg)
+  
+- Reviewed: &#x274C;
+       
+- Updated: 05/02/2023
+   
+:::  
+
+:::{grid-item-card}
+:class-header: bg-light
+:columns: 7
+
+**Notes**
+^^^
+
+```{admonition} To Do
+:class: note, dropdown
+
+Lots
+
+```
+
+```{admonition} Ideas
+:class: tip, dropdown
+
+Lots
+
+```
+
+
+:::
+::::
+
+

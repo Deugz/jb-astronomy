@@ -8,7 +8,7 @@ h1 {
     text-align: center !important ;
     padding:20px !important;
     margin-bottom:30px; ;
-    font-size: 4.5em !important; 
+    font-size: 5em !important; 
 }
 
 
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
     color: white !important;
-    font-size: 2.2em !important;
+    font-size: 2.4em !important;
     margin-top:50px !important;
     margin-bottom:30px !important;
     font-family: Garamond;
@@ -29,23 +29,35 @@ h2 {
     padding: 15px !important;
     background: linear-gradient(to bottom right, #003300 0%, #009933 120%);
     border-radius: 10px;
+    width: 100% !important;
 }
 
 h3 {
-    font-size: 2.2em !important;
+    font-size: 2.5em !important;
     font-style: bold !important;
     color: #145a32 !important;
-    margin-top:40 !important;
-    margin-bottom:30px !important;
+    margin-top:50px !important;
+    margin-bottom:40px !important;
     font-family: Garamond;
     text-align: left !important ;
     padding:20px !important;
 }
 
 h4 {
+    font-size: 1.8em !important;
     color: #f39c12 !important;
     font-style: bold !important;
     margin-left:50px !important;
+    margin-top:50px !important;
+    margin-bottom:40px !important;
+}
+
+h5 {
+    margin-left:100px !important;
+    font-size: 1.5em !important;
+    color: #7d3c98 !important;
+    margin-top:50px !important;
+    margin-bottom:40px !important;
 }
 
 img[alt$=">"] {

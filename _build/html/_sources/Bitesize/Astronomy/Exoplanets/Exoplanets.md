@@ -89,3 +89,16 @@ width: 1200px
 ---
 [Reference](https://hubblesite.org/contents/media/images/2020/06/4618-Image?itemsPerPage=100&page=3&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 ```
+
+
+## Detection methods
+
+### Transit
+
+```{figure} /Docs/Transit_method.png
+---
+name: Transit_method
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2018/45/4235-Image.html?itemsPerPage=100&page=5&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```

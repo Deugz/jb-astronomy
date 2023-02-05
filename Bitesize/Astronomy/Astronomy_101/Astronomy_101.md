@@ -1,19 +1,111 @@
 # Astronomy 101
 
+<p class="emphase2"><strong>Introduction</strong></p>
+
 ***
 
 **Topics**
 
-<div class="topnav">
-<a class="active" href="Astronomy_101.html">Home</a>  
-<a class="easy" href="More/Page1.html">Atoms</a>  
-<a class="med" href="More/Page2.html">Molecules</a>
-<a class="dif" href="More/Page3.html">Matter</a>
-</div> 
-
-
-
 ***
+
+<br>
+<br>
+
+
+:::::{div} full-width
+::::{grid} 4
+:::{grid-item-card}
+:class-header: bg-light
+**Introduction**
+^^^
+
+- **Difficulty**: 🟢 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Astronomy_101.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+**Cosmic Inventory**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="More/Page1.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+**Anatomy of a telescope**
+^^^
+
+- **Difficulty**: 🔴 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="More/Page2.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+**More**
+^^^
+
+- **Difficulty**: 🟣 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="More/Page3.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+::::
+
+<p class="emphase">&#10024; <br><br>The following image is unfortunately becoming a rarety for most of us</p>
+
+
+```{figure} Docs/Milky_way_1.jpg
+---
+name: Telescopes_EM
+width: 1200px
+---
+[source](https://apod.nasa.gov/apod/ap220611.html)
+```
+
+:::::
+
+
 
 ## Observing the Universe
 
