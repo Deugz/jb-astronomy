@@ -73,13 +73,13 @@
 
 :::{grid-item-card}
 :class-header: bg-light
-**More**
+**Historical Perspective**
 ^^^
 
 - **Difficulty**: 🟣 
 - **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
 - **Needs**: 🏸 - 💏
-- **Read time**: 5 min
+- **Read time**: 1h
 
 <br>
 <br>
@@ -104,6 +104,14 @@ width: 1200px
 ```
 
 :::::
+
+## Numbers in Astronomy
+
+<img src="https://imgs.xkcd.com/comics/astronomy_numbers.png" /> 
+
+### The Sun
+
+The Sun is a <strong>reference</strong>.
 
 
 

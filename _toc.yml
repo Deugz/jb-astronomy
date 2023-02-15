@@ -51,3 +51,8 @@ parts:
       - file: Cours/Physique/Seconde/Physique2
       - file: Cours/Physique/Premiere/Physique1
       - file: Cours/Physique/Terminale/PhysiqueT
+  - caption: Appendix
+    chapters:
+    - file: Help/bibliography
+    - file: Help/Contribution
+    - file: Help/More

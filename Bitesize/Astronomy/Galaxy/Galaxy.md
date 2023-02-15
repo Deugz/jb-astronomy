@@ -51,3 +51,8 @@ width: 1200px
 ```
 
 :::
+
+
+## Black Holes
+
+<img src="https://imgs.xkcd.com/comics/spacetime_soccer.png" />

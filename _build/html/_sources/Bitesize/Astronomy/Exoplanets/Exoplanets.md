@@ -4,6 +4,18 @@
 
 ***
 
+## The Earth
+
+```{figure} Docs/Earth-crust-cutaway-english.svg
+---
+name: Earth_Layer
+width: 1200px
+---
+[Reference](https://commons.wikimedia.org/wiki/Earth#/media/File:Earth-crust-cutaway-english.svg)
+```
+
+
+
 ### Cools stuffs elsewhere
 
 - [NASA - expolnets catalogue](https://exoplanets.nasa.gov/discovery/exoplanet-catalog/) - + interactive visualisation

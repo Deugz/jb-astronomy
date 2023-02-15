@@ -10,13 +10,13 @@ Relatively new field studying the chemistry of space
 
 [Who is who](https://whoswho.astrogewgaw.com/about)
 
-
-
 Before we speak about Astrochemistry, lets make sure we understand what is chemistry. If you feel a bit wobbly on this topic, feel free to check this free `Open Learn ` course provided by the Open University. 
 
 ***
 
 <h4><strong>Discovering chemistry </strong></h4>
+
+<img src="https://imgs.xkcd.com/comics/outdated_periodic_table.png" />
 
 <article id="P1">
 

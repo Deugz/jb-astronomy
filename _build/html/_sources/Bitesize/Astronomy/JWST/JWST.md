@@ -17,6 +17,9 @@ Image ref?
 
 James Web Space Telescope
 
+<img src="https://imgs.xkcd.com/comics/the_best_camera.png" />
+
+<img src="https://imgs.xkcd.com/comics/december_25th_launch.png"/>
 
 ## Scientific instruments
 

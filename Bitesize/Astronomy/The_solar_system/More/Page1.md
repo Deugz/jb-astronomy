@@ -23,6 +23,8 @@ width: 1200px
 [Reference](https://hubblesite.org/contents/media/images/2022/020/01FZBJ26FZQBT7WE85XCKPC356?itemsPerPage=100)
 ```
 
+<img src="https://imgs.xkcd.com/comics/planet_killer_comet_margarita.png" />
+
 ### Nucleus
 
 ```{figure} Docs/Nucleus_1.jpg

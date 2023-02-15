@@ -5,6 +5,13 @@
 **Ressources**:
 
 - [Python4astronomers](https://python4astronomers.github.io/)
+- [Marc Buffat](https://perso.univ-lyon1.fr/marc.buffat/index2.html)
+
+- [Python101](https://python101.ml/intro.html)
+
+- [Prodigious Python](https://prodigiouspython.github.io/ProdigiousPython/intro.html)
+
+- [python-programming-for-data-science](https://www.tomasbeuzen.com/python-programming-for-data-science/README.html)
 
 ***
 

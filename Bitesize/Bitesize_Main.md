@@ -1,5 +1,16 @@
 # **Bitesize**
 
+***
+**Ressource**
+
+- [Foundations-of-Data-Science-with-Python](https://jmshea.github.io/Foundations-of-Data-Science-with-Python/intro/intro.html)
+    - [Jupyter-Quiz](https://github.com/jmshea/jupyterquiz) - to test
+    - [Jupyter-Card](https://github.com/jmshea/jupytercards) - to test
+    
+- [Callysto](https://callysto.github.io/curriculum-jbook/intro.html)
+
+***
+
 ## Open Learn Courses
 
 The Open University has a great bunch of free ressources (Open Learn plateform). They are great starting point and I aim to use them as fondations to build upon
