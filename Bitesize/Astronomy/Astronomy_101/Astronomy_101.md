@@ -11,11 +11,12 @@
 <br>
 <br>
 
-
 :::::{div} full-width
-::::{grid} 4
+::::{card-carousel} 4
+
 :::{grid-item-card}
 :class-header: bg-light
+:margin: 3
 **Introduction**
 ^^^
 
@@ -35,6 +36,7 @@
 
 :::{grid-item-card}
 :class-header: bg-light
+:margin: 3
 **Cosmic Inventory**
 ^^^
 
@@ -47,36 +49,18 @@
 <br>
 
 <div class="wrapper">
-<button class="button"><span> <a href="More/Page1.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+<button class="button"><span> <a href="Sub_topics/Cosmic_inventory.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
 </div>
 
 :::
 
 :::{grid-item-card}
 :class-header: bg-light
-**Anatomy of a telescope**
-^^^
-
-- **Difficulty**: 🔴 
-- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
-- **Needs**: 🏸 - 💏
-- **Read time**: 5 min
-
-<br>
-<br>
-
-<div class="wrapper">
-<button class="button"><span> <a href="More/Page2.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
-</div>
-
-:::
-
-:::{grid-item-card}
-:class-header: bg-light
+:margin: 3
 **Historical Perspective**
 ^^^
 
-- **Difficulty**: 🟣 
+- **Difficulty**: 🔴 
 - **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
 - **Needs**: 🏸 - 💏
 - **Read time**: 1h
@@ -85,12 +69,54 @@
 <br>
 
 <div class="wrapper">
-<button class="button"><span> <a href="More/Page3.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+<button class="button"><span> <a href="Sub_topics/History.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
 </div>
 
 :::
 
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Anatomy of a telescope**
+^^^
+
+- **Difficulty**: 🟣 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Telescope_anat.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Space Missions**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 20 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Missions.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+
 ::::
+
 
 <p class="emphase">&#10024; <br><br>The following image is unfortunately becoming a rarety for most of us</p>
 
@@ -105,11 +131,108 @@ width: 1200px
 
 :::::
 
-## Numbers in Astronomy
 
+
+
+## Measuring the Universe
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+
+One of the most difficult thing, when doing Astronomy, is to obtain a **sense of scale**, because the dimensions involved are completely different to what we are used to on Earth. So lets expand our measuring scale beyond the standard International System of units (SI). Thre is 3 main parameters that we will look at, distances, pressure and temperature.
+
+:::
+
+:::{grid-item}
 <img src="https://imgs.xkcd.com/comics/astronomy_numbers.png" /> 
+:::
 
-### The Sun
+::::
+
+:::::
+
+
+### Before to start
+
+***
+<h4><strong>Scales in space and time</strong></h4>
+
+<article id="P1">
+
+<div id="subdiv1-3">    
+
+
+    
+
+:::{grid-item-card}
+:class-header: bg-light
+:link: https://www.open.edu/openlearn/science-maths-technology/scales-space-and-time/content-section-0?active-tab=description-tab
+
+```{figure} ../../Docs/Open_Learn_Images/Scales_in_space_and_time.jpg
+:width: 300px
+```
+    
+- **Time**: 12h course 
+- **Level**: Introductory  
+
+    
+:::
+    
+</div>    
+    
+<div id="subdiv2-3">
+
+Scale – *dealing with the miniscule to the massive, over milliseconds to millennia* – is central to all the sciences. In this free course, Scales in space and time, you’ll go to the absolute limits of what can be measured – all through a study of an oak tree! By studying it you will be introduced to concepts in physics, chemistry, biology and life-sciences, and Earth and environmental sciences. Across these multiple disciplines you will meet time scales that include ages, durations and rates, and size scales including distances in three dimensions, which underpin areas and volumes.
+</div>
+    
+
+    
+</article>
+
+***
+
+
+### Distances
+
+[The entire length scale](https://www.htwins.net/scale2/)
+
+#### Astronomical Units (AU)
+
+- Sun-Earth distance = 149597871 km 
+
+```{figure} Docs/Astrod.png
+:width: 200px
+Distances 
+```
+
+#### Parsec (pc)
+
+#### unit angle (")
+
+Because of telescopes ...
+
+### Pressure
+
+different pressure environment in the Universe
+
+- Ultra High Vacuum (UHV)
+    - [Youtube video](https://www.youtube.com/watch?v=XkKZ3W7kOo4)
+    
+    
+- How do we measure pressure at UHV conditions ?
+    - [Ion Gages](https://www.youtube.com/watch?v=VO0WV3FrDJQ)
+
+### Temperature
+
+- create python tool Kelvin/ Degree (Celcius)
+
+
+### Othere quantities
+
+
+#### The Sun
 
 The Sun is a <strong>reference</strong>.
 
@@ -213,83 +336,8 @@ This free course shows you how to navigate the night sky, and introduces the wid
 ***
 
 
-## Measuring the Universe
-
-One of the most difficult thing, when doing Astronomy, is to obtain a **sense of scale**, because the dimensions involved are completely different to what we are used to on Earth. So lets expand our measuring scale beyond the standard International System of units (SI). Thre is 3 main parameters that we will look at, distances, pressure and temperature.
-
-### Before to start
-
-***
-<h4><strong>Scales in space and time</strong></h4>
-
-<article id="P1">
-
-<div id="subdiv1-3">    
 
 
-    
-
-:::{grid-item-card}
-:class-header: bg-light
-:link: https://www.open.edu/openlearn/science-maths-technology/scales-space-and-time/content-section-0?active-tab=description-tab
-
-```{figure} ../../Docs/Open_Learn_Images/Scales_in_space_and_time.jpg
-:width: 300px
-```
-    
-- **Time**: 12h course 
-- **Level**: Introductory  
-
-    
-:::
-    
-</div>    
-    
-<div id="subdiv2-3">
-
-Scale – *dealing with the miniscule to the massive, over milliseconds to millennia* – is central to all the sciences. In this free course, Scales in space and time, you’ll go to the absolute limits of what can be measured – all through a study of an oak tree! By studying it you will be introduced to concepts in physics, chemistry, biology and life-sciences, and Earth and environmental sciences. Across these multiple disciplines you will meet time scales that include ages, durations and rates, and size scales including distances in three dimensions, which underpin areas and volumes.
-</div>
-    
-
-    
-</article>
-
-***
-
-
-###  Distances 
-
-[The entire length scale](https://www.htwins.net/scale2/)
-
-#### Astronomical Units (AU)
-
-- Sun-Earth distance = 149597871 km 
-
-```{figure} Docs/Astrod.png
-:width: 200px
-Distances 
-```
-
-#### Parsec (pc)
-
-#### unit angle (")
-
-Because of telescopes ...
-
-### Pressure
-
-different pressure environment in the Universe
-
-- Ultra High Vacuum (UHV)
-    - [Youtube video](https://www.youtube.com/watch?v=XkKZ3W7kOo4)
-    
-    
-- How do we measure pressure at UHV conditions ?
-    - [Ion Gages](https://www.youtube.com/watch?v=VO0WV3FrDJQ)
-
-### Temperature
-
-- create python tool Kelvin/ Degree (Celcius)
 
 
 

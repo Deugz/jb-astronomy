@@ -1,19 +1,108 @@
 # Interstellar Dust
 
+
+<p class="emphase2"><strong>Introduction</strong></p>
+
 ***
 
-Carl Sagan: Are we all made of star dust ?
+**Topics**
+
+***
+
+<br>
+<br>
+
+:::::{div} full-width
+::::{card-carousel} 4
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Introduction**
+^^^
+
+- **Difficulty**: 🟢 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Dust.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Core**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Core.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Ice Mantle**
+^^^
+
+- **Difficulty**: 🔴 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 1h
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Ice.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+::::
+
+
+<p class="emphase">&#10024; <br><br>Are we all made of star dust ? <em>Carl Sagan</em></p>
+
+:::::
+
+
+```{note}
 
 Javascript flipping card
 
 (sondage ?)
 
-***
+```
 
-```{figure} Docs/w_17.9.2019_Water in space origine.jpg
-:width: 700px
+## Structure
+
+```{figure} Docs/Dust_grain.jpg
+---
+name: Voyager_Journey
+width: 1200px
+---
 Interstellar Dust Grain. [Source](https://www.csh.unibe.ch/services/infographics/index_eng.html)
 ```
+
+
+
 
 ## Origin
 
@@ -23,7 +112,7 @@ Star outer shelves
 
 ## Ice crust
 
-<video src="../../../../_static/videos/water_form_dust_leiden.mp4" width="500" height="400" controls>
+<video src="../../../_static/videos/water_form_dust_leiden.mp4" width="500" height="400" controls>
   Your browser does not support the video tag.
 </video>
 

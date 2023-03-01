@@ -1,5 +1,122 @@
 # The Solar system
 
+<p class="emphase2"><strong>Introduction</strong></p>
+
+***
+
+**Topics**
+
+***
+
+<br>
+<br>
+
+:::::{div} full-width
+::::{card-carousel} 4
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Introduction**
+^^^
+
+- **Difficulty**: 🟢 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Solar_system.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Planets**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Planets.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Moons**
+^^^
+
+- **Difficulty**: 🔴 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 1h
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Moons.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Comets**
+^^^
+
+- **Difficulty**: 🟣 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Comets.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Meteroites**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 20 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Meteroites.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+::::
+:::::
+
+
 ## Overview
 
 <iframe src="https://deugz.github.io/3D-CSS-Solar-System/" style="width: 1000px; height: 500px;"></iframe>
@@ -108,6 +225,21 @@ There are lots of moons in our Solar System. The Earth is the only planet with j
 
 
 ***
+
+## Pluto
+
+### New Horizon mission
+
+
+
+```{figure} Docs/New_Horizon_1.png
+---
+name: New_Horizon_1
+width: 1200px
+---
+[Reference](https://hubblesite.org/contents/media/images/2021/001/01EWXHQ6Q6VTDW0FBZWZ3395SK?itemsPerPage=100&page=2&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
+```
+
 
 ## Alpha centauri solar system
 

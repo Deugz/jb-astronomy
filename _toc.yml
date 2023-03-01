@@ -15,10 +15,10 @@ parts:
       sections:
       - file: Bitesize/Astronomy/Astronomy_101/Astronomy_101
       - file: Bitesize/Astronomy/The_solar_system/Solar_system
+      - file: Bitesize/Astronomy/Stars/Stars
       - file: Bitesize/Astronomy/ISM/ISM
       - file: Bitesize/Astronomy/Astrochemistry/Astrochemistry
       - file: Bitesize/Astronomy/Interstellar_dust_grains/Dust
-      - file: Bitesize/Astronomy/Star_formation/Star_formation
       - file: Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top
       - file: Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom
       - file: Bitesize/Astronomy/Exoplanets/Exoplanets
@@ -53,6 +53,6 @@ parts:
       - file: Cours/Physique/Terminale/PhysiqueT
   - caption: Appendix
     chapters:
-    - file: Help/bibliography
+    - file: Biblio/bibliography
     - file: Help/Contribution
     - file: Help/More
