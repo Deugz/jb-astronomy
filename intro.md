@@ -310,6 +310,18 @@ Pleasure is key
 ::::
 :::::
 
+## Why ?
+
+
+<p class="emphase"> Despite a curious and inquisitive mind, I have never been a studious and full-blown student ...  </p>
+  
+I can see 3 main reasons for that:   
+- First, I have only encountered a fraction of good teachers and all of them had their hands tied by very <strong>strict curriculum</strong> they had to follow. 
+- Secondly, most of the time I spent in a classroom have been to religiously listening and copying learning material, which was an incredibely boring activity as well as a complete loss of time. 
+- Last but not least, the finality of learning was less about discovering new concepts and having the right tools to describe them, but just to fill your brain with information that had to be spit out during exams so pupils could be ranked and funneled out of Accademia.     
+
+Teaching is an important part of the life of a researcher and I believe it is one of the best and most important job that one can do. However, it is a task that is often controlled and managed by heavy administrative bodies. I think every researcher should be given the chance to share his knowledge in a creative and appealing fashion (that is terribly lacking in academia). 
+
 
 
 ## How it works ?

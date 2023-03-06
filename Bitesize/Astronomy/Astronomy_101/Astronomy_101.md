@@ -12,7 +12,7 @@
 <br>
 
 :::::{div} full-width
-::::{card-carousel} 4
+::::{grid} 7
 
 :::{grid-item-card}
 :class-header: bg-light
