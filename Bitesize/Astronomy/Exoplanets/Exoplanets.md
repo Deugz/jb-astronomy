@@ -1,5 +1,69 @@
 # Exoplanets
 
+<p class="emphase2"><strong>Introduction</strong></p>
+
+***
+
+**Topics**
+
+***
+
+<br>
+<br>
+
+:::::{div} full-width
+
+::::{card-carousel} 2
+
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Introduction**
+^^^
+
+- **Difficulty**: 🟢 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Exoplanets.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Habitable zone**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Habitability.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+::::
+
+
+<p class="emphase">&#10024; <br><br> Exoplanets</p>
+
+:::::
+
+
 ## Introduction
 
 ***

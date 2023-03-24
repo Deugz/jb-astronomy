@@ -17,32 +17,22 @@ s0.parentNode.insertBefore(s1,s0);
 ***
 
 
-:::::{margin} 
-::::{grid} 1
-:::{grid-item-card} 
-:img-top: Docs/SFP-logo.png
+:::::{margin}
+
+:::{card}
+:margin: 2
 :link: https://deugz.github.io/nb-master/_build/html/intro.html
-^^^
+
+
+```{image} Docs/SFP-logo.png
+
+```
+
++++
+
 **Vincent Deguin**
+
 :::
-::::
-
-<br>
-<br>
-
-<strong><u>Want to help </u> (![flag alt >](Docs/Svg_icons/coins-money-svgrepo-com.svg)) ? </strong>
-
-<br>
-
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#317315', 'O4O6EZO78');kofiwidget2.draw();</script> 
-<br>
-<br>
-or 
-<br>
-<br>
-
-![flag alt >](Docs/Svg_icons/patreon-svgrepo-com.svg) [Patreon](https://www.patreon.com/Science_for_the_People) 
-
 
 :::::
 
@@ -53,26 +43,8 @@ or
 :columns: 4
 
 
-**Web-site info:**
-
-<br>
-<br>
-
-- ![GitHub last commit](https://img.shields.io/github/last-commit/Deugz/nb-teaching?color=green&style=plastic) 
-- ![GitHub repo size](https://img.shields.io/github/repo-size/Deugz/nb-teaching?color=yellow&style=plastic) 
-- ![GitHub contributors](https://img.shields.io/github/contributors/Deugz/nb-teaching?color=red&style=plastic)
-- ![visitors](https://page-views.glitch.me/badge?page_id=https://deugz.github.io/nb-teaching/_build/html/intro.html) 
-
-<br>
-<br>
-
-- ![watchers](https://img.shields.io/github/watchers/Deugz/nb-teaching?style=social)
-- ![stars](https://img.shields.io/github/stars/Deugz/nb-teaching?style=social)
-
-<br>
-
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ncpnijkz.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ybiszbil.json"  background="transparent"  speed="1"  style="width: 260px; height: 260px;" hover   ></lottie-player>
 
 
 :::
@@ -80,27 +52,121 @@ or
 :::{grid-item}
 :columns: 8
 
-<p class="emphase">An Open Source, Creative and Collaborative <strong>Online Teaching </strong>Plateform about: </p>
+<p class="emphase">An Open Source, Creative and Collaborative <strong>Online Teaching </strong>Plateform related to: </p>
 
-<p class="emphase2"><strong>Physics, Astronomy and Computer Programming</strong></p>
+<p class="emphase2"><strong>Planet Formation</strong></p>
 
-
-```{epigraph}
-
-Everything I study during my scientific journey (I am an astrophysics researcher).
-
-
--- **Vince**, editor / publisher
-```
 
 
 :::
 ::::
 
+***
+
+
+<div class="video-div">
+<iframe  id="stickyAnchor" class="v-page-anchor float-left" src="https://www.youtube.com/embed/ZC488_LS42o?enablejsapi=1" frameborder="0" fullscreen width="0" height="0" style="margin:auto;"></iframe>
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="_static/assets/script/scriptvideo.js"></script>
+
+
 
 ## Introduction
 
-<h3><strong>&#187;  <u> Why ? </u></strong></h3>
+
+## Why ?
+
+:::::{div} full-width
+
+
+<p class="emphase2">Promotting Collaborations</p>
+
+<p class="emphase"> Between Scientists of different disciplines</p>
+
+:::::
+
+:::::{div} full-width
+
+<h4><strong>A Single Playground </strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+<p class="emphase"> For us <strong>all</strong></p>
+
+The boom of the *accademic pubmlishing business* resulted in the creation of a multitude of scientific journals, increasing the divisions and compartimentation of the various research fields. 
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/basketball-court-playground-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
+
+
+
+:::::{div} full-width
+
+<h4><strong>To put in context </strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+<p class="emphase"> our <strong>unique</strong> jigsaw puzzle </p>
+
+Our research is often very narrow, however the problematics to whome our progress can have an impact is incredibely broad.
+
+A single place where every researchers can bring his own piece to resolve the "Big Picture" puzzle.
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/puzzle-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
+:::::{div} full-width
+
+<h4><strong>With kindness towards each others</strong> </h4>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 10
+
+- Participativ
+- No competition
+
+Pleasure is key
+
+:::
+
+:::{grid-item}
+:columns: 2
+
+```{image} Docs/SVG_files/loving-charity-svgrepo-com.svg
+```
+
+:::
+::::
+:::::
+
 
 :::{div} full-width
 
@@ -226,89 +292,25 @@ As members of academia, we have a lot to share with each others and with the wor
 
 ***
 
-:::::{div} full-width
+<p class="emphase2">Innovative Teaching</p>
 
+- Free from curriculums
 
-<p class="emphase2">Promotting Collaborations</p>
-
-<p class="emphase"> Blabla</p>
-
-:::::
-
-:::::{div} full-width
-
-<h4><strong> Playground </strong> </h4>
-
-::::{grid} 2
-
-:::{grid-item}
-:columns: 10
-
-A single playground for us all
-
-:::
-
-:::{grid-item}
-:columns: 2
-
-```{image} Docs/SVG_files/basketball-court-playground-svgrepo-com.svg
-```
-
-:::
-::::
-:::::
+- Increase public engagement
 
 
 
+## Why ?
 
-:::::{div} full-width
 
-<h4><strong> Puzzle </strong> </h4>
+<p class="emphase"> Despite a curious and inquisitive mind, I have never been a studious and full-blown student ...  </p>
+  
+I can see 3 main reasons for that:   
+- First, I have only encountered a fraction of good teachers and all of them had their hands tied by very <strong>strict curriculum</strong> they had to follow. 
+- Secondly, most of the time I spent in a classroom have been to religiously listening and copying learning material, which was an incredibely boring activity as well as a complete loss of time. 
+- Last but not least, the finality of learning was less about discovering new concepts and having the right tools to describe them, but just to fill your brain with information that had to be spit out during exams so pupils could be ranked and funneled out of Accademia.     
 
-::::{grid} 2
-
-:::{grid-item}
-:columns: 10
-
-A single place where every researchers can bring his own piece to resolve the "Big Picture" puzzle
-
-:::
-
-:::{grid-item}
-:columns: 2
-
-```{image} Docs/SVG_files/puzzle-svgrepo-com.svg
-```
-
-:::
-::::
-:::::
-
-:::::{div} full-width
-
-<h4><strong> Kindness </strong> </h4>
-
-::::{grid} 2
-
-:::{grid-item}
-:columns: 10
-
-- Participativ
-- No competition
-
-Pleasure is key
-
-:::
-
-:::{grid-item}
-:columns: 2
-
-```{image} Docs/SVG_files/loving-charity-svgrepo-com.svg
-```
-
-:::
-::::
-:::::
+Teaching is an important part of the life of a researcher and I believe it is one of the best and most important job that one can do. However, it is a task that is often controlled and managed by heavy administrative bodies. I think every researcher should be given the chance to share his knowledge in a creative and appealing fashion (that is terribly lacking in academia). 
 
 
 
@@ -330,72 +332,114 @@ Insert fish diagrams
 
 ## Contribute
 
-### Financially
 
-:::::{div} full-width
-::::{grid} 2
+```{note}
 
-:::{grid-item}
-:columns: 4
-
-<div class="coffee">
-<div class="coffee_container">
-	<div class="saucer"></div>
-	<div class="cup">
-		<div class="rim">
-			<div class="steam">
-				<span style="--i: 1"></span>
-				<span style="--i: 3"></span>
-				<span style="--i: 16"></span>
-				<span style="--i: 5"></span>
-				<span style="--i: 13"></span>
-				<span style="--i: 6"></span>
-				<span style="--i: 7"></span>
-				<span style="--i: 10"></span>
-				<span style="--i: 8"></span>
-				<span style="--i: 7"></span>
-				<span style="--i: 10"></span>
-				<span style="--i: 8"></span>
-				<span style="--i: 17"></span>
-				<span style="--i: 11"></span>
-				<span style="--i: 12"></span>
-				<span style="--i: 14"></span>
-				<span style="--i: 2"></span>
-				<span style="-i: 9"></span>
-				<span style="--i: 15"></span>
-				<span style="--i: 4"></span>
-			</div>
-			<div class="inside">
-				<div class="tea"></div>
-			</div>
-		</div>
-		<div class="handle"></div>
-	</div>
-</div>
-</div>
+Link to collaboration workflow
 
 
-:::
+```
 
-:::{grid-item}
-:columns: 8
-
-<p class="emphase">No coffee, no Science ... That's rule n°1!</p>
-
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#317315', 'O4O6EZO78');kofiwidget2.draw();</script>
-
-:::
-::::
-:::::
-
-
-<br>
-<br>
-<br>
-<br>
 
 
 ## Comments
+
+
+
+:::::::{div} full-width
+
+::::::{grid} 3
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 6
+
+**Notes**
+^^^
+
+
+```{admonition} To Do
+:class: warning, dropdown
+
+- Create intro video
+
+
+```
+
+```{admonition} Ideas
+:class: tip, dropdown
+
+none
+
+
+```
+
+```{admonition} Collaboration
+:class: note, dropdown
+
+- Send to Friends to Review, comment
+- Orthographique correction
+
+```
+
+:::::
+
+
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+**Page**
+^^^
+
+<br>
+<br>
+
+
+- Author:  Vince;
+- Status:  &#9989;
+- Reviewed: <span class="hovertext" data-hover="Insert here who has done what">&#x274C;</span>
+- Updated: 08/03/2023
+
+
+
+   
+:::::
+
+:::::{grid-item-card}
+:class-header: bg-light
+:columns: 3
+<span style="float: right">![flag alt >](Docs/Svg_icons/coins-money-svgrepo-com.svg)</span>**Help** 
+^^^
+
+<br>
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#317315', 'O4O6EZO78');kofiwidget2.draw();</script> 
+
+<br>
+<br>
+
+or
+
+<br>
+
+![flag alt >](Docs/Svg_icons/patreon-svgrepo-com.svg) [Patreon](https://www.patreon.com/Science_for_the_People) 
+
+:::::
+::::::
+:::::::
+
+
+
+***
+
+::::{div} full-width
+
+- ![GitHub last commit](https://img.shields.io/github/last-commit/Deugz/nb-teaching?color=green&style=plastic) - ![GitHub repo size](https://img.shields.io/github/repo-size/Deugz/nb-teaching?color=yellow&style=plastic) - ![GitHub contributors](https://img.shields.io/github/contributors/Deugz/nb-teaching?color=red&style=plastic) - ![visitors](https://page-views.glitch.me/badge?page_id=https://deugz.github.io/nb-teaching/_build/html/intro.html) - ![watchers](https://img.shields.io/github/watchers/Deugz/nb-teaching?style=social) - ![stars](https://img.shields.io/github/stars/Deugz/nb-teaching?style=social)
+      
+::::
+
+***
 
 <script src="https://utteranc.es/client.js"
         repo="Deugz/nb-teaching"
@@ -404,48 +448,4 @@ Insert fish diagrams
         crossorigin="anonymous"
         async>
 </script>
-
-
-::::{grid} 2
-
-:::{grid-item-card}
-:class-header: bg-light
-:columns: 5
-
-**Page status**
-^^^
-
-- Completed: ![flag alt >](Docs/Svg_icons/Under_construction.svg)
-  
-- Reviewed: &#x274C;
-       
-- Updated: 05/02/2023
-   
-:::  
-
-:::{grid-item-card}
-:class-header: bg-light
-:columns: 7
-
-**Notes**
-^^^
-
-```{admonition} To Do
-:class: note, dropdown
-
-Lots
-
-```
-
-```{admonition} Ideas
-:class: tip, dropdown
-
-Lots
-
-```
-
-
-:::
-::::
-
 

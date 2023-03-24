@@ -60,6 +60,14 @@ a simple html page
 
 ## CSS
 
+***
+**Cool stuffs to explore**:
+
+- [CSS Doodle](https://css-doodle.com/)
+
+
+***
+
 
 
 

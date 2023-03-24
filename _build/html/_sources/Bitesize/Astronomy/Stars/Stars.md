@@ -98,6 +98,24 @@ width: 1200px
 
 ::::
 
+
+
+### Around the Sun
+
+
+
+
+```{figure} Docs/10pc_all_legend.gif
+---
+name: Sun_surrounding
+width: 1200px
+---
+[source](to add)
+```
+
+
+
+
 ### How do they work
 
 ```{figure} Docs/Soleil.png

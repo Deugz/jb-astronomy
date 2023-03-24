@@ -1,6 +1,11 @@
-# Astronomy 101 (II)
+# Astronomy 101 
 
-## Cosmic Inventory
+<p class="emphase2"><strong>Cosmic Inventory</strong></p>
+
+
+## Introduction
+
+<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/uniGQrGLEoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### The 3 Astronomical Kingdoms
 

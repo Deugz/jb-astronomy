@@ -7,9 +7,9 @@ parts:
   - caption:
     chapters:
     - file: Intro/content
-  - caption: Teaching
-    chapters:
     - file: Teaching_Main
+  - caption: Bitesize
+    chapters:
     - file: Bitesize/Bitesize_Main
     - file: Bitesize/Astronomy/Astronomy_Main
       sections:
@@ -29,6 +29,21 @@ parts:
       - file: Bitesize/Physics/Water/Water
       - file: Bitesize/Physics/IR_Spectro/IR_Spectro
       - file: Bitesize/Physics/Special_Relativity/Special_Relativity
+    - file: Bitesize/Math/Math_Main
+      sections:
+      - file: Bitesize/Math/Math_101/Math_101
+      - file: Bitesize/Math/Calculus/Calculus
+    - file: Bitesize/Chemistry/Chemistry_Main
+      sections:
+      - file: Bitesize/Chemistry/Chemistry_101/Chemistry_101
+    - file: Bitesize/Geology/Geology_Main
+      sections:
+      - file: Bitesize/Geology/Geology_101/Geology_101
+    - file: Bitesize/Biology/Biology_Main
+      sections:
+      - file: Bitesize/Biology/Biology_101/Biology_101
+  - caption: Practicle
+    chapters:
     - file: Practicle/Practicle_Main
     - file: Practicle/WebDev/WebDev_Main
       sections:

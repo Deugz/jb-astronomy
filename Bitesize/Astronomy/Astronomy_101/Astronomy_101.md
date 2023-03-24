@@ -12,7 +12,9 @@
 <br>
 
 :::::{div} full-width
-::::{grid} 7
+
+::::{card-carousel} 2
+
 
 :::{grid-item-card}
 :class-header: bg-light
@@ -110,6 +112,26 @@
 
 <div class="wrapper">
 <button class="button"><span> <a href="Sub_topics/Missions.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Space Exploration**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 20 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Exploration.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
 </div>
 
 :::
@@ -334,6 +356,10 @@ This free course shows you how to navigate the night sky, and introduces the wid
 </article>
 
 ***
+
+## Quizz
+
+- [Interactive Quizz](Quizz/test_quiz)
 
 
 

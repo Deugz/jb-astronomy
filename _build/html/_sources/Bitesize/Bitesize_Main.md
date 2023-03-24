@@ -1,4 +1,4 @@
-# **Bitesize**
+# Introduction
 
 ***
 **Ressource**
@@ -11,7 +11,31 @@
 
 ***
 
+## Aim
+
+### Mapping Science
+
+<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/ohyai6GIRZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- Great youtuber (Thanks to him), you will find some of his video as introduction in the different section of this web site.
+
+One thing that he forgets though, at the beginning when he give a list of the scientific toolkit, is **Collaboration**
+
+
+### Collaboration
+
+Give *Research grade* small tutorials to help scientist from different disciplines to grasp some basic knowledge about all the disciplines related to a broad problematic.
+
+
+
 ## Open Learn Courses
+
+```{note}
+
+Implement all in the different relevant sections 
+
+```
+
 
 The Open University has a great bunch of free ressources (Open Learn plateform). They are great starting point and I aim to use them as fondations to build upon
 

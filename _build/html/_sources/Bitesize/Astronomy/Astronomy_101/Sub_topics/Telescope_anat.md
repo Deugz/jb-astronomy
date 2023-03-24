@@ -2,6 +2,18 @@
 
 ## Anatomy of a Telescope
 
+### General architecture
+
+#### Detectors
+
+##### CCD
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_BUQMvOeTmI.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover autoplay  ></lottie-player>
+
+
+
+
 ### Hubble Space Telescope
 
 ```{figure} ../Docs/HST_in_1.png

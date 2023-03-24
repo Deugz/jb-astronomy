@@ -1,40 +1,52 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Getting Started with Python - program control &#8212; TEACHING</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/coffee_cup.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/Image_move.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/style_book_shell.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/.ipynb_checkpoints/coffee_cup-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/.ipynb_checkpoints/custom_style-checkpoint.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/.ipynb_checkpoints/Image_move-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
@@ -42,7 +54,7 @@
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
-    <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -83,8 +95,16 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script src="../../../../_static/assets/Picture_display.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/assets/script/scriptvideo.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-YJLM4C4S2Q');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -93,670 +113,419 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Practicle/Python/Ressources/Alisson/Program_Contol_PyPS';</script>
     <link rel="canonical" href="https://deugz.github.io/nb-teaching/_build/html/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.html" />
     <link rel="shortcut icon" href="../../../../_static/logo2.png"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YJLM4C4S2Q"></script>
-<script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-YJLM4C4S2Q');
-                </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint">Current Version: Jan 2023</div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../../index.html">
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Current Version: Jan 2023</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../../intro.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../../../../_static/logo2.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">TEACHING</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../../../../_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../../_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Intro/content.html">
-   Content
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Intro/content.html">Content</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Teaching
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Bitesize/Bitesize_Main.html">
-   <strong>
-    Bitesize
-   </strong>
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_Main.html">
-   Astronomy
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">
-     Astronomy 101
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">
-     The Solar system
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/ISM/ISM.html">
-     The Interstellar Medium
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">
-     Astrochemistry
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">
-     Interstellar Dust
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Star_formation/Star_formation.html">
-     Lifecycle of Stars
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">
-     Planet formation (bottom-up)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">
-     Planet formation (top-bottom)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">
-     Exoplanets
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Astronomy/JWST/JWST.html">
-     JWST
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../../Bitesize/Physics/Physics_Main.html">
-   Physics
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Physics/Physics_101/Physics_101.html">
-     Physics 101
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Physics/Water/Water.html">
-     Water
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">
-     Infrared Spectroscopy
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">
-     Special Relativity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../Practicle_Main.html">
-   <strong>
-    Practicle
-   </strong>
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../WebDev/WebDev_Main.html">
-   Web Development
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../WebDev/Jupyter_Book/Jupyter_Book.html">
-     Jupyter Book
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../WebDev/HTML_CSS/HTML_CSS.html">
-     HTML / CSS
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../Python_Main.html">
-   Python
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Get_Ready/Get_Ready.html">
-     Get ready
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Matplotlib/Matplotlib.html">
-     Matplotlib
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Pandas/Pandas.html">
-     Pandas
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../External/Basketball_DQ.html">
-     Basketball
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Bitesize/Bitesize_Main.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_Main.html">Astronomy</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Astronomy_101/Astronomy_101.html">Astronomy 101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/The_solar_system/Solar_system.html">The Solar system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Stars/Stars.html">Stars Lifecycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/ISM/ISM.html">The Interstellar Medium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Astrochemistry/Astrochemistry.html">Astrochemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Interstellar_dust_grains/Dust.html">Interstellar Dust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_bottom-top/Planet_formation_bottom-top.html">Planet formation (bottom-up)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Planet_formation_top-bottom/Planet_formation_top-bottom.html">Planet formation (top-bottom)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/Exoplanets/Exoplanets.html">Exoplanets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Astronomy/JWST/JWST.html">JWST</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Cours particuliers
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Cours/Cours_particuliers.html">
-   <strong>
-    Introduction
-   </strong>
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Cours/Anglais/Anglais.html">
-   Anglais
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../../Cours/Physique/Physique.html">
-   Physique Chimie
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Cours/Physique/Seconde/Physique2.html">
-     Seconde
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Cours/Physique/Premiere/Physique1.html">
-     Première
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../../Cours/Physique/Terminale/PhysiqueT.html">
-     Terminale
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Physics/Physics_Main.html">Physics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Physics/Physics_101/Physics_101.html">Physics 101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Physics/Water/Water.html">Water</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Physics/IR_Spectro/IR_Spectro.html">Infrared Spectroscopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Physics/Special_Relativity/Special_Relativity.html">Special Relativity</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Appendix
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Math/Math_Main.html">Maths</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Math/Math_101/Math_101.html">Math 101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Math/Calculus/Calculus.html">Calculus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Chemistry/Chemistry_Main.html">Chemistry</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Chemistry/Chemistry_101/Chemistry_101.html">Chemistry 101</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Geology/Geology_Main.html">Geology</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Geology/Geology_101/Geology_101.html">Geology 101</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Bitesize/Biology/Biology_Main.html">Biology</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Bitesize/Biology/Biology_101/Biology_101.html">Biology 101</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Practicle</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Biblio/bibliography.html">
-   Bibliography
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Help/Contribution.html">
-   Contribution Workflow
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../../Help/More.html">
-   More
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Practicle_Main.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../WebDev/WebDev_Main.html">Web Development</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../WebDev/Jupyter_Book/Jupyter_Book.html">Jupyter Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../WebDev/HTML_CSS/HTML_CSS.html">HTML / CSS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Python_Main.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Get_Ready/Get_Ready.html">Get ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Matplotlib/Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Pandas/Pandas.html">Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../External/Basketball_DQ.html">Basketball</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cours particuliers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../Cours/Cours_particuliers.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Cours/Anglais/Anglais.html">Anglais</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../Cours/Physique/Physique.html">Physique Chimie</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Cours/Physique/Seconde/Physique2.html">Seconde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Cours/Physique/Premiere/Physique1.html">Première</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../Cours/Physique/Terminale/PhysiqueT.html">Terminale</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../Biblio/bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Help/Contribution.html">Contribution Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Help/More.html">More</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/Deugz/nb-teaching/master?urlpath=tree/docs/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../../../../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-teaching" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-teaching/edit/master/docs/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Ressources/Alisson/Program_Contol_PyPS.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/Deugz/nb-teaching"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/Deugz/nb-teaching/issues/new?title=Issue%20on%20page%20%2FPracticle/Python/Ressources/Alisson/Program_Contol_PyPS.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/Deugz/nb-teaching/edit/master/docs/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../../../_sources/Practicle/Python/Ressources/Alisson/Program_Contol_PyPS.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sequence">
-   1. Sequence
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sequence-summary">
-     Sequence - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#selection">
-   2. Selection
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selection-summary">
-     Selection - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iteration">
-   3. Iteration
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#for-loops">
-     3.1 For loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#while-loops">
-     3.2 While loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#iteration-summary">
-     Iteration - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercises-answers">
-   Exercises - Answers
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Getting Started with Python - program control</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sequence">
-   1. Sequence
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#sequence-summary">
-     Sequence - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#selection">
-   2. Selection
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selection-summary">
-     Selection - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iteration">
-   3. Iteration
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#for-loops">
-     3.1 For loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#while-loops">
-     3.2 While loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#iteration-summary">
-     Iteration - summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercises-answers">
-   Exercises - Answers
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started with Python - program control</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequence">1. Sequence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sequence-summary">Sequence - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection">2. Selection</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-summary">Selection - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration">3. Iteration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">3.1 For loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loops">3.2 While loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-summary">Iteration - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises-answers">Exercises - Answers</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-program-control">
 <h1>Getting Started with Python - program control<a class="headerlink" href="#getting-started-with-python-program-control" title="Permalink to this headline">#</a></h1>
 <p>Version 0.2 Aug 2020</p>
 <p>This notebook demonstrates how programs in Python can run a set of instructions, and how those instructions can be made to depend on information generated or acquired at the time that the progam is run. Overall, this concept is called <strong>program control</strong> and we will look at three specific areas:</p>
-<p><a class="reference external" href="#Sequence">1. Sequence</a></p>
-<p><a class="reference external" href="#Selection">2. Selection</a></p>
-<p><a class="reference external" href="#Iteration">3. Iteration</a></p>
-<p><a class="reference external" href="#Exercise-Answers">Answers to the Exercises</a></p>
+<p><span class="xref myst">1. Sequence</span></p>
+<p><span class="xref myst">2. Selection</span></p>
+<p><span class="xref myst">3. Iteration</span></p>
+<p><span class="xref myst">Answers to the Exercises</span></p>
 <p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">Program_Control.ipnyb</span></code></p>
 <hr class="docutils" />
 <p><a id="Sequence"></a></p>
@@ -774,7 +543,7 @@ title="Print to PDF"
 </div>
 <p>The first instruction (line 1) is an <code class="docutils literal notranslate"><span class="pre">assignment</span></code>: the computer evaluates the expression to the right of the assignment (=) and stores the result in the variable (<code class="docutils literal notranslate"><span class="pre">result</span></code>) on the left of the assignment. Each piece of data that is needed by a program must be stored in a variable. Translating Python to English, the assignment states ‘let result be the sum of 3 and 7’. We could call the variable anything we want, such as <code class="docutils literal notranslate"><span class="pre">R</span></code> or <code class="docutils literal notranslate"><span class="pre">sum_of_two_numbers</span></code>, but the first of these is rather too short to be meaningful, and the second is rather long to type in. So a compromise for the variable name that’s not too long, not too short, and which means something to anyone reading the program is usually the best option.</p>
 <p>The second instruction, <code class="docutils literal notranslate"><span class="pre">print()</span></code> (in line 2), prints some text on the screen (in the left-hand pane), followed by the computed result. Note the following:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>The comma separates the two things to be printed, in the same way that we use commas in English to enumerate two, three, or more things.</p></li>
 <li><p>Text is written between double quotes, which are not printed themselves. In Python, a sequence of characters surrounded by double quotes is called a <em>string</em>. (Note that single quotes can also be used and you may see them employed in Python programs.)</p></li>
 </ol>
@@ -835,7 +604,7 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </ol>   
 <p>Remember that you can copy and paste cells using the relevant buttons on the toolbar.</p>
 </div>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers1.3">Exercise Answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 1.3</span>
@@ -895,7 +664,7 @@ In the following program, the steps that will be followed by the kernel depend o
 <b>Exercise 2.1: Testing the <i>weight calculation</i> program</b> <br> 
 Change the latitude to $44^\text{o}$ and then $45^\text{o}$ and confirm that the weight is what you expect in each case.
 </div>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.1">Exercise Answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <p>Now looking at how the selection works, the process of selection uses the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement.  In more detail, we have</p>
 <p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(condition):</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">(block</span> <span class="pre">1)</span>&#160; <span class="pre">else:</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">(block</span> <span class="pre">2)</span></code></p>
 <p>Such a structure chooses which block of code to execute as follows. The computer checks the condition after the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. If the condition is true, the computer executes the code in <code class="docutils literal notranslate"><span class="pre">block</span> <span class="pre">1</span></code> (the indented instructions). If the condition is false, the computer executes the code in <code class="docutils literal notranslate"><span class="pre">block</span> <span class="pre">2</span></code> instead.</p>
@@ -934,7 +703,7 @@ Change the latitude to $44^\text{o}$ and then $45^\text{o}$ and confirm that the
 <b>Exercise 2.2: Testing the selection instruction</b> <br> 
 Test the code above with the four borderline cases: latitudes of $29^\text{o}$, $30^\text{o}$, $59^\text{o}$ and $60^\text{o}$.
 </div>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.2">Exercise answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise answers</span></p>
 <p>Note that the order in which the conditions are written is crucial. This is because the kernel checks conditions sequentially from top to bottom, and on the first occasion that the test condition is true it will run the associated block of code before continuing with the code that follows the selection. Note also that the <code class="docutils literal notranslate"><span class="pre">else</span></code> block has no condition, so this last block is a catch-all in case no condition is true.</p>
 <p><a id="Exercise2.3"></a></p>
 <div class="alert alert-block alert-info">
@@ -942,7 +711,7 @@ Test the code above with the four borderline cases: latitudes of $29^\text{o}$, 
 Run the following code and test it by setting the value of the variable latitude to different values.
 Does the code provide correct results? Is there anything that needs changing?
 </div>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.3">Exercise answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise answers</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 2.3</span>
@@ -992,7 +761,7 @@ Does the code provide correct results? Is there anything that needs changing?
 <p>Combine selections using the <code class="docutils literal notranslate"><span class="pre">or</span></code> operator if you require the block to be executed if <em>either</em> of the conditions is true.</p>
 <p>In fact, the <code class="docutils literal notranslate"><span class="pre">or</span></code> operator will be satisfied if either condition is satisfied and also if both conditions are satisfied.</p>
 <p>Various comparison operators can be employed with numerical variables. For example, to check whether a variable is <strong>greater than or equal to</strong> a particular value, use <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>. There are actually six comparison operators:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> greater than</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> less than</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> greater than or equal to</p></li>
@@ -1008,7 +777,7 @@ Does the code provide correct results? Is there anything that needs changing?
 <li> How would you change the code if you wanted the value of $9.78\text{ m s}^{−2}$ to be used when the latitude is exactly $30^\text{o}$ (with all other condutions being the same)? </li> 
 </ol>
 </div>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers2.4">Exercise Answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code for Exercise 2.4</span>
@@ -1050,7 +819,7 @@ Does the code provide correct results? Is there anything that needs changing?
 <section id="for-loops">
 <h3>3.1 For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">#</a></h3>
 <p>Imagine you have a selection of items for which you know the individual masses and you wish to calculate the total mass. As with any physical problem, the first stage is to set out the steps (the <em>algorithm</em>) that reaches the required solution. (At this point we aren’t concerned about how we would program this in any particular programming language.)</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>We have list of the masses of individual items.</p></li>
 <li><p>Let the total mass be zero.</p></li>
 <li><p>For each item in the list: add it to the total mass.</p></li>
@@ -1102,7 +871,7 @@ The program in the following window is copied from the previous program. Adapt i
 </div>
 </div>
 </div>
-<p>You should attempt this activity <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.1">Exercise Answers</a></p>
+<p>You should attempt this activity <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 </section>
 <hr class="docutils" />
 <section id="while-loops">
@@ -1124,10 +893,10 @@ The program in the following window is copied from the previous program. Adapt i
 </div>
 </div>
 <p>This example can be summarised as follows:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>First, the given number is set and the counter is initialised to one.</p></li>
 <li><p>Then the loop starts and iterates the following steps:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>The value of the counter is compared to 10</p></li>
 <li><p>If the counter is below 10, the result of the multiplication of the counter by the given number is printed. Then the counter is increased</p></li>
 <li><p>If the counter is above or equal to 10, the loop is stopped</p></li>
@@ -1164,18 +933,18 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 <div class="alert alert-block alert-info">
 <p>Based on what you have learned in this notebook, attempt the following:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>In a series of bullet points, explain what each of the lines in the program does.</p></li>
 <li><p>The algorithm will only work correctly if the two numbers input are greater than zero. How would you modify the program to prevent this issue by printing:
 “ERROR: The number entered is negative.” ?</p></li>
 </ol>
-<p>You should attempt this exercise <em>before</em> looking at the <a class="reference external" href="#ExerciseAnswers3.2">Exercise Answers</a></p>
+<p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 </section>
 <section id="iteration-summary">
 <h3>Iteration - summary<a class="headerlink" href="#iteration-summary" title="Permalink to this headline">#</a></h3>
 <hr class="docutils" />
 <p>In this section you have learned two ways to iterate an action for a certain number of times:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>The <strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong> loop, which allows you to repeat an action on each element of a list.</p></li>
 <li><p>The <strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong> loop, which repeats an action according to a logical condition that is evaluated before each iteration.</p></li>
 </ol>
@@ -1187,7 +956,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <p><a id="ExerciseAnswers1.3"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 1.3 - notes</b> <br> 
-</div><ol class="simple">
+</div><ol class="arabic simple">
 <li><p>The difference between two numbers</p></li>
 </ol>
 <div class="cell docutils container">
@@ -1198,7 +967,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 </div>
-<ol class="simple">
+<ol class="arabic simple" start="2">
 <li><p>The product of two numbers</p></li>
 </ol>
 <div class="cell docutils container">
@@ -1209,7 +978,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 </div>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>The ratio of two numbers</p></li>
 </ol>
 <div class="cell docutils container">
@@ -1220,7 +989,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 </div>
-<ol class="simple">
+<ol class="arabic simple" start="4">
 <li><p>One number to the power of another</p></li>
 </ol>
 <div class="cell docutils container">
@@ -1231,37 +1000,37 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 </div>
-<p><a class="reference external" href="#Exercise1.3">Back to Exercise 1.3</a></p>
+<p><span class="xref myst">Back to Exercise 1.3</span></p>
 <p><a id="ExerciseAnswers2.1"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 2.1 - answers</b> <br> 
-</div><ol class="simple">
+</div><ol class="arabic simple">
 <li><p>For an angle of <span class="math notranslate nohighlight">\(45^\text{o}\)</span> and any angle above, the weight is 97.89999999999999 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(44^\text{o}\)</span> and any angle below, the weight is 98.2 newtons</p></li>
 </ol>
-<p><a class="reference external" href="#Exercise2.1">Back to Exercise 2.1</a></p>
+<p><span class="xref myst">Back to Exercise 2.1</span></p>
 <p><a id="ExerciseAnswers2.2"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 2.2 - answers</b> <br> 
-</div><ol class="simple">
+</div><ol class="arabic simple">
 <li><p>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(60^\text{o}\)</span> and any angle below, the weight is 98.3 newtons</p></li>
 </ol>
-<p><a class="reference external" href="#Exercise2.2">Back to Exercise 2.2</a></p>
+<p><span class="xref myst">Back to Exercise 2.2</span></p>
 <p><a id="ExerciseAnswers2.3"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 2.3 - answers</b> <br> 
 </div><p>The code provides incorrect results. If you set latitude to values smaller than <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, it will not use the acceleration value of <span class="math notranslate nohighlight">\(9.78\text{ m s}^{−2}\)</span>. The reason is that the code will encounter the first if condition (<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">60</span></code>) and, because <span class="math notranslate nohighlight">\(30^\text{o}\)</span> &lt; <span class="math notranslate nohighlight">\(60^\text{o}\)</span>, it will set acc = 9.81. After this, the code will skip all the other if conditions and proceed to the line <code class="docutils literal notranslate"><span class="pre">weight</span> <span class="pre">=</span> <span class="pre">totmass</span> <span class="pre">*</span> <span class="pre">acc</span></code>.</p>
 <p>One solution is to order the if conditions in the same way as the previous example. Another solution is explained in the next section.</p>
-<p><a class="reference external" href="#Exercise2.3">Back to Exercise 2.3</a></p>
+<p><span class="xref myst">Back to Exercise 2.3</span></p>
 <p><a id="ExerciseAnswers2.4"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 2.4 - answers</b> <br> 
-</div><ol class="simple">
+</div><ol class="arabic simple">
 <li><p>The cases give the following answers:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
 <li><p>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
@@ -1275,7 +1044,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </ul>
 </li>
 </ol>
-<p><a class="reference external" href="#Exercise2.4">Back to Exercise 2.4</a></p>
+<p><span class="xref myst">Back to Exercise 2.4</span></p>
 <p><a id="ExerciseAnswers3.1"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 3.1 - answers</b> <br> 
@@ -1297,14 +1066,14 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 </div>
-<p><a class="reference external" href="#Exercise3.1">Back to Exercise 3.1</a></p>
+<p><span class="xref myst">Back to Exercise 3.1</span></p>
 <p><a id="ExerciseAnswers3.2"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 3.2 - answers</b> <br> 
-</div><ol class="simple">
+</div><ol class="arabic simple">
 <li><p>The program executes the following steps:</p></li>
 </ol>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Initialisation: the two integers of which we want to know the greatest common divisor.</p></li>
 <li><p>Loop: test whether <code class="docutils literal notranslate"><span class="pre">n</span></code> is not equal to <code class="docutils literal notranslate"><span class="pre">m</span></code>. If the condition is fulfilled, then execute the block of code for the loop, if not, then leave.</p></li>
 <li><p>In the loop,</p>
@@ -1315,7 +1084,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </li>
 <li><p>After the loop, print the value of <code class="docutils literal notranslate"><span class="pre">n</span></code> which is the greatest common divisor.</p></li>
 </ol>
-<ol class="simple">
+<ol class="arabic simple" start="2">
 <li><p>In order to avoid the issue of initialisation of integers to negative values, one solution is to test if they are both positive and if so, perform the Euclid algorithm, and if either is negative, stop the program and print the error message.</p></li>
 </ol>
 <p>The following cell provides an example solution.</p>
@@ -1343,7 +1112,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 <p>Try it with different cases to check that it works as you expect!</p>
-<p><a class="reference external" href="#Exercise3.2">Back to Exercise 3.2</a></p>
+<p><span class="xref myst">Back to Exercise 3.2</span></p>
 </section>
 </section>
 
@@ -1359,7 +1128,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Practicle\Python\Ressources\Alisson"
         },
         predefinedOutput: true
@@ -1367,40 +1136,93 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sequence">1. Sequence</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sequence-summary">Sequence - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection">2. Selection</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-summary">Selection - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration">3. Iteration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loops">3.1 For loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loops">3.2 While loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-summary">Iteration - summary</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises-answers">Exercises - Answers</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By <strong>Vincent Deguin</strong> (with ❤️)<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By <strong>Vincent Deguin</strong> (with ❤️)
+</p>
+
+  </div>
   
-    <div class="extra_footer">
-      
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  
 <img class="CC_licence" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licence CC BY NC SA 2"/>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
+  </div>
+  
+</div></div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
