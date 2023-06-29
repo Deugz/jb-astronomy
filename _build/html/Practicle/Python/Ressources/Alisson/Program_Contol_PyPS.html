@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Getting Started with Python - program control &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
@@ -519,7 +520,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-program-control">
-<h1>Getting Started with Python - program control<a class="headerlink" href="#getting-started-with-python-program-control" title="Permalink to this headline">#</a></h1>
+<h1>Getting Started with Python - program control<a class="headerlink" href="#getting-started-with-python-program-control" title="Permalink to this heading">#</a></h1>
 <p>Version 0.2 Aug 2020</p>
 <p>This notebook demonstrates how programs in Python can run a set of instructions, and how those instructions can be made to depend on information generated or acquired at the time that the progam is run. Overall, this concept is called <strong>program control</strong> and we will look at three specific areas:</p>
 <p><span class="xref myst">1. Sequence</span></p>
@@ -530,7 +531,7 @@ document.write(`
 <hr class="docutils" />
 <p><a id="Sequence"></a></p>
 <section id="sequence">
-<h2>1. Sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">#</a></h2>
+<h2>1. Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading">#</a></h2>
 <p>The simplest Python program is a <strong>sequence</strong> of instructions, written one per line, and executed one by one from top to bottom. Every time the program is run, the same operations are executed in the same order.</p>
 <p>Our first program only has two lines of instructions in the code cell below. For this notebook, it helps to display the line numbers (these are displayed on the left hand side of a cell) - do this by selecting the <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">line</span> <span class="pre">numbers</span></code> option from the <code class="docutils literal notranslate"><span class="pre">View</span></code> menu (you can switch off line numbers by repeating this operation). Then <strong>run</strong> the cell.</p>
 <div class="cell docutils container">
@@ -615,7 +616,7 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </div>
 </div>
 <section id="sequence-summary">
-<h3>Sequence - summary<a class="headerlink" href="#sequence-summary" title="Permalink to this headline">#</a></h3>
+<h3>Sequence - summary<a class="headerlink" href="#sequence-summary" title="Permalink to this heading">#</a></h3>
 <p>To recap then, in a sequence, all instructions are executed line by line. If one of the instructions causes an error, then the program will stop at the point that it encounters the error and provide an error message.</p>
 <p>While the ability to execute a sequence of instructions is useful, there are often times where we would like a program to selectively execute some instructions but not others. Selection is the subject of the next section.</p>
 <hr class="docutils" />
@@ -623,7 +624,7 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </section>
 </section>
 <section id="selection">
-<h2>2. Selection<a class="headerlink" href="#selection" title="Permalink to this headline">#</a></h2>
+<h2>2. Selection<a class="headerlink" href="#selection" title="Permalink to this heading">#</a></h2>
 <p>Imagine that you are developing software to solve a physics problem – where you need to work out the weight of a collection of objects. These may be items in a shopping basket for instance. You know that the weight in Newtons is equal to the total mass of the objects in kilograms multiplied by the acceleration due to gravity, at the surface of the Earth, in <span class="math notranslate nohighlight">\(\text{m s}^{−2}\)</span>.</p>
 <p>Here is a short program to do this – it’s a simple sequence of assignments and an output. (Use <code class="docutils literal notranslate"><span class="pre">View</span></code> | <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Line</span> <span class="pre">Numbers</span></code> to see the line numbers if they are not already displayed.)</p>
 <div class="cell docutils container">
@@ -799,7 +800,7 @@ Does the code provide correct results? Is there anything that needs changing?
 </div>
 </div>
 <section id="selection-summary">
-<h3>Selection - summary<a class="headerlink" href="#selection-summary" title="Permalink to this headline">#</a></h3>
+<h3>Selection - summary<a class="headerlink" href="#selection-summary" title="Permalink to this heading">#</a></h3>
 <hr class="docutils" />
 <p>In this section, you saw:</p>
 <ul class="simple">
@@ -813,11 +814,11 @@ Does the code provide correct results? Is there anything that needs changing?
 </section>
 </section>
 <section id="iteration">
-<h2>3. Iteration<a class="headerlink" href="#iteration" title="Permalink to this headline">#</a></h2>
+<h2>3. Iteration<a class="headerlink" href="#iteration" title="Permalink to this heading">#</a></h2>
 <p>Iteration is a very powerful concept as it allows you to repeat an operation a designated number of times. There are two main Python statements that produce iteration: <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code>. Because the kernel repeatedly cycles through a block of code, you will often hear programmers refer to <code class="docutils literal notranslate"><span class="pre">for</span></code> loops and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops as part of a computer program.</p>
 <p>We will introduce <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> below, before concluding with an activity that draws together much of what you have learned in this notebook.</p>
 <section id="for-loops">
-<h3>3.1 For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">#</a></h3>
+<h3>3.1 For loops<a class="headerlink" href="#for-loops" title="Permalink to this heading">#</a></h3>
 <p>Imagine you have a selection of items for which you know the individual masses and you wish to calculate the total mass. As with any physical problem, the first stage is to set out the steps (the <em>algorithm</em>) that reaches the required solution. (At this point we aren’t concerned about how we would program this in any particular programming language.)</p>
 <ol class="arabic simple">
 <li><p>We have list of the masses of individual items.</p></li>
@@ -875,7 +876,7 @@ The program in the following window is copied from the previous program. Adapt i
 </section>
 <hr class="docutils" />
 <section id="while-loops">
-<h3>3.2 While loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">#</a></h3>
+<h3>3.2 While loops<a class="headerlink" href="#while-loops" title="Permalink to this heading">#</a></h3>
 <p>Another way for automating a series of instructions uses the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Generally, it has the form:</p>
 <p><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">(condition):</span>&#160;&#160;&#160;&#160; <span class="pre">(block</span> <span class="pre">of</span> <span class="pre">code)</span></code></p>
 <p>As the name suggests, this will repeatedly execute the block of code as long as the condition is fulfilled (<code class="docutils literal notranslate"><span class="pre">True</span></code>). The expression for the condition must be Boolean (i.e. either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>) similar to the examples with the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement we saw previously. Typically the condition is a comparison operation and note that it is evaluated <em>before</em> the start of each iteration through the block of code. If the condition changes to <code class="docutils literal notranslate"><span class="pre">False</span></code> the kernel moves on to execute the code following the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p>
@@ -941,7 +942,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 </section>
 <section id="iteration-summary">
-<h3>Iteration - summary<a class="headerlink" href="#iteration-summary" title="Permalink to this headline">#</a></h3>
+<h3>Iteration - summary<a class="headerlink" href="#iteration-summary" title="Permalink to this heading">#</a></h3>
 <hr class="docutils" />
 <p>In this section you have learned two ways to iterate an action for a certain number of times:</p>
 <ol class="arabic simple">
@@ -952,7 +953,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </section>
 </section>
 <section id="exercises-answers">
-<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">#</a></h2>
+<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.3"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 1.3 - notes</b> <br> 

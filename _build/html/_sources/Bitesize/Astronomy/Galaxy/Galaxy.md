@@ -2,6 +2,20 @@
 
 - [Seyfert illustration](https://hubblesite.org/contents/media/images/2020/33/4669-Image?itemsPerPage=100&page=3&filterUUID=5a370ecc-f605-44dd-8096-125e4e623945)
 
+
+## Big Bang
+
+- [Video](https://webbtelescope.org/contents/media/videos/1066-Video?page=7&filterUUID=e273820a-7d43-4578-8fcb-2ee59b93555b)
+
+
+
+## What is a Galaxy
+
+- [Video](https://webbtelescope.org/contents/media/videos/2019/27/1206-Video?page=5&filterUUID=e273820a-7d43-4578-8fcb-2ee59b93555b)
+
+
+
+
 ## Shape
 
 ```{figure} Docs/Galaxies_shapes.jpg
@@ -56,3 +70,10 @@ width: 1200px
 ## Black Holes
 
 <img src="https://imgs.xkcd.com/comics/spacetime_soccer.png" />
+
+
+### Supermassive Black holes
+
+- [video ressource](https://webbtelescope.org/contents/media/videos/2021/015/01F09AQGN1JD1H8BJJZDR4RPWS?page=3&filterUUID=e273820a-7d43-4578-8fcb-2ee59b93555b)
+
+- [video ressource](https://webbtelescope.org/contents/media/videos/01F099WFKMGVB0B549DDBA4BAF?page=3&filterUUID=e273820a-7d43-4578-8fcb-2ee59b93555b)

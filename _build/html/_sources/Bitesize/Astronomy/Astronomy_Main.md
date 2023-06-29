@@ -40,6 +40,8 @@ Ah astronomy, a realm of wonder and beauty ...
 
 - [SAO/Cosmos](https://astronomy.swin.edu.au/cosmos/)
 
+- [Europlanet](http://astroedu.iau.org/en/collections/)
+
 ## Introduction
 
 - insert puzzle pieces (cf svg in docs)

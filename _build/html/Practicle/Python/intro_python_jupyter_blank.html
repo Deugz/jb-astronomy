@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction to Python and Jupyter notebooks &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -524,7 +525,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-python-and-jupyter-notebooks">
-<h1>Introduction to Python and Jupyter notebooks<a class="headerlink" href="#introduction-to-python-and-jupyter-notebooks" title="Permalink to this headline">#</a></h1>
+<h1>Introduction to Python and Jupyter notebooks<a class="headerlink" href="#introduction-to-python-and-jupyter-notebooks" title="Permalink to this heading">#</a></h1>
 <p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
 <p>Welcome!
 In this notebook, we will introduce the <a class="reference external" href="https://www.python.org/"><strong>Python programming language</strong></a> and <a class="reference external" href="https://jupyter.org/"><strong>Jupyter notebook</strong></a> programming environment.
@@ -535,7 +536,7 @@ We hope you don’t mind the quick refresher, and maybe some of our protips will
 <p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
 </div>
 <section id="did-you-say-python">
-<h2>Did you say… Python?<a class="headerlink" href="#did-you-say-python" title="Permalink to this headline">#</a></h2>
+<h2>Did you say… Python?<a class="headerlink" href="#did-you-say-python" title="Permalink to this heading">#</a></h2>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <figure class="align-center" id="id1">
@@ -566,7 +567,7 @@ This growth is in part due to:</p>
 <strong>If you’re new to Python, that’s OK!</strong>
 The rest of today will be spent on [re]acquainting ourselves with Python and introducing the necessarity functionalities.</p>
 <section id="using-python-code">
-<h3>Using Python code<a class="headerlink" href="#using-python-code" title="Permalink to this headline">#</a></h3>
+<h3>Using Python code<a class="headerlink" href="#using-python-code" title="Permalink to this heading">#</a></h3>
 <p>In this module, we’re going to take a somewhat practical approach to using Python, in the sense that we view it as just another tool in our toolbox for expanding our understanding of materials.
 We’ll discuss Python concepts, syntax, and style along the way, but the <em>focus</em> will always be on applying it to solve relevant MSE problems in a data-driven fashion.
 Therefore, our focus as mentors will be to teach you only what’s relevant for this module, and unfortunately won’t have much time to extensively cover the details of the language or various packages during the tutorials (you’re welcome to ask in OH!).</p>
@@ -584,18 +585,18 @@ We have designed this module in such a way that surfaces these other elements (t
 </ol>
 </section>
 <section id="running-python-code">
-<h3>Running Python code<a class="headerlink" href="#running-python-code" title="Permalink to this headline">#</a></h3>
+<h3>Running Python code<a class="headerlink" href="#running-python-code" title="Permalink to this heading">#</a></h3>
 <p>You can <em>write</em> Python code just about anywhere (even in Microsoft Word, lol), but in order to <em>execute</em> the code, you will need a Python <strong>kernel</strong>.
 For this module (at least, for these tutorials), we will use Jupyter notebooks for running the Python code we write.</p>
 </section>
 </section>
 <section id="philosophy-of-jupyter-notebooks">
-<h2>Philosophy of Jupyter notebooks<a class="headerlink" href="#philosophy-of-jupyter-notebooks" title="Permalink to this headline">#</a></h2>
+<h2>Philosophy of Jupyter notebooks<a class="headerlink" href="#philosophy-of-jupyter-notebooks" title="Permalink to this heading">#</a></h2>
 <p>The main design philosophy behind Jupyter notebooks could be summarized as the following: A platform for creating <em>computational narratives</em> to promote <em>literate computing</em>.
 The creators of Project Jupyter, one of whom is UC Berkeley Statistics Professor <a class="reference external" href="https://statistics.berkeley.edu/people/fernando-perez">Fernando Pérez</a>, wanted to create a tool that made computational research easier to communicate and more reproducible, which led to the development of Jupyter notebooks.
 The interleaving of code with prose and graphics has made programming a lot more accessible to general audiences and the interactivity of these notebooks also makes them great teaching tools!</p>
 <section id="organization-of-jupyter-notebooks">
-<h3>Organization of Jupyter notebooks<a class="headerlink" href="#organization-of-jupyter-notebooks" title="Permalink to this headline">#</a></h3>
+<h3>Organization of Jupyter notebooks<a class="headerlink" href="#organization-of-jupyter-notebooks" title="Permalink to this heading">#</a></h3>
 <p>The information in Jupyter notebooks is organized into <strong>cells</strong>, which come in many forms.
 This cell is called a <strong>Markdown cell</strong>, which is used for text that can be formatted with the <a class="reference external" href="https://www.markdownguide.org/">Markdown</a> markup language.
 This is a fairly simple, yet extremely powerful markup language that allows you to do most of the basic styles, such as add emphasis, make itemized lists, create headings, write inline code, add links, include external images, and use HTML (see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">here</a> for a cheat sheet).
@@ -613,7 +614,7 @@ You know this is a Markdown cell because when you select this cell (click on it 
 <p>And if you love <span class="math notranslate nohighlight">\(\LaTeX\)</span> as much as we do, it can handle that too. 😍</p>
 </section>
 <section id="making-edits">
-<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this headline">#</a></h3>
+<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this heading">#</a></h3>
 <p>To <strong>edit</strong> a Markdown cell, double-click on it until you see your cursor flashing in the cell and the cell change color from <font color="blue">blue</font> to <font color="green">green</font>.
 The cell’s background will also change color from white to a light gray.</p>
 <p><strong>EXERCISE:</strong> Double click on this cell and answer the following question by replacing the underscores:</p>
@@ -625,7 +626,7 @@ It’s often a nice design choice to split your work into smaller chunks to impr
 </section>
 </section>
 <section id="introducing-the-code-cell">
-<h2>Introducing the code cell<a class="headerlink" href="#introducing-the-code-cell" title="Permalink to this headline">#</a></h2>
+<h2>Introducing the code cell<a class="headerlink" href="#introducing-the-code-cell" title="Permalink to this heading">#</a></h2>
 <p>Notice how the next cell looks a little different.
 It is a <strong>code cell</strong>, which you can distinguish in a few ways.</p>
 <ul class="simple">
@@ -657,18 +658,18 @@ This allows you to split code among several code blocks and run them sequentiall
 We still recommend top to bottom, but this does give us flexibility to change an earlier code cell (and rerun it!) if we later deem it necessary.</p></li>
 </ul>
 <section id="exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
-<h3>EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it<a class="headerlink" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it" title="Permalink to this headline">#</a></h3>
+<h3>EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it<a class="headerlink" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it" title="Permalink to this heading">#</a></h3>
 <p>a = 4
 a             # what do you see?</p>
 </section>
 </section>
 <section id="datahub">
-<h2>DataHub<a class="headerlink" href="#datahub" title="Permalink to this headline">#</a></h2>
+<h2>DataHub<a class="headerlink" href="#datahub" title="Permalink to this heading">#</a></h2>
 <p>If you are a UC Berkeley student, you may be reading this Jupyter notebook on the school’s DataHub (a <a class="reference external" href="https://jupyter.org/hub">JupyterHub</a> instance), which has been graciously provisioned for this module by the <a class="reference external" href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>.
 With DataHub, all of our Python code will be saved and executed in the cloud, which saves us <em>a lot</em> of hassle with software installation.
 Everything is also automatically synced with the Jupyter Book!</p>
 <section id="installing-extra-packages">
-<h3>Installing extra packages<a class="headerlink" href="#installing-extra-packages" title="Permalink to this headline">#</a></h3>
+<h3>Installing extra packages<a class="headerlink" href="#installing-extra-packages" title="Permalink to this heading">#</a></h3>
 <p>Perhaps the only “catch,” which may come up as you work on your research project, is that you will still have to manually install Python packages that are not included with the default DataHub deployment <em>every time</em> you load DataHub.
 In order to install new packages, use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> package manager directly within a Jupyter code cell.</p>
 <p><strong>EXERCISE</strong>: Let’s demonstrate this below by adding a new code cell and installing the <code class="docutils literal notranslate"><span class="pre">mendeleev</span></code> package.</p>
@@ -677,14 +678,14 @@ Note that when you close a DataHub notebook, your edits and outputs are preserve
 </section>
 </section>
 <section id="general-programming-principles-and-tips">
-<h2>General programming principles and tips ☝<a class="headerlink" href="#general-programming-principles-and-tips" title="Permalink to this headline">#</a></h2>
+<h2>General programming principles and tips ☝<a class="headerlink" href="#general-programming-principles-and-tips" title="Permalink to this heading">#</a></h2>
 <p><strong>EXERCISE</strong>: Before we set you loose to work on practice problems, let’s spend some time discussing some general programming principles and best practices.</p>
 <p>I’ll start us off with one: <strong>save your work frequently</strong>.
 Just because a code cell runs or a Markdown cell renders does <em>not</em> mean that your work is saved.
 Jupyter notebook kernels are known to crash pretty randomly, so save your work by clicking the symbol in the menu bar or using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Command</kbd>+<kbd>S</kbd> on Macs).</p>
 </section>
 <section id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>If you want to read more about the design of Jupyter notebooks, please see the short paper by <a class="reference external" href="https://ebooks.iospress.nl/publication/42900">Kluyver, T. et al. <em>Positioning and power in academic publishing: Players, agents and agendas</em>, 2016</a>.</p></li>
 <li><p>If you want to see a [very long] list of interesting Jupyter notebooks, see <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">here</a>.</p></li>

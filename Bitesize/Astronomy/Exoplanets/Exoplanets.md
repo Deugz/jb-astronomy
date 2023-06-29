@@ -56,6 +56,26 @@
 
 :::
 
+:::{grid-item-card}
+:class-header: bg-light
+:margin: 3
+**Trappist 1**
+^^^
+
+- **Difficulty**: 🟡 
+- **Status**: ![flag alt >](../../../Docs/Svg_icons/Under_construction.svg) - 🔥
+- **Needs**: 🏸 - 💏
+- **Read time**: 5 min
+
+<br>
+<br>
+
+<div class="wrapper">
+<button class="button"><span> <a href="Sub_topics/Trappist1.html"  title= "" target="blank"> Let's Go ! </a></span></button> 
+</div>
+
+:::
+
 ::::
 
 

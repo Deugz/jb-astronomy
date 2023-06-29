@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Basketball &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -514,7 +515,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="basketball">
-<h1>Basketball<a class="headerlink" href="#basketball" title="Permalink to this headline">#</a></h1>
+<h1>Basketball<a class="headerlink" href="#basketball" title="Permalink to this heading">#</a></h1>
 <hr class="docutils" />
 <p><strong>Predict Basketball Games (NBA) Using Machine Learning</strong></p>
 <p>Tutorial adapted from <em>Dataquest</em></p>
@@ -524,7 +525,7 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <section id="project-overview">
-<h2>Project Overview<a class="headerlink" href="#project-overview" title="Permalink to this headline">#</a></h2>
+<h2>Project Overview<a class="headerlink" href="#project-overview" title="Permalink to this heading">#</a></h2>
 <p>In this project, we’ll predict who will win basketball games in the NBA.  We’ll start by web scraping NBA box scores.  We’ll read in and clean the html using BeautifulSoup.  Then we’ll parse the box scores into pandas DataFrames that we can use for machine learning.  Then we’ll do feature selection to identify good predictors, and train a machine learning model to make predictions.  We’ll end by computing rolling predictors and improving the model.</p>
 <p>This is a complete end-to-end project, and we’ll be using web scraping, data cleaning, and machine learning.</p>
 <p><strong>Project Steps</strong></p>
@@ -537,7 +538,7 @@ document.write(`
 <li><p>Compute rolling predictors to improve the model</p></li>
 </ul>
 <section id="code">
-<h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h3>
+<h3>Code<a class="headerlink" href="#code" title="Permalink to this heading">#</a></h3>
 <p>You can find the code for this project <a class="reference external" href="https://github.com/dataquestio/project-walkthroughs/tree/master/nba_games">here</a></p>
 <p>File overview:</p>
 <ul class="simple">
@@ -547,7 +548,7 @@ document.write(`
 </section>
 </section>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <p>To complete this project, you’ll need to have a good understanding of:</p>
 <ul class="simple">
 <li><p>Python syntax, including functions, if statements, and data structures</p></li>
@@ -569,9 +570,9 @@ document.write(`
 </ul>
 </section>
 <section id="local-setup">
-<h2>Local Setup<a class="headerlink" href="#local-setup" title="Permalink to this headline">#</a></h2>
+<h2>Local Setup<a class="headerlink" href="#local-setup" title="Permalink to this heading">#</a></h2>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h3>
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h3>
 <p>To follow this project, please install the following locally:</p>
 <ul class="simple">
 <li><p>JupyerLab</p></li>
@@ -587,7 +588,7 @@ document.write(`
 </ul>
 </section>
 <section id="data">
-<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
 <p>We’ll download our dataset from Basketball Reference.</p>
 <ul class="simple">
 <li><p>You can find the pre-scraped data <a class="reference external" href="https://drive.google.com/uc?export=download&amp;id=10uPrEUqhe1uxShKiiZciRJViYqhJcre6">here</a> if you don’t want to run the code.</p></li>

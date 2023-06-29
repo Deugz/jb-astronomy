@@ -99,6 +99,31 @@ width: 1200px
 ::::
 
 
+#### Temperature
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+
+<video src="../../../_static/videos/Rainbow-telescope-temperature.mp4" width="100%" height="" controls>
+  Your browser does not support the video tag.
+</video>
+
+Taken from: [Source](https://webbtelescope.org/contents/media/videos/01F9KWXB37VDZXVJVWEBMEQQW9?page=2&filterUUID=e273820a-7d43-4578-8fcb-2ee59b93555b)
+
+:::
+
+:::{grid-item}
+
+Explanation
+
+:::
+
+::::
+
+:::::
+
 
 ### Around the Sun
 
@@ -118,6 +143,12 @@ width: 1200px
 
 ### How do they work
 
+:::::{div} full-width
+
+::::{grid} 2
+
+:::{grid-item}
+
 ```{figure} Docs/Soleil.png
 ---
 name: Fusion-machin
@@ -125,6 +156,18 @@ width: 400px
 ---
 source: 
 ```
+
+:::
+
+:::{grid-item}
+
+A star's life is a constant struggle against the force of gravity. Gravity constantly works to try and cause the star to collapse. The star's core, however, is very hot, which creates pressure within the gas. This pressure counteracts the force of gravity, putting the star into what is called hydrostatic equilibrium. A star is okay as long as the star has this equilibrium between gravity pulling the star inwards and pressure pushing the star outwards.
+
+:::
+
+::::
+
+:::::
 
 
 ### How do they form
@@ -144,6 +187,8 @@ source:
 ### Life
 
 #### HR diagram
+
+During most of a star's lifetime, the interior heat and radiation is provided by nuclear reactions in the star's core. This phase of the star's life is called the **main sequence**.
 
 ```{figure} Docs/diag-hr.png
 ---
@@ -178,6 +223,10 @@ width: 2000px
 - link toward Periodic table
 
 ### How do they die
+
+At some point, the star will run out of material in its core for those nuclear reactions. When the star runs out of nuclear fuel, it comes to the end of its time on the main sequence. If the star is large enough, it can go through a series of less-efficient nuclear reactions to produce internal heat. However, eventually these reactions will no longer generate sufficient heat to support the star against its own gravity and the star will collapse
+
+- Process dependant on the mass
 
 #### Crab Nebulae
 

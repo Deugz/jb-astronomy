@@ -4,6 +4,10 @@
 format: jb-book
 root: intro
 parts:
+  - caption: ""
+    chapters:
+    - url: https://deugz.github.io/sp-Science_Journey/build/html/index.html
+      title: "🏠 Home"
   - caption:
     chapters:
     - file: Intro/content

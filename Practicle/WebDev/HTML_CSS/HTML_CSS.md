@@ -65,6 +65,7 @@ a simple html page
 
 - [CSS Doodle](https://css-doodle.com/)
 
+- [Diagonal layout](https://codepen.io/enbee81/pen/MWPwMMJ)
 
 ***
 

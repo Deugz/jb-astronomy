@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Getting Started with Python - Variables &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
@@ -517,7 +518,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-variables">
-<h1>Getting Started with Python - Variables<a class="headerlink" href="#getting-started-with-python-variables" title="Permalink to this headline">#</a></h1>
+<h1>Getting Started with Python - Variables<a class="headerlink" href="#getting-started-with-python-variables" title="Permalink to this heading">#</a></h1>
 <p>Version 0.1 Jul 2020</p>
 <p>This notebook introduces the concept of variables in Python programming. You will discover what variables are, and see that every variable in Python has a type. You will also find out more about lists in Python.</p>
 <p><span class="xref myst">1. Variables</span></p>
@@ -528,7 +529,7 @@ document.write(`
 <hr class="docutils" />
 <p><a id="Variables"></a></p>
 <section id="variables">
-<h2>1. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
+<h2>1. Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h2>
 <p>A <strong>variable</strong> is a named entity that stores some information within a computer program. Variables provide a way for programmers to store information so that they can retrieve and reuse this information as many times as they want, just by calling its name.</p>
 <p>Using variables in Python starts usually starts with an <em>assignment statement</em>, such as</p>
 <p><code class="docutils literal notranslate"><span class="pre">variable_name</span> <span class="pre">=</span> <span class="pre">(value)</span></code></p>
@@ -609,7 +610,7 @@ document.write(`
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <section id="variables-summary">
-<h3>Variables - summary<a class="headerlink" href="#variables-summary" title="Permalink to this headline">#</a></h3>
+<h3>Variables - summary<a class="headerlink" href="#variables-summary" title="Permalink to this heading">#</a></h3>
 <p>To recap then:</p>
 <ul class="simple">
 <li><p>Variables are places where you can store information in the computer under a given name. You can then retrieve and use this information just by calling its name.</p></li>
@@ -622,7 +623,7 @@ document.write(`
 </section>
 </section>
 <section id="types">
-<h2>2. Types<a class="headerlink" href="#types" title="Permalink to this headline">#</a></h2>
+<h2>2. Types<a class="headerlink" href="#types" title="Permalink to this heading">#</a></h2>
 <p>As you can imagine, variables can be used in many more applications than just moving integers from one box to another (as you saw in Exercise 1.2). In fact, numbers are only one flavour of data that you might be handling with Python.</p>
 <p>When any new variable is defined using an assignment in Python, the kernel automatically attributes a <em>type</em> to it. You have come across several types of data already in this course, but we haven’t yet discussed them explicitly. So, let’s briefly introduce the most common variable types in Python.</p>
 <ol class="arabic simple">
@@ -688,7 +689,7 @@ document.write(`
 <p>Running this code will give an error message, because it is not permissable to add a string to a float. This example shows you that you should keep track of the types of your variables so you don’t mix them together in a forbidden way.</p>
 <p>The exception to the general prohibition on mixing data types occurs with floats and integers. It is acceptable to carry arithmetic operations that mix floats and integers, but note that the results will usually be converted to floats. This isn’t usually problematic for calculations, but it can be a problem if you then use that result to do something in Python that requires an integer input.</p>
 <section id="types-summary">
-<h3>Types - summary<a class="headerlink" href="#types-summary" title="Permalink to this headline">#</a></h3>
+<h3>Types - summary<a class="headerlink" href="#types-summary" title="Permalink to this heading">#</a></h3>
 <p>To recap this section:</p>
 <ul class="simple">
 <li><p>Every variable in Python has a specific type.</p></li>
@@ -701,7 +702,7 @@ document.write(`
 </section>
 </section>
 <section id="more-about-lists">
-<h2>3. More about Lists<a class="headerlink" href="#more-about-lists" title="Permalink to this headline">#</a></h2>
+<h2>3. More about Lists<a class="headerlink" href="#more-about-lists" title="Permalink to this heading">#</a></h2>
 <p>We quickly introduced lists when we talked about iteration. Let us be a bit more thorough in describing what Python means by a list. Recalling the definition we used before, lists are sequences of elements that can be anything from numbers to words. They are represented by the form:</p>
 <p>[element 1, element 2, element 3, …. element n]</p>
 <p>where elements are separated by commas within square brackets.</p>
@@ -776,14 +777,14 @@ document.write(`
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <section id="lists-summary">
-<h3>Lists - summary<a class="headerlink" href="#lists-summary" title="Permalink to this headline">#</a></h3>
+<h3>Lists - summary<a class="headerlink" href="#lists-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned what lists are and how to use them to store a set of information. You also saw how to retrieve the different elements of the list or append elements to it.</p>
 <hr class="docutils" />
 <p><a id="Exercise-Answers"></a></p>
 </section>
 </section>
 <section id="exercises-answers">
-<h2>Exercises Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">#</a></h2>
+<h2>Exercises Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.1"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 1.1</b> <br> 

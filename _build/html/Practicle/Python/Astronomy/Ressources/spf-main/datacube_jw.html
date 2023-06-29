@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>ASTR777 Star and Planet Formation Problem Set 1 &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
@@ -513,9 +514,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="astr777-star-and-planet-formation-problem-set-1">
-<h1>ASTR777 Star and Planet Formation Problem Set 1<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-1" title="Permalink to this headline">#</a></h1>
+<h1>ASTR777 Star and Planet Formation Problem Set 1<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-1" title="Permalink to this heading">#</a></h1>
 <section id="explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014">
-<h2>explore the IRAM 30m Orion data cube of 12CO and 13CO from <a class="reference external" href="https://www.iram.fr/ILPA/LP014">https://www.iram.fr/ILPA/LP014</a><a class="headerlink" href="#explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014" title="Permalink to this headline">#</a></h2>
+<h2>explore the IRAM 30m Orion data cube of 12CO and 13CO from <a class="reference external" href="https://www.iram.fr/ILPA/LP014">https://www.iram.fr/ILPA/LP014</a><a class="headerlink" href="#explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -537,7 +538,7 @@ document.write(`
 </div>
 </section>
 <section id="read-in-the-data-and-examine-header">
-<h2>read in the data and examine header<a class="headerlink" href="#read-in-the-data-and-examine-header" title="Permalink to this headline">#</a></h2>
+<h2>read in the data and examine header<a class="headerlink" href="#read-in-the-data-and-examine-header" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># read in the fits file and get some basic information</span>
@@ -580,7 +581,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </section>
 <section id="plot-a-map-of-the-peak-temperature">
-<h2>plot a map of the peak temperature<a class="headerlink" href="#plot-a-map-of-the-peak-temperature" title="Permalink to this headline">#</a></h2>
+<h2>plot a map of the peak temperature<a class="headerlink" href="#plot-a-map-of-the-peak-temperature" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the peak value at each ra-dec position (note that velocity is axis 0 of the python array)</span>
@@ -658,7 +659,7 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </section>
 <section id="plot-channel-maps-and-write-them-out-to-make-a-movie">
-<h2>plot channel maps and write them out to make a movie<a class="headerlink" href="#plot-channel-maps-and-write-them-out-to-make-a-movie" title="Permalink to this headline">#</a></h2>
+<h2>plot channel maps and write them out to make a movie<a class="headerlink" href="#plot-channel-maps-and-write-them-out-to-make-a-movie" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># now go through the velocity axis and look at the &quot;channels&quot; one by one</span>
@@ -723,20 +724,20 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </div>
 <section id="and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook">
-<h3>and then run ffmpeg (on the unix command line outside of the notebook)<a class="headerlink" href="#and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook" title="Permalink to this headline">#</a></h3>
+<h3>and then run ffmpeg (on the unix command line outside of the notebook)<a class="headerlink" href="#and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg">
-<h3>see <a class="reference external" href="https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg">https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg</a><a class="headerlink" href="#see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg" title="Permalink to this headline">#</a></h3>
+<h3>see <a class="reference external" href="https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg">https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg</a><a class="headerlink" href="#see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg" title="Permalink to this heading">#</a></h3>
 <blockquote>
 <div><p>ffmpeg -framerate 10 -pattern_type glob -i ‘*.png’ -c:v libx264 -pix_fmt yuv420p channels.mp4</p>
 </div></blockquote>
 </section>
 <section id="there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out">
-<h3>there is a way to do this using matplotlib animator but I haven’t been able to figure it out…<a class="headerlink" href="#there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out" title="Permalink to this headline">#</a></h3>
+<h3>there is a way to do this using matplotlib animator but I haven’t been able to figure it out…<a class="headerlink" href="#there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out" title="Permalink to this heading">#</a></h3>
 </section>
 </section>
 <section id="now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number">
-<h2>now look at spectra, i.e., temperature vs velocity, and calculate Mach number<a class="headerlink" href="#now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number" title="Permalink to this headline">#</a></h2>
+<h2>now look at spectra, i.e., temperature vs velocity, and calculate Mach number<a class="headerlink" href="#now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># basic first try </span>
@@ -829,7 +830,7 @@ FWHM =  5.32 km/s
 </div>
 </section>
 <section id="calculate-virial-mass">
-<h2>calculate virial mass<a class="headerlink" href="#calculate-virial-mass" title="Permalink to this headline">#</a></h2>
+<h2>calculate virial mass<a class="headerlink" href="#calculate-virial-mass" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dist</span> <span class="o">=</span> <span class="mi">412</span>        <span class="c1"># distance to Trapezium Cluster in pc</span>

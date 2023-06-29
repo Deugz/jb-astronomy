@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>ASTR777 Star and Planet Formation Problem Set 2 &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
@@ -507,14 +508,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="astr777-star-and-planet-formation-problem-set-2">
-<h1>ASTR777 Star and Planet Formation Problem Set 2<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-2" title="Permalink to this headline">#</a></h1>
+<h1>ASTR777 Star and Planet Formation Problem Set 2<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-2" title="Permalink to this heading">#</a></h1>
 <section id="numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile">
-<h2>numerically integrate the Emden-Chandrasekhar equation and plot Bonnor-Ebert density profile<a class="headerlink" href="#numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile" title="Permalink to this headline">#</a></h2>
+<h2>numerically integrate the Emden-Chandrasekhar equation and plot Bonnor-Ebert density profile<a class="headerlink" href="#numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\frac{1}{x^2}\frac{d}{dx}\left(x^2\frac{dy}{dx}\right) = e^{-y}\]</div>
 </section>
 <section id="first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set">
-<h2>first solution ec_integrate1 follows methodology described in the problem set<a class="headerlink" href="#first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set" title="Permalink to this headline">#</a></h2>
+<h2>first solution ec_integrate1 follows methodology described in the problem set<a class="headerlink" href="#first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set" title="Permalink to this heading">#</a></h2>
 <p>expand the differential to derive,
 $<span class="math notranslate nohighlight">\(2x y' + x^2 y'' = x^2 e^{-y},\)</span><span class="math notranslate nohighlight">\(
 where \)</span>y’ = dy/dx, y’’ = d^2y/dx^2<span class="math notranslate nohighlight">\(. This gives a prescription for \)</span>y’’<span class="math notranslate nohighlight">\( which we can use in Taylor expansions,
@@ -523,7 +524,7 @@ where \)</span>y’ = dy/dx, y’’ = d^2y/dx^2<span class="math notranslate no
 We then step out from \)</span>x=0<span class="math notranslate nohighlight">\( to determine \)</span>y(x)<span class="math notranslate nohighlight">\(. The initial conditions are \)</span>y(0)=y’(0)=0<span class="math notranslate nohighlight">\( (gravitational potential is zero and symmetric about the origin). We also need \)</span>y’’(0)<span class="math notranslate nohighlight">\( which is a bit tricky but we integrate once to determine \)</span>x^2y’=\int x^2e^{-y}dx\simeq x^3/3<span class="math notranslate nohighlight">\( where the last approximation is for near the origin. This gives \)</span>y’\simeq x/3<span class="math notranslate nohighlight">\( which implies \)</span>y’’(0)=1/3$. This bit of arithmetic gymnastics mimics the more direct alternative solution below.</p>
 </section>
 <section id="alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk">
-<h2>alternative solution ec_integrate2 is based on <a class="reference external" href="https://www.youtube.com/watch?v=S0yupkDgyJk">https://www.youtube.com/watch?v=S0yupkDgyJk</a><a class="headerlink" href="#alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk" title="Permalink to this headline">#</a></h2>
+<h2>alternative solution ec_integrate2 is based on <a class="reference external" href="https://www.youtube.com/watch?v=S0yupkDgyJk">https://www.youtube.com/watch?v=S0yupkDgyJk</a><a class="headerlink" href="#alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk" title="Permalink to this heading">#</a></h2>
 <p>Integrate once to,
 $<span class="math notranslate nohighlight">\(x^2\frac{dy}{dx} = \int_0^x x^2e^{-y}dx \equiv f(x)\)</span><span class="math notranslate nohighlight">\(
 which then gives a prescription for a numerical solution,

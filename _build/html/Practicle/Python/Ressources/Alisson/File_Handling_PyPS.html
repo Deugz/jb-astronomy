@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Getting Started with Python - File input and output &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
@@ -517,7 +518,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-file-input-and-output">
-<h1>Getting Started with Python - File input and output<a class="headerlink" href="#getting-started-with-python-file-input-and-output" title="Permalink to this headline">#</a></h1>
+<h1>Getting Started with Python - File input and output<a class="headerlink" href="#getting-started-with-python-file-input-and-output" title="Permalink to this heading">#</a></h1>
 <p>Version 0.2 Aug 2020</p>
 <p>This notebook explains how you can import data from external files into a Python program or write data from a program to a file.</p>
 <p>For this part, you will need to download the files <code class="docutils literal notranslate"><span class="pre">file_1.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">file_2.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">file_3.txt</span></code> from the Resources section of the course. These files should be saved to the same folder as this notebook.</p>
@@ -529,7 +530,7 @@ document.write(`
 <hr class="docutils" />
 <p><a id="Input"></a></p>
 <section id="importing-data-from-a-file">
-<h2>1. Importing data from a file<a class="headerlink" href="#importing-data-from-a-file" title="Permalink to this headline">#</a></h2>
+<h2>1. Importing data from a file<a class="headerlink" href="#importing-data-from-a-file" title="Permalink to this heading">#</a></h2>
 <p>We’ve already seen (in <code class="docutils literal notranslate"><span class="pre">Functions_PyPS.ipynb</span></code>) how we can get the user to input data from the keyboard. However, it is not very practical to do so when you want to input or output thousands of lines of data or long texts. To overcome this issue, Python provides a way to access the content of files.</p>
 <p>The first step is to use the <code class="docutils literal notranslate"><span class="pre">open()</span></code> function to tell Python the name of the file. This is done using a statement such as:</p>
 <div class="cell docutils container">
@@ -642,7 +643,7 @@ document.write(`
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <section id="importing-data-from-a-file-summary">
-<h3>Importing data from a file - summary<a class="headerlink" href="#importing-data-from-a-file-summary" title="Permalink to this headline">#</a></h3>
+<h3>Importing data from a file - summary<a class="headerlink" href="#importing-data-from-a-file-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned how to load a file in Python and you saw how to read it either in its entirety or line by line.
 You saw that methods are types of functions that apply to entities (such as file objects or strings). You also gained experience in working with strings and saw how to extract data from a string that you can work with in a program.</p>
 <hr class="docutils" />
@@ -650,7 +651,7 @@ You saw that methods are types of functions that apply to entities (such as file
 </section>
 </section>
 <section id="writing-data-to-a-file">
-<h2>2. Writing data to a file<a class="headerlink" href="#writing-data-to-a-file" title="Permalink to this headline">#</a></h2>
+<h2>2. Writing data to a file<a class="headerlink" href="#writing-data-to-a-file" title="Permalink to this heading">#</a></h2>
 <p>Often, you will find it useful to store some data that your Python program has produced. Saving data in an external file allows it to be used at a later time. Python allows you to write to a text file in a way that is similar to the process of reading data.</p>
 <p>The first step is to open the file, but this time in a <em>write</em> mode:</p>
 <div class="cell docutils container">
@@ -737,7 +738,7 @@ You saw that methods are types of functions that apply to entities (such as file
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <section id="writing-data-to-a-file-summary">
-<h3>Writing data to a file - summary<a class="headerlink" href="#writing-data-to-a-file-summary" title="Permalink to this headline">#</a></h3>
+<h3>Writing data to a file - summary<a class="headerlink" href="#writing-data-to-a-file-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned how a file can be created with Python and how you can write text to it.</p>
 <p>Now it is time to see how you can change how numbers and words are written so that you can modify the way they are printed.</p>
 <hr class="docutils" />
@@ -745,7 +746,7 @@ You saw that methods are types of functions that apply to entities (such as file
 </section>
 </section>
 <section id="formatting-text">
-<h2>3. Formatting text<a class="headerlink" href="#formatting-text" title="Permalink to this headline">#</a></h2>
+<h2>3. Formatting text<a class="headerlink" href="#formatting-text" title="Permalink to this heading">#</a></h2>
 <p>Computers can handle numerical calculations with ease, but making it readable to humans takes a little thought and care.</p>
 <p>Take this example – this program calculates the square root of 2.0 and prints it out. This example uses the <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> function, which is part of the <code class="docutils literal notranslate"><span class="pre">math</span></code> package. We must import the <code class="docutils literal notranslate"><span class="pre">math</span></code> package first, before we can use it.</p>
 <p>Run the following to see how the number is output:</p>
@@ -842,7 +843,7 @@ You saw that methods are types of functions that apply to entities (such as file
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
 <section id="formatting-text-summary">
-<h3>Formatting text - summary<a class="headerlink" href="#formatting-text-summary" title="Permalink to this headline">#</a></h3>
+<h3>Formatting text - summary<a class="headerlink" href="#formatting-text-summary" title="Permalink to this heading">#</a></h3>
 <p>In this section you have seen some of the ways that you can control the format of text that is written to a file. Specifically, you have seen how to control the format of how variables are written to a string. This string can then be output (printed or written to a file).</p>
 <p>There are many more aspects to formatting strings, but the examples you have seen here will allow you to have some control over how to store and display numerical data from your Python programs.</p>
 <hr class="docutils" />
@@ -850,7 +851,7 @@ You saw that methods are types of functions that apply to entities (such as file
 </section>
 </section>
 <section id="exercises-answers">
-<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this headline">#</a></h2>
+<h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.1"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 1.1</b> <br> 

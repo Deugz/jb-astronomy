@@ -8,6 +8,10 @@ HTML CSS Jupyter-Book ...
 
 - [coding a snowflake tutorial](https://cloudfour.com/thinks/coding-a-snowflake-generator/) - HTML/CSS/JS
 
+**To explore for our websites**
+
+- [Scroll indicator](https://www.w3schools.com/howto/howto_js_scroll_indicator.asp)
+- [Modal](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal) - may-be for mathematical development ...
 
 ***
 

@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>ASTR777 Star and Planet Formation Problem Set 6 &#8212; TEACHING</title>
   
@@ -51,6 +51,7 @@
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
@@ -511,9 +512,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="astr777-star-and-planet-formation-problem-set-6">
-<h1>ASTR777 Star and Planet Formation Problem Set 6<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-6" title="Permalink to this headline">#</a></h1>
+<h1>ASTR777 Star and Planet Formation Problem Set 6<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-6" title="Permalink to this heading">#</a></h1>
 <section id="image-analysis-the-spirals-of-im-lup">
-<h2>Image Analysis - the spirals of IM Lup<a class="headerlink" href="#image-analysis-the-spirals-of-im-lup" title="Permalink to this headline">#</a></h2>
+<h2>Image Analysis - the spirals of IM Lup<a class="headerlink" href="#image-analysis-the-spirals-of-im-lup" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">time</span>           
@@ -665,7 +666,7 @@ Set OBSGEO-H to     5053.796 from OBSGEO-[XYZ]&#39;. [astropy.wcs.wcs]
 </section>
 </section>
 <section id="derotated-deprojected-map">
-<h1>Derotated, deprojected Map<a class="headerlink" href="#derotated-deprojected-map" title="Permalink to this headline">#</a></h1>
+<h1>Derotated, deprojected Map<a class="headerlink" href="#derotated-deprojected-map" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># function to (linearly) interpolate the map</span>
@@ -729,7 +730,7 @@ Set OBSGEO-H to     5053.796 from OBSGEO-[XYZ]&#39;. [astropy.wcs.wcs]
 </div>
 </section>
 <section id="deprojected-radius-azimuth-map-amd-radial-profile">
-<h1>Deprojected Radius-Azimuth Map amd Radial Profile<a class="headerlink" href="#deprojected-radius-azimuth-map-amd-radial-profile" title="Permalink to this headline">#</a></h1>
+<h1>Deprojected Radius-Azimuth Map amd Radial Profile<a class="headerlink" href="#deprojected-radius-azimuth-map-amd-radial-profile" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">interp2d</span><span class="p">(</span><span class="n">xdisk</span><span class="p">,</span> <span class="n">ydisk</span><span class="p">,</span> <span class="n">image_deproj</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;cubic&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -845,7 +846,7 @@ Set OBSGEO-H to     5053.796 from OBSGEO-[XYZ]&#39;. [astropy.wcs.wcs]
 </div>
 </section>
 <section id="create-an-azimuthally-symmetric-image-from-the-radial-profile-and-subtract-it-from-the-original-to-enhance-the-spirals">
-<h1>create an azimuthally symmetric image from the radial profile and subtract it from the original to enhance the spirals<a class="headerlink" href="#create-an-azimuthally-symmetric-image-from-the-radial-profile-and-subtract-it-from-the-original-to-enhance-the-spirals" title="Permalink to this headline">#</a></h1>
+<h1>create an azimuthally symmetric image from the radial profile and subtract it from the original to enhance the spirals<a class="headerlink" href="#create-an-azimuthally-symmetric-image-from-the-radial-profile-and-subtract-it-from-the-original-to-enhance-the-spirals" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># radial profile that we will sweep out</span>
@@ -908,7 +909,7 @@ Set OBSGEO-H to     5053.796 from OBSGEO-[XYZ]&#39;. [astropy.wcs.wcs]
 </div>
 </section>
 <section id="now-transform-back-to-the-skyframe">
-<h1>Now transform back to the skyframe<a class="headerlink" href="#now-transform-back-to-the-skyframe" title="Permalink to this headline">#</a></h1>
+<h1>Now transform back to the skyframe<a class="headerlink" href="#now-transform-back-to-the-skyframe" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image_res</span> <span class="o">=</span> <span class="n">image_deproj</span><span class="o">-</span><span class="n">image_sweep</span>
