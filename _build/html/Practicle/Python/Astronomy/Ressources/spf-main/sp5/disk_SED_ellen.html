@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Problem Set 5 &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../../_static/jquery.js"></script>
     <script src="../../../../../../_static/underscore.js"></script>
     <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../../_static/doctools.js"></script>
+    <script src="../../../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../../_static/copybutton.js"></script>
     <script src="../../../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -514,7 +517,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problem-set-5">
+  <div class="tex2jax_ignore mathjax_ignore section" id="problem-set-5">
 <h1>Problem Set 5<a class="headerlink" href="#problem-set-5" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -553,13 +556,13 @@ F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \un
 </div>
 </div>
 </div>
-<section id="part-1">
+<div class="section" id="part-1">
 <h2>Part 1<a class="headerlink" href="#part-1" title="Permalink to this heading">#</a></h2>
 <p>The contribution from the star is predictable. For the disk, we obtain <span class="math notranslate nohighlight">\(T_1=100 \text{ K}\)</span> and <span class="math notranslate nohighlight">\(\Sigma_1 = 20 \text{ g/cm}^2\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">planck</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">Teff</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the value of Planck&#39;s function.</span>
 <span class="sd">    </span>
 <span class="sd">    PARAMETERS</span>
@@ -569,7 +572,7 @@ F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \un
     <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">H</span><span class="o">*</span><span class="n">nu</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="n">C</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">H</span><span class="o">*</span><span class="n">nu</span><span class="o">/</span><span class="p">(</span><span class="n">K_B</span><span class="o">*</span><span class="n">Teff</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">extinction</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns A_lambda/A_V for the given wavelength, according to eqs. (9) and (10) of</span>
 <span class="sd">    Wang &amp; Chen 2019.</span>
 <span class="sd">    </span>
@@ -585,7 +588,7 @@ F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \un
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">,</span> <span class="n">f1</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">f2</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
 
 <span class="k">def</span> <span class="nf">sed_star</span><span class="p">(</span><span class="n">nu</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the SED of the star with extinction.</span>
 <span class="sd">    </span>
 <span class="sd">    PARAMETERS:</span>
@@ -598,7 +601,7 @@ F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \un
     <span class="k">return</span> <span class="n">nu</span><span class="o">*</span><span class="n">F_nu_obs_star</span><span class="o">*</span><span class="n">ext_corr</span>
 
 <span class="k">def</span> <span class="nf">sed_disk</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the SED of the disk with extinction.</span>
 <span class="sd">    </span>
 <span class="sd">    PARAMETERS</span>
@@ -657,9 +660,9 @@ F_{\nu,disk} = \int_{R_{min}}^{R_{max}} \underbrace{B_{\nu}(T)}_{\text{(a)}} \un
 <img alt="../../../../../../_images/5ee3913f4982ae4d5cc7df10dd8f8a32655b69642bd1f66c7a48cbe10e4224ee.png" src="../../../../../../_images/5ee3913f4982ae4d5cc7df10dd8f8a32655b69642bd1f66c7a48cbe10e4224ee.png" />
 </div>
 </div>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="part-2">
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="part-2">
 <h1>Part 2<a class="headerlink" href="#part-2" title="Permalink to this heading">#</a></h1>
 <p>The ratios are:</p>
 <div class="math notranslate nohighlight">
@@ -711,13 +714,13 @@ Sint/Sext = 16.00
 <img alt="../../../../../../_images/61fb6b19d6b3bf93a492b703302b043182ee2cc0503bd5c857cf787123a7eba8.png" src="../../../../../../_images/61fb6b19d6b3bf93a492b703302b043182ee2cc0503bd5c857cf787123a7eba8.png" />
 </div>
 </div>
-<section id="part-3">
+<div class="section" id="part-3">
 <h2>Part 3<a class="headerlink" href="#part-3" title="Permalink to this heading">#</a></h2>
 <p>Playing with the parameters of <span class="math notranslate nohighlight">\(F_{\nu, disk}\)</span>, we find that:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\beta\)</span> changes the slope of the right edge</p></li>
-<li><p><span class="math notranslate nohighlight">\(R_{min}\)</span> changes the size of the middle left dip</p></li>
-<li><p><span class="math notranslate nohighlight">\(R_{max}\)</span> changes the location of the right edge.</p></li>
+<li><span class="math notranslate nohighlight">\(\beta\)</span> changes the slope of the right edge</li>
+<li><span class="math notranslate nohighlight">\(R_{min}\)</span> changes the size of the middle left dip</li>
+<li><span class="math notranslate nohighlight">\(R_{max}\)</span> changes the location of the right edge.</li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -752,8 +755,8 @@ Sint/Sext = 16.00
 <img alt="../../../../../../_images/1a2e12a82fe8dab294582042809f949d044ccd5abfa9a58c053dac629e9e6be4.png" src="../../../../../../_images/1a2e12a82fe8dab294582042809f949d044ccd5abfa9a58c053dac629e9e6be4.png" />
 </div>
 </div>
-</section>
-<section id="part-4">
+</div>
+<div class="section" id="part-4">
 <h2>Part 4<a class="headerlink" href="#part-4" title="Permalink to this heading">#</a></h2>
 <p>We can split the integral for <span class="math notranslate nohighlight">\(F_{\nu, disk}\)</span> so that we don’t integrate over the radii where the gap is located.</p>
 <div class="math notranslate nohighlight">
@@ -764,7 +767,7 @@ F_{\nu,disk} = \int_{R_{disk,min}}^{R_{gap,min}} B_{\nu}(T) \big[ 1-e^{-\kappa_{
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sed_disk_gap</span><span class="p">(</span><span class="n">nu</span><span class="p">,</span> <span class="n">rmin</span><span class="p">,</span> <span class="n">rmax</span><span class="p">,</span> <span class="n">gapmin</span><span class="p">,</span> <span class="n">gapmax</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">T1</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the SED using the flat disk model with extinction.</span>
 <span class="sd">    </span>
 <span class="sd">    PARAMETERS</span>
@@ -824,8 +827,8 @@ F_{\nu,disk} = \int_{R_{disk,min}}^{R_{gap,min}} B_{\nu}(T) \big[ 1-e^{-\kappa_{
 <img alt="../../../../../../_images/e66f3dff96d9a0292b454aabc7bb990c244f63ed4b9d6ee6b9279db907e1bcf9.png" src="../../../../../../_images/e66f3dff96d9a0292b454aabc7bb990c244f63ed4b9d6ee6b9279db907e1bcf9.png" />
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -853,9 +856,15 @@ F_{\nu,disk} = \int_{R_{disk,min}}^{R_{gap,min}} B_{\nu}(T) \big[ 1-e^{-\kappa_{
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -888,7 +897,7 @@ F_{\nu,disk} = \int_{R_{disk,min}}^{R_{gap,min}} B_{\nu}(T) \big[ 1-e^{-\kappa_{
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -916,7 +925,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -925,8 +934,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

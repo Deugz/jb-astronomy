@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTR777 Star and Planet Formation Problem Set 2 &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
     <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
     <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -507,14 +510,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="astr777-star-and-planet-formation-problem-set-2">
+  <div class="section" id="astr777-star-and-planet-formation-problem-set-2">
 <h1>ASTR777 Star and Planet Formation Problem Set 2<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-2" title="Permalink to this heading">#</a></h1>
-<section id="numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile">
+<div class="section" id="numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile">
 <h2>numerically integrate the Emden-Chandrasekhar equation and plot Bonnor-Ebert density profile<a class="headerlink" href="#numerically-integrate-the-emden-chandrasekhar-equation-and-plot-bonnor-ebert-density-profile" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\frac{1}{x^2}\frac{d}{dx}\left(x^2\frac{dy}{dx}\right) = e^{-y}\]</div>
-</section>
-<section id="first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set">
+</div>
+<div class="section" id="first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set">
 <h2>first solution ec_integrate1 follows methodology described in the problem set<a class="headerlink" href="#first-solution-ec-integrate1-follows-methodology-described-in-the-problem-set" title="Permalink to this heading">#</a></h2>
 <p>expand the differential to derive,
 $<span class="math notranslate nohighlight">\(2x y' + x^2 y'' = x^2 e^{-y},\)</span><span class="math notranslate nohighlight">\(
@@ -522,9 +525,9 @@ where \)</span>y’ = dy/dx, y’’ = d^2y/dx^2<span class="math notranslate no
 \)</span><span class="math notranslate nohighlight">\(y(x+\Delta x) = y(x) + y'(x)\Delta x + y''(x) \Delta x^2/2,\)</span><span class="math notranslate nohighlight">\(
 \)</span><span class="math notranslate nohighlight">\(y'(x+\Delta x) = y'(x) + y''(x)\Delta x.\)</span><span class="math notranslate nohighlight">\(
 We then step out from \)</span>x=0<span class="math notranslate nohighlight">\( to determine \)</span>y(x)<span class="math notranslate nohighlight">\(. The initial conditions are \)</span>y(0)=y’(0)=0<span class="math notranslate nohighlight">\( (gravitational potential is zero and symmetric about the origin). We also need \)</span>y’’(0)<span class="math notranslate nohighlight">\( which is a bit tricky but we integrate once to determine \)</span>x^2y’=\int x^2e^{-y}dx\simeq x^3/3<span class="math notranslate nohighlight">\( where the last approximation is for near the origin. This gives \)</span>y’\simeq x/3<span class="math notranslate nohighlight">\( which implies \)</span>y’’(0)=1/3$. This bit of arithmetic gymnastics mimics the more direct alternative solution below.</p>
-</section>
-<section id="alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk">
-<h2>alternative solution ec_integrate2 is based on <a class="reference external" href="https://www.youtube.com/watch?v=S0yupkDgyJk">https://www.youtube.com/watch?v=S0yupkDgyJk</a><a class="headerlink" href="#alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk">
+<h2>alternative solution ec_integrate2 is based on <a class="reference external" href="https://www.youtube.com/watch?v=S0yupkDgyJk" rel="noopener noreferrer" target="_blank">https://www.youtube.com/watch?v=S0yupkDgyJk</a><a class="headerlink" href="#alternative-solution-ec-integrate2-is-based-on-https-www-youtube-com-watch-v-s0yupkdgyjk" title="Permalink to this heading">#</a></h2>
 <p>Integrate once to,
 $<span class="math notranslate nohighlight">\(x^2\frac{dy}{dx} = \int_0^x x^2e^{-y}dx \equiv f(x)\)</span><span class="math notranslate nohighlight">\(
 which then gives a prescription for a numerical solution,
@@ -784,8 +787,8 @@ M_max/M_SIS = 1.49
 <img alt="../../../../../_images/2d7958ead35df650c8b55681ca34987a9a679bea0035389204474f00cc9851f4.png" src="../../../../../_images/2d7958ead35df650c8b55681ca34987a9a679bea0035389204474f00cc9851f4.png" />
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -813,9 +816,15 @@ M_max/M_SIS = 1.49
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -841,7 +850,7 @@ M_max/M_SIS = 1.49
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -869,7 +878,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -878,8 +887,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

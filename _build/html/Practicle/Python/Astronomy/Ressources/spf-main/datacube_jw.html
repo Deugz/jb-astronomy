@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTR777 Star and Planet Formation Problem Set 1 &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
     <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
     <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -206,6 +206,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -513,10 +516,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="astr777-star-and-planet-formation-problem-set-1">
+  <div class="tex2jax_ignore mathjax_ignore section" id="astr777-star-and-planet-formation-problem-set-1">
 <h1>ASTR777 Star and Planet Formation Problem Set 1<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-1" title="Permalink to this heading">#</a></h1>
-<section id="explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014">
-<h2>explore the IRAM 30m Orion data cube of 12CO and 13CO from <a class="reference external" href="https://www.iram.fr/ILPA/LP014">https://www.iram.fr/ILPA/LP014</a><a class="headerlink" href="#explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014" title="Permalink to this heading">#</a></h2>
+<div class="section" id="explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014">
+<h2>explore the IRAM 30m Orion data cube of 12CO and 13CO from <a class="reference external" href="https://www.iram.fr/ILPA/LP014" rel="noopener noreferrer" target="_blank">https://www.iram.fr/ILPA/LP014</a><a class="headerlink" href="#explore-the-iram-30m-orion-data-cube-of-12co-and-13co-from-https-www-iram-fr-ilpa-lp014" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -536,8 +539,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="read-in-the-data-and-examine-header">
+</div>
+<div class="section" id="read-in-the-data-and-examine-header">
 <h2>read in the data and examine header<a class="headerlink" href="#read-in-the-data-and-examine-header" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -579,8 +582,8 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </div>
 </div>
-</section>
-<section id="plot-a-map-of-the-peak-temperature">
+</div>
+<div class="section" id="plot-a-map-of-the-peak-temperature">
 <h2>plot a map of the peak temperature<a class="headerlink" href="#plot-a-map-of-the-peak-temperature" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -657,8 +660,8 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 <img alt="../../../../../_images/f8d0bb2d207a6792005fb1014ecc3d68894568ad90a1e2ac313ab2735bc62bb8.png" src="../../../../../_images/f8d0bb2d207a6792005fb1014ecc3d68894568ad90a1e2ac313ab2735bc62bb8.png" />
 </div>
 </div>
-</section>
-<section id="plot-channel-maps-and-write-them-out-to-make-a-movie">
+</div>
+<div class="section" id="plot-channel-maps-and-write-them-out-to-make-a-movie">
 <h2>plot channel maps and write them out to make a movie<a class="headerlink" href="#plot-channel-maps-and-write-them-out-to-make-a-movie" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -723,20 +726,19 @@ No.    Name      Ver    Type      Cards   Dimensions   Format
 </div>
 </div>
 </div>
-<section id="and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook">
+<div class="section" id="and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook">
 <h3>and then run ffmpeg (on the unix command line outside of the notebook)<a class="headerlink" href="#and-then-run-ffmpeg-on-the-unix-command-line-outside-of-the-notebook" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg">
-<h3>see <a class="reference external" href="https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg">https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg</a><a class="headerlink" href="#see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg">
+<h3>see <a class="reference external" href="https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg" rel="noopener noreferrer" target="_blank">https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg</a><a class="headerlink" href="#see-https-stackoverflow-com-questions-24961127-how-to-create-a-video-from-images-with-ffmpeg" title="Permalink to this heading">#</a></h3>
 <blockquote>
-<div><p>ffmpeg -framerate 10 -pattern_type glob -i ‘*.png’ -c:v libx264 -pix_fmt yuv420p channels.mp4</p>
-</div></blockquote>
-</section>
-<section id="there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out">
+<div>ffmpeg -framerate 10 -pattern_type glob -i ‘*.png’ -c:v libx264 -pix_fmt yuv420p channels.mp4</div></blockquote>
+</div>
+<div class="section" id="there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out">
 <h3>there is a way to do this using matplotlib animator but I haven’t been able to figure it out…<a class="headerlink" href="#there-is-a-way-to-do-this-using-matplotlib-animator-but-i-haven-t-been-able-to-figure-it-out" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
-<section id="now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number">
+</div>
+</div>
+<div class="section" id="now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number">
 <h2>now look at spectra, i.e., temperature vs velocity, and calculate Mach number<a class="headerlink" href="#now-look-at-spectra-i-e-temperature-vs-velocity-and-calculate-mach-number" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -828,8 +830,8 @@ FWHM =  5.32 km/s
 </div>
 </div>
 </div>
-</section>
-<section id="calculate-virial-mass">
+</div>
+<div class="section" id="calculate-virial-mass">
 <h2>calculate virial mass<a class="headerlink" href="#calculate-virial-mass" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -853,8 +855,8 @@ FWHM =  5.32 km/s
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -882,9 +884,15 @@ FWHM =  5.32 km/s
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -918,7 +926,7 @@ FWHM =  5.32 km/s
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -946,7 +954,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -955,8 +963,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

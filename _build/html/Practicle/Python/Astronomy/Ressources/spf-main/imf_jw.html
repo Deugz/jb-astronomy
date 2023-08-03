@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTR777 Star and Planet Formation Problem Set 4 &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
     <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../../_static/clipboard.min.js"></script>
     <script src="../../../../../_static/copybutton.js"></script>
     <script src="../../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -206,6 +206,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -508,9 +511,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="astr777-star-and-planet-formation-problem-set-4">
+  <div class="section" id="astr777-star-and-planet-formation-problem-set-4">
 <h1>ASTR777 Star and Planet Formation Problem Set 4<a class="headerlink" href="#astr777-star-and-planet-formation-problem-set-4" title="Permalink to this heading">#</a></h1>
-<section id="monte-carlo-sampling-from-an-imf">
+<div class="section" id="monte-carlo-sampling-from-an-imf">
 <h2>Monte-Carlo sampling from an IMF<a class="headerlink" href="#monte-carlo-sampling-from-an-imf" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -522,8 +525,8 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="imf-prescription-from-chabrier-2003-pasp-table-1">
+</div>
+<div class="section" id="imf-prescription-from-chabrier-2003-pasp-table-1">
 <h2>IMF prescription from Chabrier 2003 PASP Table 1<a class="headerlink" href="#imf-prescription-from-chabrier-2003-pasp-table-1" title="Permalink to this heading">#</a></h2>
 <p>\begin{align}
 \xi(\log m) &amp;\equiv \frac{dN}{d\log m} = A \exp[-(\log m - \log m_c)^2/2\sigma^2],~~~~ m \leq 1,M_\odot\
@@ -628,8 +631,8 @@ document.write(`
 <img alt="../../../../../_images/b607dc66d9e5320d0a02a68dc590e1bfe0bdce06139da96e53b9b18ade3048ec.png" src="../../../../../_images/b607dc66d9e5320d0a02a68dc590e1bfe0bdce06139da96e53b9b18ade3048ec.png" />
 </div>
 </div>
-</section>
-<section id="compare-two-different-imfs">
+</div>
+<div class="section" id="compare-two-different-imfs">
 <h2>compare two different IMFs<a class="headerlink" href="#compare-two-different-imfs" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -721,17 +724,17 @@ document.write(`
 <img alt="../../../../../_images/7b65b4aaca7a8aa65a901346211fb6a82ecee9462f90391fd751128f38d0abb4.png" src="../../../../../_images/7b65b4aaca7a8aa65a901346211fb6a82ecee9462f90391fd751128f38d0abb4.png" />
 </div>
 </div>
-</section>
-<section id="answer-to-question-3">
+</div>
+<div class="section" id="answer-to-question-3">
 <h2>Answer to question 3:<a class="headerlink" href="#answer-to-question-3" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="n-250-stars-to-show-x-1-differs-from-x-1-35-with-mmin-1-msun">
+</div>
+<div class="section" id="n-250-stars-to-show-x-1-differs-from-x-1-35-with-mmin-1-msun">
 <h2>N ~ 250 stars to show x=1 differs from x=1.35 with Mmin = 1 Msun<a class="headerlink" href="#n-250-stars-to-show-x-1-differs-from-x-1-35-with-mmin-1-msun" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="n-100-stars-to-show-x-2-differs-from-x-1-35-with-mmin-0-5-msun">
+</div>
+<div class="section" id="n-100-stars-to-show-x-2-differs-from-x-1-35-with-mmin-0-5-msun">
 <h2>N ~ 100 stars to show x=2 differs from x=1.35 with Mmin = 0.5 Msun<a class="headerlink" href="#n-100-stars-to-show-x-2-differs-from-x-1-35-with-mmin-0-5-msun" title="Permalink to this heading">#</a></h2>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -759,9 +762,15 @@ document.write(`
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -790,7 +799,7 @@ document.write(`
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -818,7 +827,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -827,8 +836,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

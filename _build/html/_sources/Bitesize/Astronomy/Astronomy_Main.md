@@ -42,6 +42,10 @@ Ah astronomy, a realm of wonder and beauty ...
 
 - [Europlanet](http://astroedu.iau.org/en/collections/)
 
+### Simulation packages
+
+- [OpenSPH](https://pavelsevecek.github.io/)
+
 ## Introduction
 
 - insert puzzle pieces (cf svg in docs)

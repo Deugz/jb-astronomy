@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Started with Python - File input and output &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
     <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -517,7 +520,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-file-input-and-output">
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-file-input-and-output">
 <h1>Getting Started with Python - File input and output<a class="headerlink" href="#getting-started-with-python-file-input-and-output" title="Permalink to this heading">#</a></h1>
 <p>Version 0.2 Aug 2020</p>
 <p>This notebook explains how you can import data from external files into a Python program or write data from a program to a file.</p>
@@ -529,7 +532,7 @@ document.write(`
 <p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">File_Handling_PyPS.ipnyb</span></code></p>
 <hr class="docutils" />
 <p><a id="Input"></a></p>
-<section id="importing-data-from-a-file">
+<div class="section" id="importing-data-from-a-file">
 <h2>1. Importing data from a file<a class="headerlink" href="#importing-data-from-a-file" title="Permalink to this heading">#</a></h2>
 <p>We’ve already seen (in <code class="docutils literal notranslate"><span class="pre">Functions_PyPS.ipynb</span></code>) how we can get the user to input data from the keyboard. However, it is not very practical to do so when you want to input or output thousands of lines of data or long texts. To overcome this issue, Python provides a way to access the content of files.</p>
 <p>The first step is to use the <code class="docutils literal notranslate"><span class="pre">open()</span></code> function to tell Python the name of the file. This is done using a statement such as:</p>
@@ -543,9 +546,9 @@ document.write(`
 <p>Here <code class="docutils literal notranslate"><span class="pre">&quot;file_1.txt&quot;</span></code> is the file you want the program to to access. Note that the file needs to be in the same folder as your Jupyter Notebook.</p>
 <p>In addition, you need an instruction that describes how Python will be working with this file:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">'r'</span></code> opens the file in reading mode. This reads data from an existing file.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">'w'</span></code> opens the file in writing mode. If the file already exists, then this mode overwrites the content of the existing file. If the file does not exist then it is created by the kernel.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">'a'</span></code> opens the file in append mode. Writing in this mode will add what you write at the end of the file.</p></li>
+<li><code class="docutils literal notranslate"><span class="pre">'r'</span></code> opens the file in reading mode. This reads data from an existing file.</li>
+<li><code class="docutils literal notranslate"><span class="pre">'w'</span></code> opens the file in writing mode. If the file already exists, then this mode overwrites the content of the existing file. If the file does not exist then it is created by the kernel.</li>
+<li><code class="docutils literal notranslate"><span class="pre">'a'</span></code> opens the file in append mode. Writing in this mode will add what you write at the end of the file.</li>
 </ol>
 <p>Let’s trying opening and reading the input file <code class="docutils literal notranslate"><span class="pre">file_1.txt</span></code>, assuming it is located in the same folder as this notebook. Run the following:</p>
 <div class="cell docutils container">
@@ -596,9 +599,9 @@ document.write(`
 <p>Lines that are extracted this way are a sequence of single strings. You will often find that you need to manipulate such strings to get at the data you want to work with, so let us show you some properties of strings and one useful method that works on <code class="docutils literal notranslate"><span class="pre">str</span></code> variables (i.e. a string method):</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">string</span></code> is a <code class="docutils literal notranslate"><span class="pre">str</span></code> type variable, then:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">string[k]</span></code> is the k-th element of <code class="docutils literal notranslate"><span class="pre">string</span></code>,  i.e. the character in the k-th position. Remember that in Python, counting starts at 0.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">string[i:j]</span></code> is the part of the <code class="docutils literal notranslate"><span class="pre">string</span></code> from the i-th to the j-th characters.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">string.split('divider')</span></code>: this method allows you to divide <code class="docutils literal notranslate"><span class="pre">string</span></code> into multiple strings using the <code class="docutils literal notranslate"><span class="pre">divider</span></code> ; e.g. dividing a string using <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (which is the default value) would divide a phrase into words. This method returns a list of strings containing all the words in the phrase.</p></li>
+<li><code class="docutils literal notranslate"><span class="pre">string[k]</span></code> is the k-th element of <code class="docutils literal notranslate"><span class="pre">string</span></code>,  i.e. the character in the k-th position. Remember that in Python, counting starts at 0.</li>
+<li><code class="docutils literal notranslate"><span class="pre">string[i:j]</span></code> is the part of the <code class="docutils literal notranslate"><span class="pre">string</span></code> from the i-th to the j-th characters.</li>
+<li><code class="docutils literal notranslate"><span class="pre">string.split('divider')</span></code>: this method allows you to divide <code class="docutils literal notranslate"><span class="pre">string</span></code> into multiple strings using the <code class="docutils literal notranslate"><span class="pre">divider</span></code> ; e.g. dividing a string using <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> (which is the default value) would divide a phrase into words. This method returns a list of strings containing all the words in the phrase.</li>
 </ol>
 <p>Let us illustrate these by running a short example:</p>
 <div class="cell docutils container">
@@ -642,15 +645,15 @@ document.write(`
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="importing-data-from-a-file-summary">
+<div class="section" id="importing-data-from-a-file-summary">
 <h3>Importing data from a file - summary<a class="headerlink" href="#importing-data-from-a-file-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned how to load a file in Python and you saw how to read it either in its entirety or line by line.
 You saw that methods are types of functions that apply to entities (such as file objects or strings). You also gained experience in working with strings and saw how to extract data from a string that you can work with in a program.</p>
 <hr class="docutils" />
 <p><a id="Output"></a></p>
-</section>
-</section>
-<section id="writing-data-to-a-file">
+</div>
+</div>
+<div class="section" id="writing-data-to-a-file">
 <h2>2. Writing data to a file<a class="headerlink" href="#writing-data-to-a-file" title="Permalink to this heading">#</a></h2>
 <p>Often, you will find it useful to store some data that your Python program has produced. Saving data in an external file allows it to be used at a later time. Python allows you to write to a text file in a way that is similar to the process of reading data.</p>
 <p>The first step is to open the file, but this time in a <em>write</em> mode:</p>
@@ -737,15 +740,15 @@ You saw that methods are types of functions that apply to entities (such as file
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="writing-data-to-a-file-summary">
+<div class="section" id="writing-data-to-a-file-summary">
 <h3>Writing data to a file - summary<a class="headerlink" href="#writing-data-to-a-file-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned how a file can be created with Python and how you can write text to it.</p>
 <p>Now it is time to see how you can change how numbers and words are written so that you can modify the way they are printed.</p>
 <hr class="docutils" />
 <p><a id="Format"></a></p>
-</section>
-</section>
-<section id="formatting-text">
+</div>
+</div>
+<div class="section" id="formatting-text">
 <h2>3. Formatting text<a class="headerlink" href="#formatting-text" title="Permalink to this heading">#</a></h2>
 <p>Computers can handle numerical calculations with ease, but making it readable to humans takes a little thought and care.</p>
 <p>Take this example – this program calculates the square root of 2.0 and prints it out. This example uses the <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> function, which is part of the <code class="docutils literal notranslate"><span class="pre">math</span></code> package. We must import the <code class="docutils literal notranslate"><span class="pre">math</span></code> package first, before we can use it.</p>
@@ -842,15 +845,15 @@ You saw that methods are types of functions that apply to entities (such as file
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="formatting-text-summary">
+<div class="section" id="formatting-text-summary">
 <h3>Formatting text - summary<a class="headerlink" href="#formatting-text-summary" title="Permalink to this heading">#</a></h3>
 <p>In this section you have seen some of the ways that you can control the format of text that is written to a file. Specifically, you have seen how to control the format of how variables are written to a string. This string can then be output (printed or written to a file).</p>
 <p>There are many more aspects to formatting strings, but the examples you have seen here will allow you to have some control over how to store and display numerical data from your Python programs.</p>
 <hr class="docutils" />
 <p><a id="Exercise-Answers"></a></p>
-</section>
-</section>
-<section id="exercises-answers">
+</div>
+</div>
+<div class="section" id="exercises-answers">
 <h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.1"></a></p>
 <div class="alert alert-block alert-info">
@@ -976,8 +979,8 @@ You saw that methods are types of functions that apply to entities (such as file
 </div>
 </div>
 <p><span class="xref myst">Back to Exercise 3.1</span></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1005,9 +1008,15 @@ You saw that methods are types of functions that apply to entities (such as file
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1043,7 +1052,7 @@ You saw that methods are types of functions that apply to entities (such as file
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1071,7 +1080,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1080,8 +1089,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

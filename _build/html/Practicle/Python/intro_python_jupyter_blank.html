@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to Python and Jupyter notebooks &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -524,96 +527,92 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-python-and-jupyter-notebooks">
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-python-and-jupyter-notebooks">
 <h1>Introduction to Python and Jupyter notebooks<a class="headerlink" href="#introduction-to-python-and-jupyter-notebooks" title="Permalink to this heading">#</a></h1>
 <p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
 <p>Welcome!
-In this notebook, we will introduce the <a class="reference external" href="https://www.python.org/"><strong>Python programming language</strong></a> and <a class="reference external" href="https://jupyter.org/"><strong>Jupyter notebook</strong></a> programming environment.
+In this notebook, we will introduce the <a class="reference external" href="https://www.python.org/" rel="noopener noreferrer" target="_blank"><strong>Python programming language</strong></a> and <a class="reference external" href="https://jupyter.org/" rel="noopener noreferrer" target="_blank"><strong>Jupyter notebook</strong></a> programming environment.
 If you already have extensive experience with both of these concepts, that’s great!
 We hope you don’t mind the quick refresher, and maybe some of our protips will be new for you. 😀</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+<p class="first admonition-title">Note</p>
+<p class="last">This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
 </div>
-<section id="did-you-say-python">
+<div class="section" id="did-you-say-python">
 <h2>Did you say… Python?<a class="headerlink" href="#did-you-say-python" title="Permalink to this heading">#</a></h2>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<figure class="align-center" id="id1">
+<div class="margin sidebar">
+<p class="first sidebar-title"></p>
+<div class="last figure align-center" id="id1">
 <a class="reference internal image-reference" href="assets/fig/week_1/01/python.png"><img alt="python" src="assets/fig/week_1/01/python.png" style="width: 30%;" /></a>
-<figcaption>
-<p><span class="caption-text">Python logo.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</aside>
-<p>By now, many people know (or at least have heard of) the Python programming language, but what they don’t know is that the language is not named after the snake 🐍, but rather the television show <a class="reference external" href="https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus">Monty Python’s Flying Circus</a>! 📺</p>
-<p>Since its introduction in 1991, Python has <a class="reference external" href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">skyrocketed in popularity</a> in recent years to become one of the most popular programming languages used in computer science, and arguably the <em>most</em> popular language in data science.
+<p class="caption"><span class="caption-text">Python logo.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<p>By now, many people know (or at least have heard of) the Python programming language, but what they don’t know is that the language is not named after the snake 🐍, but rather the television show <a class="reference external" href="https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus" rel="noopener noreferrer" target="_blank">Monty Python’s Flying Circus</a>! 📺</p>
+<p>Since its introduction in 1991, Python has <a class="reference external" href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/" rel="noopener noreferrer" target="_blank">skyrocketed in popularity</a> in recent years to become one of the most popular programming languages used in computer science, and arguably the <em>most</em> popular language in data science.
 This growth is in part due to:</p>
-<aside class="sidebar">
-<p class="sidebar-title">Python</p>
-<figure class="align-center" id="id2">
+<div class="sidebar">
+<p class="first sidebar-title">Python</p>
+<div class="last figure align-center" id="id2">
 <a class="reference internal image-reference" href="assets/fig/week_1/01/python_xkcd.png"><img alt="python_xkcd" src="assets/fig/week_1/01/python_xkcd.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text"><a class="reference external" href="https://xkcd.com/353/">xkcd comic 353</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-</aside>
+<p class="caption"><span class="caption-text"><a class="reference external" href="https://xkcd.com/353/" rel="noopener noreferrer" target="_blank">xkcd comic 353</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</div>
+</div>
 <ol class="arabic simple">
-<li><p>Its <em>readability</em>. Python is designed to be simple and reads like English, using common keywords instead of symbols (e.g., <code class="docutils literal notranslate"><span class="pre">and</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>).</p></li>
-<li><p>Its <em>extensibility</em>. Python makes it easy for developers to write <em>modules</em> that extend its functionalities for applications in data science, <a class="reference external" href="https://www.nature.com/articles/s41586-020-2649-2">scientific computing</a>, <a class="reference external" href="https://numfocus.org/case-studies/first-photograph-black-hole">imaging black holes</a>, and <a class="reference external" href="https://twitter.com/ThePSF/status/1362516507918483458?s=20">flying drones on Mars</a>.</p></li>
-<li><p>Its <em>open-source</em> properties. This means anyone can contribute to Python development and anyone can use it—for free!</p></li>
+<li>Its <em>readability</em>. Python is designed to be simple and reads like English, using common keywords instead of symbols (e.g., <code class="docutils literal notranslate"><span class="pre">and</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>).</li>
+<li>Its <em>extensibility</em>. Python makes it easy for developers to write <em>modules</em> that extend its functionalities for applications in data science, <a class="reference external" href="https://www.nature.com/articles/s41586-020-2649-2" rel="noopener noreferrer" target="_blank">scientific computing</a>, <a class="reference external" href="https://numfocus.org/case-studies/first-photograph-black-hole" rel="noopener noreferrer" target="_blank">imaging black holes</a>, and <a class="reference external" href="https://twitter.com/ThePSF/status/1362516507918483458?s=20" rel="noopener noreferrer" target="_blank">flying drones on Mars</a>.</li>
+<li>Its <em>open-source</em> properties. This means anyone can contribute to Python development and anyone can use it—for free!</li>
 </ol>
 <p>For these reasons (and more), we will be using Python for this module.
 <strong>If you’re new to Python, that’s OK!</strong>
 The rest of today will be spent on [re]acquainting ourselves with Python and introducing the necessarity functionalities.</p>
-<section id="using-python-code">
+<div class="section" id="using-python-code">
 <h3>Using Python code<a class="headerlink" href="#using-python-code" title="Permalink to this heading">#</a></h3>
 <p>In this module, we’re going to take a somewhat practical approach to using Python, in the sense that we view it as just another tool in our toolbox for expanding our understanding of materials.
 We’ll discuss Python concepts, syntax, and style along the way, but the <em>focus</em> will always be on applying it to solve relevant MSE problems in a data-driven fashion.
 Therefore, our focus as mentors will be to teach you only what’s relevant for this module, and unfortunately won’t have much time to extensively cover the details of the language or various packages during the tutorials (you’re welcome to ask in OH!).</p>
 <p>While this strategy risks leaving you with only a cursory understanding of Python, we want to offer three points of solace and why this might not actually be the case:</p>
 <ol class="arabic simple">
-<li><p>Based on the initial survey, many of you have some programming experience already, even if it’s in a different language.
-We think you’ll be surprised to find that, both at a theoretical and applied level, Python is not <em>too</em> different from other languages that you may have seen (e.g., C++, MATLAB) and that a lot of your prior knowledge will transfer to help you understand Python.</p></li>
-<li><p>Solving scientific problems algorithmically (e.g., in a data-driven way) often requires a lot more than being able to program, irrespective of the programming language.
+<li>Based on the initial survey, many of you have some programming experience already, even if it’s in a different language.
+We think you’ll be surprised to find that, both at a theoretical and applied level, Python is not <em>too</em> different from other languages that you may have seen (e.g., C++, MATLAB) and that a lot of your prior knowledge will transfer to help you understand Python.</li>
+<li>Solving scientific problems algorithmically (e.g., in a data-driven way) often requires a lot more than being able to program, irrespective of the programming language.
 Therefore, while we’re teaching you Python programming syntax and tools, what we’re really hoping to communicate is a <em>way of thinking</em> like a computer, which is quite different than the way humans think.
 And so you might find that you’re spending more time <em>formulating</em> data-driven solutions than actually <em>writing code</em>.
 A little planning goes a long way.
-For more on this topic, see Jeannette Wing’s article on <strong>computational thinking</strong> assigned in the <span class="xref std std-doc">homework_01</span>.</p></li>
-<li><p>The third point isn’t really related to Python but to the internship more broadly, and that is our desire to expose you to the graduate school research experience, which encompasses a lot more than hammering out lines of code.
-We have designed this module in such a way that surfaces these other elements (the pleasant ones, anyways 😉) which we hope you will come to appreciate as well.</p></li>
+For more on this topic, see Jeannette Wing’s article on <strong>computational thinking</strong> assigned in the <span class="xref std std-doc">homework_01</span>.</li>
+<li>The third point isn’t really related to Python but to the internship more broadly, and that is our desire to expose you to the graduate school research experience, which encompasses a lot more than hammering out lines of code.
+We have designed this module in such a way that surfaces these other elements (the pleasant ones, anyways 😉) which we hope you will come to appreciate as well.</li>
 </ol>
-</section>
-<section id="running-python-code">
+</div>
+<div class="section" id="running-python-code">
 <h3>Running Python code<a class="headerlink" href="#running-python-code" title="Permalink to this heading">#</a></h3>
 <p>You can <em>write</em> Python code just about anywhere (even in Microsoft Word, lol), but in order to <em>execute</em> the code, you will need a Python <strong>kernel</strong>.
 For this module (at least, for these tutorials), we will use Jupyter notebooks for running the Python code we write.</p>
-</section>
-</section>
-<section id="philosophy-of-jupyter-notebooks">
+</div>
+</div>
+<div class="section" id="philosophy-of-jupyter-notebooks">
 <h2>Philosophy of Jupyter notebooks<a class="headerlink" href="#philosophy-of-jupyter-notebooks" title="Permalink to this heading">#</a></h2>
 <p>The main design philosophy behind Jupyter notebooks could be summarized as the following: A platform for creating <em>computational narratives</em> to promote <em>literate computing</em>.
-The creators of Project Jupyter, one of whom is UC Berkeley Statistics Professor <a class="reference external" href="https://statistics.berkeley.edu/people/fernando-perez">Fernando Pérez</a>, wanted to create a tool that made computational research easier to communicate and more reproducible, which led to the development of Jupyter notebooks.
+The creators of Project Jupyter, one of whom is UC Berkeley Statistics Professor <a class="reference external" href="https://statistics.berkeley.edu/people/fernando-perez" rel="noopener noreferrer" target="_blank">Fernando Pérez</a>, wanted to create a tool that made computational research easier to communicate and more reproducible, which led to the development of Jupyter notebooks.
 The interleaving of code with prose and graphics has made programming a lot more accessible to general audiences and the interactivity of these notebooks also makes them great teaching tools!</p>
-<section id="organization-of-jupyter-notebooks">
+<div class="section" id="organization-of-jupyter-notebooks">
 <h3>Organization of Jupyter notebooks<a class="headerlink" href="#organization-of-jupyter-notebooks" title="Permalink to this heading">#</a></h3>
 <p>The information in Jupyter notebooks is organized into <strong>cells</strong>, which come in many forms.
-This cell is called a <strong>Markdown cell</strong>, which is used for text that can be formatted with the <a class="reference external" href="https://www.markdownguide.org/">Markdown</a> markup language.
-This is a fairly simple, yet extremely powerful markup language that allows you to do most of the basic styles, such as add emphasis, make itemized lists, create headings, write inline code, add links, include external images, and use HTML (see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">here</a> for a cheat sheet).
+This cell is called a <strong>Markdown cell</strong>, which is used for text that can be formatted with the <a class="reference external" href="https://www.markdownguide.org/" rel="noopener noreferrer" target="_blank">Markdown</a> markup language.
+This is a fairly simple, yet extremely powerful markup language that allows you to do most of the basic styles, such as add emphasis, make itemized lists, create headings, write inline code, add links, include external images, and use HTML (see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/" rel="noopener noreferrer" target="_blank">here</a> for a cheat sheet).
 You know this is a Markdown cell because when you select this cell (click on it such that a <font color="blue">blue bar</font> appears on the left), the menu bar at the top shows “<code class="docutils literal notranslate"><span class="pre">Markdown</span>&#160; <span class="pre">v</span></code>” in the second row:</p>
 <p><img alt="jupyter_menu" src="assets/fig/week_1/01/jupyter_menu.png" /></p>
 <p>As an example, here is an itemized list:</p>
 <ul class="simple">
-<li><p>spam</p></li>
-<li><p>eggs</p></li>
+<li>spam</li>
+<li>eggs</li>
 </ul>
 <p>And here is a code block <em>in the Markdown cell</em> with Python syntax highlighting:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>And if you love <span class="math notranslate nohighlight">\(\LaTeX\)</span> as much as we do, it can handle that too. 😍</p>
-</section>
-<section id="making-edits">
+</div>
+<div class="section" id="making-edits">
 <h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this heading">#</a></h3>
 <p>To <strong>edit</strong> a Markdown cell, double-click on it until you see your cursor flashing in the cell and the cell change color from <font color="blue">blue</font> to <font color="green">green</font>.
 The cell’s background will also change color from white to a light gray.</p>
@@ -623,16 +622,16 @@ The cell’s background will also change color from white to a light gray.</p>
 <p>To leave “edit mode” and show your changes, press <kbd>Shift</kbd>+<kbd>Enter</kbd> when you’re done.</p>
 <p>Notice how we included several Markdown cells in a row rather than putting all this information into a single, giant cell.
 It’s often a nice design choice to split your work into smaller chunks to improve readability. 👀</p>
-</section>
-</section>
-<section id="introducing-the-code-cell">
+</div>
+</div>
+<div class="section" id="introducing-the-code-cell">
 <h2>Introducing the code cell<a class="headerlink" href="#introducing-the-code-cell" title="Permalink to this heading">#</a></h2>
 <p>Notice how the next cell looks a little different.
 It is a <strong>code cell</strong>, which you can distinguish in a few ways.</p>
 <ul class="simple">
-<li><p>If you click in the cell, the menu bar at the top will now show “<code class="docutils literal notranslate"><span class="pre">Code</span>&#160;&#160; <span class="pre">v</span></code>.”</p></li>
-<li><p>The cell will always have a gray background.</p></li>
-<li><p>You may also notice a <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> tag in the left margin.</p></li>
+<li>If you click in the cell, the menu bar at the top will now show “<code class="docutils literal notranslate"><span class="pre">Code</span>&#160;&#160; <span class="pre">v</span></code>.”</li>
+<li>The cell will always have a gray background.</li>
+<li>You may also notice a <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> tag in the left margin.</li>
 </ul>
 <p>You can write Python code in these cells and then <strong>execute the code</strong> with <kbd>Shift</kbd>+<kbd>Enter</kbd>.
 Or you can click the <kbd>▶ Run</kbd> button in the menu bar.</p>
@@ -650,50 +649,50 @@ Or you can click the <kbd>▶ Run</kbd> button in the menu bar.</p>
 (e.g., <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>)
 This number indicates the sequence of code cell execution, which can be handy for a few reasons:</p>
 <ul class="simple">
-<li><p>You can clearly tell which cells have been executed and which cells have not.
-A cell’s variables and functions are only usable in the notebook after it has been executed.</p></li>
-<li><p>Accordingly, for better or worse, the variables and functions in one code cell (at the global <em>scope</em>) can be accessed in other code cells that are executed later.
-This allows you to split code among several code blocks and run them sequentially.</p></li>
-<li><p>For better or worse, you can execute code cells in Jupyter notebooks in <em>whatever order you want</em>.
-We still recommend top to bottom, but this does give us flexibility to change an earlier code cell (and rerun it!) if we later deem it necessary.</p></li>
+<li>You can clearly tell which cells have been executed and which cells have not.
+A cell’s variables and functions are only usable in the notebook after it has been executed.</li>
+<li>Accordingly, for better or worse, the variables and functions in one code cell (at the global <em>scope</em>) can be accessed in other code cells that are executed later.
+This allows you to split code among several code blocks and run them sequentially.</li>
+<li>For better or worse, you can execute code cells in Jupyter notebooks in <em>whatever order you want</em>.
+We still recommend top to bottom, but this does give us flexibility to change an earlier code cell (and rerun it!) if we later deem it necessary.</li>
 </ul>
-<section id="exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
+<div class="section" id="exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
 <h3>EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it<a class="headerlink" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it" title="Permalink to this heading">#</a></h3>
 <p>a = 4
 a             # what do you see?</p>
-</section>
-</section>
-<section id="datahub">
+</div>
+</div>
+<div class="section" id="datahub">
 <h2>DataHub<a class="headerlink" href="#datahub" title="Permalink to this heading">#</a></h2>
-<p>If you are a UC Berkeley student, you may be reading this Jupyter notebook on the school’s DataHub (a <a class="reference external" href="https://jupyter.org/hub">JupyterHub</a> instance), which has been graciously provisioned for this module by the <a class="reference external" href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>.
+<p>If you are a UC Berkeley student, you may be reading this Jupyter notebook on the school’s DataHub (a <a class="reference external" href="https://jupyter.org/hub" rel="noopener noreferrer" target="_blank">JupyterHub</a> instance), which has been graciously provisioned for this module by the <a class="reference external" href="https://data.berkeley.edu/" rel="noopener noreferrer" target="_blank">Division of Computing, Data Science, and Society</a>.
 With DataHub, all of our Python code will be saved and executed in the cloud, which saves us <em>a lot</em> of hassle with software installation.
 Everything is also automatically synced with the Jupyter Book!</p>
-<section id="installing-extra-packages">
+<div class="section" id="installing-extra-packages">
 <h3>Installing extra packages<a class="headerlink" href="#installing-extra-packages" title="Permalink to this heading">#</a></h3>
 <p>Perhaps the only “catch,” which may come up as you work on your research project, is that you will still have to manually install Python packages that are not included with the default DataHub deployment <em>every time</em> you load DataHub.
 In order to install new packages, use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> package manager directly within a Jupyter code cell.</p>
 <p><strong>EXERCISE</strong>: Let’s demonstrate this below by adding a new code cell and installing the <code class="docutils literal notranslate"><span class="pre">mendeleev</span></code> package.</p>
 <p>We’ll also quickly demonstrate how to navigate to the root directory for you to see all the files in DataHub and upload new ones as needed.
 Note that when you close a DataHub notebook, your edits and outputs are preserved, but the variables (kernel) will be reset.</p>
-</section>
-</section>
-<section id="general-programming-principles-and-tips">
+</div>
+</div>
+<div class="section" id="general-programming-principles-and-tips">
 <h2>General programming principles and tips ☝<a class="headerlink" href="#general-programming-principles-and-tips" title="Permalink to this heading">#</a></h2>
 <p><strong>EXERCISE</strong>: Before we set you loose to work on practice problems, let’s spend some time discussing some general programming principles and best practices.</p>
 <p>I’ll start us off with one: <strong>save your work frequently</strong>.
 Just because a code cell runs or a Markdown cell renders does <em>not</em> mean that your work is saved.
 Jupyter notebook kernels are known to crash pretty randomly, so save your work by clicking the symbol in the menu bar or using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Command</kbd>+<kbd>S</kbd> on Macs).</p>
-</section>
-<section id="resources">
+</div>
+<div class="section" id="resources">
 <h2>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>If you want to read more about the design of Jupyter notebooks, please see the short paper by <a class="reference external" href="https://ebooks.iospress.nl/publication/42900">Kluyver, T. et al. <em>Positioning and power in academic publishing: Players, agents and agendas</em>, 2016</a>.</p></li>
-<li><p>If you want to see a [very long] list of interesting Jupyter notebooks, see <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">here</a>.</p></li>
-<li><p>More tutorials on using Python in Jupyter notebooks can be found with a quick web search.</p></li>
-<li><p>For a Markdown <strong>cheat sheet</strong>, see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">here</a>.</p></li>
+<li>If you want to read more about the design of Jupyter notebooks, please see the short paper by <a class="reference external" href="https://ebooks.iospress.nl/publication/42900" rel="noopener noreferrer" target="_blank">Kluyver, T. et al. <em>Positioning and power in academic publishing: Players, agents and agendas</em>, 2016</a>.</li>
+<li>If you want to see a [very long] list of interesting Jupyter notebooks, see <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks" rel="noopener noreferrer" target="_blank">here</a>.</li>
+<li>More tutorials on using Python in Jupyter notebooks can be found with a quick web search.</li>
+<li>For a Markdown <strong>cheat sheet</strong>, see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/" rel="noopener noreferrer" target="_blank">here</a>.</li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -721,9 +720,15 @@ Jupyter notebook kernels are known to crash pretty randomly, so save your work b
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -766,7 +771,7 @@ Jupyter notebook kernels are known to crash pretty randomly, so save your work b
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -794,7 +799,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -803,8 +808,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

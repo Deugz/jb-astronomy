@@ -74,6 +74,13 @@ s0.parentNode.insertBefore(s1,s0);
 
 ## Introduction
 
+```{note}
+
+Extraire ce qui n'est pas astronomy dans les autres sites web
+
+Extraire la page d'acceuil et réécrire dans SP-...
+
+```
 
 ## Why ?
 

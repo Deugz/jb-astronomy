@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Started with Python - program control &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
     <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -519,7 +522,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-program-control">
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-program-control">
 <h1>Getting Started with Python - program control<a class="headerlink" href="#getting-started-with-python-program-control" title="Permalink to this heading">#</a></h1>
 <p>Version 0.2 Aug 2020</p>
 <p>This notebook demonstrates how programs in Python can run a set of instructions, and how those instructions can be made to depend on information generated or acquired at the time that the progam is run. Overall, this concept is called <strong>program control</strong> and we will look at three specific areas:</p>
@@ -530,7 +533,7 @@ document.write(`
 <p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">Program_Control.ipnyb</span></code></p>
 <hr class="docutils" />
 <p><a id="Sequence"></a></p>
-<section id="sequence">
+<div class="section" id="sequence">
 <h2>1. Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading">#</a></h2>
 <p>The simplest Python program is a <strong>sequence</strong> of instructions, written one per line, and executed one by one from top to bottom. Every time the program is run, the same operations are executed in the same order.</p>
 <p>Our first program only has two lines of instructions in the code cell below. For this notebook, it helps to display the line numbers (these are displayed on the left hand side of a cell) - do this by selecting the <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">line</span> <span class="pre">numbers</span></code> option from the <code class="docutils literal notranslate"><span class="pre">View</span></code> menu (you can switch off line numbers by repeating this operation). Then <strong>run</strong> the cell.</p>
@@ -545,8 +548,8 @@ document.write(`
 <p>The first instruction (line 1) is an <code class="docutils literal notranslate"><span class="pre">assignment</span></code>: the computer evaluates the expression to the right of the assignment (=) and stores the result in the variable (<code class="docutils literal notranslate"><span class="pre">result</span></code>) on the left of the assignment. Each piece of data that is needed by a program must be stored in a variable. Translating Python to English, the assignment states ‘let result be the sum of 3 and 7’. We could call the variable anything we want, such as <code class="docutils literal notranslate"><span class="pre">R</span></code> or <code class="docutils literal notranslate"><span class="pre">sum_of_two_numbers</span></code>, but the first of these is rather too short to be meaningful, and the second is rather long to type in. So a compromise for the variable name that’s not too long, not too short, and which means something to anyone reading the program is usually the best option.</p>
 <p>The second instruction, <code class="docutils literal notranslate"><span class="pre">print()</span></code> (in line 2), prints some text on the screen (in the left-hand pane), followed by the computed result. Note the following:</p>
 <ol class="arabic simple">
-<li><p>The comma separates the two things to be printed, in the same way that we use commas in English to enumerate two, three, or more things.</p></li>
-<li><p>Text is written between double quotes, which are not printed themselves. In Python, a sequence of characters surrounded by double quotes is called a <em>string</em>. (Note that single quotes can also be used and you may see them employed in Python programs.)</p></li>
+<li>The comma separates the two things to be printed, in the same way that we use commas in English to enumerate two, three, or more things.</li>
+<li>Text is written between double quotes, which are not printed themselves. In Python, a sequence of characters surrounded by double quotes is called a <em>string</em>. (Note that single quotes can also be used and you may see them employed in Python programs.)</li>
 </ol>
 <p>These details are important once you start writing your own programs. Computers are not as smart and accommodating as human readers; at the slightest spelling mistake (like <code class="docutils literal notranslate"><span class="pre">pint</span></code> instead of <code class="docutils literal notranslate"><span class="pre">print</span></code>) or missing punctuation (like forgetting the comma or double quotes), the computer will give up on running your code and will display an error message.</p>
 <p>On top of that, most error messages are rather cryptic. Therefore, it’s a good idea to get used to them by noting any error messages that you get and what caused them, so that you understand what might be wrong when faced with similar error messages as you develop your own programs. This is what you will do in the following exercise.</p>
@@ -615,15 +618,15 @@ Adapt the following code cell, which calculates and prints the sum of two number
 </div>
 </div>
 </div>
-<section id="sequence-summary">
+<div class="section" id="sequence-summary">
 <h3>Sequence - summary<a class="headerlink" href="#sequence-summary" title="Permalink to this heading">#</a></h3>
 <p>To recap then, in a sequence, all instructions are executed line by line. If one of the instructions causes an error, then the program will stop at the point that it encounters the error and provide an error message.</p>
 <p>While the ability to execute a sequence of instructions is useful, there are often times where we would like a program to selectively execute some instructions but not others. Selection is the subject of the next section.</p>
 <hr class="docutils" />
 <p><a id="Selection"></a></p>
-</section>
-</section>
-<section id="selection">
+</div>
+</div>
+<div class="section" id="selection">
 <h2>2. Selection<a class="headerlink" href="#selection" title="Permalink to this heading">#</a></h2>
 <p>Imagine that you are developing software to solve a physics problem – where you need to work out the weight of a collection of objects. These may be items in a shopping basket for instance. You know that the weight in Newtons is equal to the total mass of the objects in kilograms multiplied by the acceleration due to gravity, at the surface of the Earth, in <span class="math notranslate nohighlight">\(\text{m s}^{−2}\)</span>.</p>
 <p>Here is a short program to do this – it’s a simple sequence of assignments and an output. (Use <code class="docutils literal notranslate"><span class="pre">View</span></code> | <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Line</span> <span class="pre">Numbers</span></code> to see the line numbers if they are not already displayed.)</p>
@@ -694,10 +697,10 @@ Change the latitude to $44^\text{o}$ and then $45^\text{o}$ and confirm that the
 </div>
 <p>In plain English:</p>
 <ul class="simple">
-<li><p>if the latitude is less than <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, let the acceleration due to gravity be
-<span class="math notranslate nohighlight">\(9.78 \text{ m s}^{-2}\)</span>;</p></li>
-<li><p>otherwise if (notice this is specified by the special statement <code class="docutils literal notranslate"><span class="pre">elif</span></code>, and not <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>) it is less than <span class="math notranslate nohighlight">\(60^\text{o}\)</span>, let the acceleration due to gravity be <span class="math notranslate nohighlight">\(9.81 \text{ m s}^{-2}\)</span>;</p></li>
-<li><p>otherwise let the acceleration due to gravity be <span class="math notranslate nohighlight">\(9.83 \text{ m s}^{-2}\)</span>.</p></li>
+<li>if the latitude is less than <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, let the acceleration due to gravity be
+<span class="math notranslate nohighlight">\(9.78 \text{ m s}^{-2}\)</span>;</li>
+<li>otherwise if (notice this is specified by the special statement <code class="docutils literal notranslate"><span class="pre">elif</span></code>, and not <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>) it is less than <span class="math notranslate nohighlight">\(60^\text{o}\)</span>, let the acceleration due to gravity be <span class="math notranslate nohighlight">\(9.81 \text{ m s}^{-2}\)</span>;</li>
+<li>otherwise let the acceleration due to gravity be <span class="math notranslate nohighlight">\(9.83 \text{ m s}^{-2}\)</span>.</li>
 </ul>
 <p><a id="Exercise2.2"></a></p>
 <div class="alert alert-block alert-info">
@@ -763,12 +766,12 @@ Does the code provide correct results? Is there anything that needs changing?
 <p>In fact, the <code class="docutils literal notranslate"><span class="pre">or</span></code> operator will be satisfied if either condition is satisfied and also if both conditions are satisfied.</p>
 <p>Various comparison operators can be employed with numerical variables. For example, to check whether a variable is <strong>greater than or equal to</strong> a particular value, use <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>. There are actually six comparison operators:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> greater than</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> less than</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> greater than or equal to</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> less than or equal to</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">==</span></code> equal to</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">!=</span></code> not equal to.</p></li>
+<li><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> greater than</li>
+<li><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> less than</li>
+<li><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> greater than or equal to</li>
+<li><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> less than or equal to</li>
+<li><code class="docutils literal notranslate"><span class="pre">==</span></code> equal to</li>
+<li><code class="docutils literal notranslate"><span class="pre">!=</span></code> not equal to.</li>
 </ol>
 <p><a id="Exercise2.4"></a></p>
 <div class="alert alert-block alert-info">
@@ -799,32 +802,32 @@ Does the code provide correct results? Is there anything that needs changing?
 </div>
 </div>
 </div>
-<section id="selection-summary">
+<div class="section" id="selection-summary">
 <h3>Selection - summary<a class="headerlink" href="#selection-summary" title="Permalink to this heading">#</a></h3>
 <hr class="docutils" />
 <p>In this section, you saw:</p>
 <ul class="simple">
-<li><p>how to use <code class="docutils literal notranslate"><span class="pre">if</span></code> statement to control decision making within a simple program.</p></li>
-<li><p>that combining <code class="docutils literal notranslate"><span class="pre">if</span></code> with <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> statements can control more complex selection.</p></li>
-<li><p>that <code class="docutils literal notranslate"><span class="pre">and</span></code> and <code class="docutils literal notranslate"><span class="pre">or</span></code> statements can be used to combine multiple selection conditions.</p></li>
+<li>how to use <code class="docutils literal notranslate"><span class="pre">if</span></code> statement to control decision making within a simple program.</li>
+<li>that combining <code class="docutils literal notranslate"><span class="pre">if</span></code> with <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> statements can control more complex selection.</li>
+<li>that <code class="docutils literal notranslate"><span class="pre">and</span></code> and <code class="docutils literal notranslate"><span class="pre">or</span></code> statements can be used to combine multiple selection conditions.</li>
 </ul>
 <p>This decision making ability is very useful as it allows to programs to alter how they operate depending on conditions that may only be known when the program is running.</p>
 <p>Now it is time to start learning about automation and how you can make a program peform a series of operations a certain number of times: a process called <em>iteration</em>.</p>
 <p><a id="Iteration"></a></p>
-</section>
-</section>
-<section id="iteration">
+</div>
+</div>
+<div class="section" id="iteration">
 <h2>3. Iteration<a class="headerlink" href="#iteration" title="Permalink to this heading">#</a></h2>
 <p>Iteration is a very powerful concept as it allows you to repeat an operation a designated number of times. There are two main Python statements that produce iteration: <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code>. Because the kernel repeatedly cycles through a block of code, you will often hear programmers refer to <code class="docutils literal notranslate"><span class="pre">for</span></code> loops and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops as part of a computer program.</p>
 <p>We will introduce <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> below, before concluding with an activity that draws together much of what you have learned in this notebook.</p>
-<section id="for-loops">
+<div class="section" id="for-loops">
 <h3>3.1 For loops<a class="headerlink" href="#for-loops" title="Permalink to this heading">#</a></h3>
 <p>Imagine you have a selection of items for which you know the individual masses and you wish to calculate the total mass. As with any physical problem, the first stage is to set out the steps (the <em>algorithm</em>) that reaches the required solution. (At this point we aren’t concerned about how we would program this in any particular programming language.)</p>
 <ol class="arabic simple">
-<li><p>We have list of the masses of individual items.</p></li>
-<li><p>Let the total mass be zero.</p></li>
-<li><p>For each item in the list: add it to the total mass.</p></li>
-<li><p>Report the final total mass.</p></li>
+<li>We have list of the masses of individual items.</li>
+<li>Let the total mass be zero.</li>
+<li>For each item in the list: add it to the total mass.</li>
+<li>Report the final total mass.</li>
 </ol>
 <p>Step 3 is where the concept of iteration comes into play: we iterate through the list to process each item.</p>
 <p>This algorithm can be translated to Python as follows.</p>
@@ -873,9 +876,9 @@ The program in the following window is copied from the previous program. Adapt i
 </div>
 </div>
 <p>You should attempt this activity <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="while-loops">
+<div class="section" id="while-loops">
 <h3>3.2 While loops<a class="headerlink" href="#while-loops" title="Permalink to this heading">#</a></h3>
 <p>Another way for automating a series of instructions uses the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Generally, it has the form:</p>
 <p><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">(condition):</span>&#160;&#160;&#160;&#160; <span class="pre">(block</span> <span class="pre">of</span> <span class="pre">code)</span></code></p>
@@ -895,12 +898,11 @@ The program in the following window is copied from the previous program. Adapt i
 </div>
 <p>This example can be summarised as follows:</p>
 <ol class="arabic simple">
-<li><p>First, the given number is set and the counter is initialised to one.</p></li>
-<li><p>Then the loop starts and iterates the following steps:</p>
-<ol class="arabic simple">
-<li><p>The value of the counter is compared to 10</p></li>
-<li><p>If the counter is below 10, the result of the multiplication of the counter by the given number is printed. Then the counter is increased</p></li>
-<li><p>If the counter is above or equal to 10, the loop is stopped</p></li>
+<li>First, the given number is set and the counter is initialised to one.</li>
+<li>Then the loop starts and iterates the following steps:<ol class="arabic">
+<li>The value of the counter is compared to 10</li>
+<li>If the counter is below 10, the result of the multiplication of the counter by the given number is printed. Then the counter is increased</li>
+<li>If the counter is above or equal to 10, the loop is stopped</li>
 </ol>
 </li>
 </ol>
@@ -935,30 +937,30 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="alert alert-block alert-info">
 <p>Based on what you have learned in this notebook, attempt the following:</p>
 <ol class="arabic simple">
-<li><p>In a series of bullet points, explain what each of the lines in the program does.</p></li>
-<li><p>The algorithm will only work correctly if the two numbers input are greater than zero. How would you modify the program to prevent this issue by printing:
-“ERROR: The number entered is negative.” ?</p></li>
+<li>In a series of bullet points, explain what each of the lines in the program does.</li>
+<li>The algorithm will only work correctly if the two numbers input are greater than zero. How would you modify the program to prevent this issue by printing:
+“ERROR: The number entered is negative.” ?</li>
 </ol>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-</section>
-<section id="iteration-summary">
+</div>
+<div class="section" id="iteration-summary">
 <h3>Iteration - summary<a class="headerlink" href="#iteration-summary" title="Permalink to this heading">#</a></h3>
 <hr class="docutils" />
 <p>In this section you have learned two ways to iterate an action for a certain number of times:</p>
 <ol class="arabic simple">
-<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong> loop, which allows you to repeat an action on each element of a list.</p></li>
-<li><p>The <strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong> loop, which repeats an action according to a logical condition that is evaluated before each iteration.</p></li>
+<li>The <strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong> loop, which allows you to repeat an action on each element of a list.</li>
+<li>The <strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong> loop, which repeats an action according to a logical condition that is evaluated before each iteration.</li>
 </ol>
 <p><a id="Exercise-Answers"></a></p>
-</section>
-</section>
-<section id="exercises-answers">
+</div>
+</div>
+<div class="section" id="exercises-answers">
 <h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.3"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 1.3 - notes</b> <br> 
 </div><ol class="arabic simple">
-<li><p>The difference between two numbers</p></li>
+<li>The difference between two numbers</li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -969,7 +971,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>The product of two numbers</p></li>
+<li>The product of two numbers</li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -980,7 +982,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>The ratio of two numbers</p></li>
+<li>The ratio of two numbers</li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -991,7 +993,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>One number to the power of another</p></li>
+<li>One number to the power of another</li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1006,18 +1008,18 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="alert alert-block alert-info">
 <b>Exercise 2.1 - answers</b> <br> 
 </div><ol class="arabic simple">
-<li><p>For an angle of <span class="math notranslate nohighlight">\(45^\text{o}\)</span> and any angle above, the weight is 97.89999999999999 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(44^\text{o}\)</span> and any angle below, the weight is 98.2 newtons</p></li>
+<li>For an angle of <span class="math notranslate nohighlight">\(45^\text{o}\)</span> and any angle above, the weight is 97.89999999999999 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(44^\text{o}\)</span> and any angle below, the weight is 98.2 newtons</li>
 </ol>
 <p><span class="xref myst">Back to Exercise 2.1</span></p>
 <p><a id="ExerciseAnswers2.2"></a></p>
 <div class="alert alert-block alert-info">
 <b>Exercise 2.2 - answers</b> <br> 
 </div><ol class="arabic simple">
-<li><p>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(60^\text{o}\)</span> and any angle below, the weight is 98.3 newtons</p></li>
+<li>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(60^\text{o}\)</span> and any angle below, the weight is 98.3 newtons</li>
 </ol>
 <p><span class="xref myst">Back to Exercise 2.2</span></p>
 <p><a id="ExerciseAnswers2.3"></a></p>
@@ -1030,18 +1032,16 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="alert alert-block alert-info">
 <b>Exercise 2.4 - answers</b> <br> 
 </div><ol class="arabic simple">
-<li><p>The cases give the following answers:</p>
-<ol class="arabic simple">
-<li><p>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</p></li>
-<li><p>For an angle of <span class="math notranslate nohighlight">\(60^\text{o}\)</span> and any angle below, the weight is 98.3 newtons</p></li>
+<li>The cases give the following answers:<ol class="arabic">
+<li>For an angle of <span class="math notranslate nohighlight">\(29^\text{o}\)</span> and any angle below, the weight is 97.8 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(30^\text{o}\)</span>, the weight is 98.1 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(59^\text{o}\)</span>, the weight is 98.1 newtons</li>
+<li>For an angle of <span class="math notranslate nohighlight">\(60^\text{o}\)</span> and any angle below, the weight is 98.3 newtons</li>
 </ol>
 </li>
-<li><p>You would change:</p>
-<ul class="simple">
-<li><p>line 5 - <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">60</span> <span class="pre">and</span> <span class="pre">latitude</span> <span class="pre">&gt;=</span> <span class="pre">30</span></code> to <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">60</span> <span class="pre">and</span> <span class="pre">latitude</span> <span class="pre">&gt;</span> <span class="pre">30</span></code></p></li>
-<li><p>line 7 - <code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">30</span></code> to <code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">latitude</span> <span class="pre">&lt;=</span> <span class="pre">30</span></code>.</p></li>
+<li>You would change:<ul>
+<li>line 5 - <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">60</span> <span class="pre">and</span> <span class="pre">latitude</span> <span class="pre">&gt;=</span> <span class="pre">30</span></code> to <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">60</span> <span class="pre">and</span> <span class="pre">latitude</span> <span class="pre">&gt;</span> <span class="pre">30</span></code></li>
+<li>line 7 - <code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">latitude</span> <span class="pre">&lt;</span> <span class="pre">30</span></code> to <code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">latitude</span> <span class="pre">&lt;=</span> <span class="pre">30</span></code>.</li>
 </ul>
 </li>
 </ol>
@@ -1072,21 +1072,20 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 <div class="alert alert-block alert-info">
 <b>Exercise 3.2 - answers</b> <br> 
 </div><ol class="arabic simple">
-<li><p>The program executes the following steps:</p></li>
+<li>The program executes the following steps:</li>
 </ol>
 <ol class="arabic simple">
-<li><p>Initialisation: the two integers of which we want to know the greatest common divisor.</p></li>
-<li><p>Loop: test whether <code class="docutils literal notranslate"><span class="pre">n</span></code> is not equal to <code class="docutils literal notranslate"><span class="pre">m</span></code>. If the condition is fulfilled, then execute the block of code for the loop, if not, then leave.</p></li>
-<li><p>In the loop,</p>
-<ul class="simple">
-<li><p>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is greater than <code class="docutils literal notranslate"><span class="pre">m</span></code>, assign <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-</span> <span class="pre">m</span></code> to <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
-<li><p>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is smaller than <code class="docutils literal notranslate"><span class="pre">m</span></code>, assign <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">-</span> <span class="pre">n</span></code> to <code class="docutils literal notranslate"><span class="pre">m</span></code></p></li>
+<li>Initialisation: the two integers of which we want to know the greatest common divisor.</li>
+<li>Loop: test whether <code class="docutils literal notranslate"><span class="pre">n</span></code> is not equal to <code class="docutils literal notranslate"><span class="pre">m</span></code>. If the condition is fulfilled, then execute the block of code for the loop, if not, then leave.</li>
+<li>In the loop,<ul>
+<li>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is greater than <code class="docutils literal notranslate"><span class="pre">m</span></code>, assign <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-</span> <span class="pre">m</span></code> to <code class="docutils literal notranslate"><span class="pre">n</span></code></li>
+<li>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is smaller than <code class="docutils literal notranslate"><span class="pre">m</span></code>, assign <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">-</span> <span class="pre">n</span></code> to <code class="docutils literal notranslate"><span class="pre">m</span></code></li>
 </ul>
 </li>
-<li><p>After the loop, print the value of <code class="docutils literal notranslate"><span class="pre">n</span></code> which is the greatest common divisor.</p></li>
+<li>After the loop, print the value of <code class="docutils literal notranslate"><span class="pre">n</span></code> which is the greatest common divisor.</li>
 </ol>
 <ol class="arabic simple" start="2">
-<li><p>In order to avoid the issue of initialisation of integers to negative values, one solution is to test if they are both positive and if so, perform the Euclid algorithm, and if either is negative, stop the program and print the error message.</p></li>
+<li>In order to avoid the issue of initialisation of integers to negative values, one solution is to test if they are both positive and if so, perform the Euclid algorithm, and if either is negative, stop the program and print the error message.</li>
 </ol>
 <p>The following cell provides an example solution.</p>
 <div class="cell docutils container">
@@ -1114,8 +1113,8 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
 </div>
 <p>Try it with different cases to check that it works as you expect!</p>
 <p><span class="xref myst">Back to Exercise 3.2</span></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1143,9 +1142,15 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1183,7 +1188,7 @@ This (for example) is needed to simplify fractions. Explaining the maths that ma
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1211,7 +1216,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1220,8 +1225,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -13,6 +13,8 @@
 
 - [python-programming-for-data-science](https://www.tomasbeuzen.com/python-programming-for-data-science/README.html)
 
+- [Image processing](https://vincmazet.github.io/bip/appendices/python.html#python)
+
 ***
 
 

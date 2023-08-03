@@ -20,3 +20,9 @@ The aim of this section is to teach specific topic **by doing**.
 
 - [7 Roadmaps for 2023](https://www.youtube.com/watch?v=66tfvFeALBQ)
 
+- [raspberrypi](https://www.raspberrypi.org/): computing litteracy organisation
+    - [Sonic-PI tuto repo](https://github.com/raspberrypilearning/sonic-pi-lessons)
+        - [Sonic-PI](https://sonic-pi.net/) - Could be a great Python tutorial for music enthusiast (check BAI interest)
+        
+        
+

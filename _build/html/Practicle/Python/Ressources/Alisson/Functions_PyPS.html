@@ -7,8 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Started with Python - Functions &#8212; TEACHING</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -45,14 +44,15 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
     <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
@@ -208,6 +208,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://deugz.github.io/sp-Science_Journey/build/html/index.html" rel="noopener noreferrer" target="_blank">🏠 Home</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../Intro/content.html">Content</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Bitesize</span></p>
@@ -517,7 +520,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-python-functions">
+  <div class="tex2jax_ignore mathjax_ignore section" id="getting-started-with-python-functions">
 <h1>Getting Started with Python - Functions<a class="headerlink" href="#getting-started-with-python-functions" title="Permalink to this heading">#</a></h1>
 <p>Version 0.1 Jul 2020</p>
 <p>This notebook introduces a key concept in programming which is functions. You will discover what functions are and how to use them in Python.</p>
@@ -528,7 +531,7 @@ document.write(`
 <p><strong>FILE:</strong> <code class="docutils literal notranslate"><span class="pre">Functions_PyPS.ipnyb</span></code></p>
 <hr class="docutils" />
 <p><a id="Functions"></a></p>
-<section id="functions-what-are-they">
+<div class="section" id="functions-what-are-they">
 <h2>1. Functions: what are they?<a class="headerlink" href="#functions-what-are-they" title="Permalink to this heading">#</a></h2>
 <p>Programs often involve running the same sequence of instructions several (or many) times. Where there are situations like this, it is usually possible to group these instructions into a named block of code that can be deployed as and when needed. These blocks are called <strong>Functions</strong>. Some functions are supplied as part of Python or in a <em>library</em> that you can easily access. For library functions, the block of code that makes up the function is something you would not normally be able to see or edit.</p>
 <p>You have already used some functions, but here we will go into a bit more detail about what they are. So, you have already seen and used the functions <code class="docutils literal notranslate"><span class="pre">print()</span></code> and <code class="docutils literal notranslate"><span class="pre">type()</span></code>. All functions are used in a similar way: when a program uses a function, there will be some code of the form <code class="docutils literal notranslate"><span class="pre">name_of_function(input)</span></code>. This will <em>call</em> the function, which then returns something depending on the value of <code class="docutils literal notranslate"><span class="pre">input</span></code>.</p>
@@ -666,14 +669,14 @@ functions (lines 4 and 14) to see what happens.</p>
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="functions-summary">
+<div class="section" id="functions-summary">
 <h3>Functions - summary<a class="headerlink" href="#functions-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you learned what functions are and how to use some pre-defined ones. You saw that the functions <code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">float()</span></code> and <code class="docutils literal notranslate"><span class="pre">str()</span></code> convert variable types and how the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function allows you to prompt the user to supply a value for a variable. You also learnt more about how to use the <code class="docutils literal notranslate"><span class="pre">print</span></code> function and that it can call several variables of different types that need to be comma-separated.</p>
 <hr class="docutils" />
 <p><a id="Building"></a></p>
-</section>
-</section>
-<section id="how-to-build-your-own-functions">
+</div>
+</div>
+<div class="section" id="how-to-build-your-own-functions">
 <h2>2. How to build your own functions<a class="headerlink" href="#how-to-build-your-own-functions" title="Permalink to this heading">#</a></h2>
 <p>Using existing functions from Python libraries is very powerful but sometimes you will want to create your own functions to carry out specific tasks.</p>
 <p>Let us see an example how this is done in Python by running the following:</p>
@@ -726,17 +729,17 @@ functions (lines 4 and 14) to see what happens.</p>
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="build-your-own-functions-summary">
+<div class="section" id="build-your-own-functions-summary">
 <h3>Build your own functions - summary<a class="headerlink" href="#build-your-own-functions-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you have seen how to define your own function, how to call it and how the function returns a certain value to the main program. You have also seen than variables that are only defined within functions are called <em>local</em> variables and that these are not accessible from the main program.</p>
 <hr class="docutils" />
 <p><a id="Modules"></a></p>
-</section>
-</section>
-<section id="modules-and-packages">
+</div>
+</div>
+<div class="section" id="modules-and-packages">
 <h2>3. Modules and Packages<a class="headerlink" href="#modules-and-packages" title="Permalink to this heading">#</a></h2>
 <p>We saw earlier that it is possible to use a few pre-built functions to automatically perform some operations. Then we learned how to go about writing our own functions. But you don’t want to lose precious time reinventing the wheel if a function already exists. Fortunately in Python, many function libraries have been developed and are available to you! They are called <strong>Modules</strong> and <strong>Packages</strong>.</p>
-<p>As we’ve already mentioned, Python is an extremely popular programming language and there are huge numbers of people out there using it to do specialist things. Python is managed by the Python Software Foundation (<a class="reference external" href="https://www.python.org/psf/">https://www.python.org/psf/</a>) which guides its development.</p>
+<p>As we’ve already mentioned, Python is an extremely popular programming language and there are huge numbers of people out there using it to do specialist things. Python is managed by the Python Software Foundation (<a class="reference external" href="https://www.python.org/psf/" rel="noopener noreferrer" target="_blank">https://www.python.org/psf/</a>) which guides its development.</p>
 <p>One example of a module is the <code class="docutils literal notranslate"><span class="pre">math</span></code> module. This is built into Python and contains useful mathematical functions such as <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code> (square root). Packages are collections of related modules, and these are often produced and distributed as extensions to the Python language.</p>
 <p>There are lots of packages written either specifically for Physics, Astronomy and Data Science or more generally for science and technology (as well as Machine learning, A.I., natural language processing, web development, … and so on). Part of the skill of developing code in Python is being able to find and use modules that have been developed by others.</p>
 <p>As an example, we will focus in this section on the <code class="docutils literal notranslate"><span class="pre">math</span></code> module for you to see how it works, and how you use it.  Following the same sort of approach, you will then be able to use many other available modules.</p>
@@ -778,20 +781,20 @@ functions (lines 4 and 14) to see what happens.</p>
 </div>
 <p>Many calculations in the physical sciences require functions from the <code class="docutils literal notranslate"><span class="pre">math</span></code> module. Some of the many functions available are:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">factorial(x)</span></code>	The factorial of the number x.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">exp(x)</span></code>	The exponential of the number x (i.e. e to the power x)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">log(x)</span></code>	The natural logarithm of the number x (i.e. the log to the base e of x)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">log10(x)</span></code>	The logarithm to the base 10 of the number x</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">sin(x)</span></code>	The sine of the number x, where x is in radians</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cos(x)</span></code>	The cosine of the number x, where x is in radians</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tan(x)</span></code>	The tangent of the number x, where x is in radians</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">asin(x)</span></code>	The arcsine of the number x (i.e. the angle in radians whose sine is x)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">acos(x)</span></code>	The arccosine of the number x (i.e. the angle in radians whose cosine is x)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">atan(x)</span></code>	The arctangent of the number x (i.e. the angle in radians whose tangent is x)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">e</span></code>         The base of natural logarithms (i.e. the number 2.71828182846…)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pi</span></code>       	The ratio of the circumference of a circle to its diameter (i.e. the number 3.14159265359…)</p></li>
+<li><code class="docutils literal notranslate"><span class="pre">factorial(x)</span></code>	The factorial of the number x.</li>
+<li><code class="docutils literal notranslate"><span class="pre">exp(x)</span></code>	The exponential of the number x (i.e. e to the power x)</li>
+<li><code class="docutils literal notranslate"><span class="pre">log(x)</span></code>	The natural logarithm of the number x (i.e. the log to the base e of x)</li>
+<li><code class="docutils literal notranslate"><span class="pre">log10(x)</span></code>	The logarithm to the base 10 of the number x</li>
+<li><code class="docutils literal notranslate"><span class="pre">sin(x)</span></code>	The sine of the number x, where x is in radians</li>
+<li><code class="docutils literal notranslate"><span class="pre">cos(x)</span></code>	The cosine of the number x, where x is in radians</li>
+<li><code class="docutils literal notranslate"><span class="pre">tan(x)</span></code>	The tangent of the number x, where x is in radians</li>
+<li><code class="docutils literal notranslate"><span class="pre">asin(x)</span></code>	The arcsine of the number x (i.e. the angle in radians whose sine is x)</li>
+<li><code class="docutils literal notranslate"><span class="pre">acos(x)</span></code>	The arccosine of the number x (i.e. the angle in radians whose cosine is x)</li>
+<li><code class="docutils literal notranslate"><span class="pre">atan(x)</span></code>	The arctangent of the number x (i.e. the angle in radians whose tangent is x)</li>
+<li><code class="docutils literal notranslate"><span class="pre">e</span></code>         The base of natural logarithms (i.e. the number 2.71828182846…)</li>
+<li><code class="docutils literal notranslate"><span class="pre">pi</span></code>       	The ratio of the circumference of a circle to its diameter (i.e. the number 3.14159265359…)</li>
 </ul>
-<p>They are very numerous and it might be interesting to have a look at the module documentation online (<a class="reference external" href="https://docs.python.org/3/library/math.html">https://docs.python.org/3/library/math.html</a>). However, do note that much of the documentation about modules does contain a lot more information that what you need at the moment, but you can always refer back to it as you become more advanced in your programing skills.</p>
+<p>They are very numerous and it might be interesting to have a look at the module documentation online (<a class="reference external" href="https://docs.python.org/3/library/math.html" rel="noopener noreferrer" target="_blank">https://docs.python.org/3/library/math.html</a>). However, do note that much of the documentation about modules does contain a lot more information that what you need at the moment, but you can always refer back to it as you become more advanced in your programing skills.</p>
 <p>Let’s use all you have learned so far in a concluding activity:</p>
 <p><a id="Exercise3.1"></a></p>
 <div class="alert alert-block alert-info">
@@ -808,14 +811,14 @@ In the the expansion of $(1+x)^{n}$, the integer coefficient of $x^{n}$ is calle
 </div>
 </div>
 <p>You should attempt this exercise <em>before</em> looking at the <span class="xref myst">Exercise Answers</span></p>
-<section id="modules-and-packages-summary">
+<div class="section" id="modules-and-packages-summary">
 <h3>Modules and Packages - summary<a class="headerlink" href="#modules-and-packages-summary" title="Permalink to this heading">#</a></h3>
 <p>In this part, you have learnt how you can load packages of modules of pre-defined functions to be able to use them. You have played with some functions of the <code class="docutils literal notranslate"><span class="pre">math</span></code> module.</p>
 <hr class="docutils" />
 <p><a id="Exercise-Answers"></a></p>
-</section>
-</section>
-<section id="exercises-answers">
+</div>
+</div>
+<div class="section" id="exercises-answers">
 <h2>Exercises - Answers<a class="headerlink" href="#exercises-answers" title="Permalink to this heading">#</a></h2>
 <p><a id="ExerciseAnswers1.1"></a></p>
 <div class="alert alert-block alert-info">
@@ -927,8 +930,8 @@ The working of the program is explained in comments on each line in the code cel
 </div>
 </div>
 <p><span class="xref myst">Back to Exercise 3.1</span></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -956,9 +959,15 @@ The working of the program is explained in comments on each line in the code cel
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -994,7 +1003,7 @@ The working of the program is explained in comments on each line in the code cel
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1022,7 +1031,7 @@ By <strong>Vincent Deguin</strong> (with ❤️)
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1031,8 +1040,8 @@ By <strong>Vincent Deguin</strong> (with ❤️)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
